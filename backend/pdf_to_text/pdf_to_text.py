@@ -22,6 +22,8 @@ class GetCompSubsFromInput():
 
         self.comps = [self.comp_MedN,self.comp_MetN,self.comp_PraN,self.comp_MedS,self.comp_MetS,self.comp_PraS,self.comp_MedW,self.comp_MetW,self.comp_PraW,self.comp_MedG,self.comp_MetG,self.comp_PraG]
 
+
+    #Takes a filepath to a pdf TOR and returns all comps subjects found as strings inside a list
     def getCompSubsFromTOR(self,file_path):
         reader = PdfReader(file_path)
 
