@@ -1,10 +1,6 @@
 class TimeFrame():
-    def __init__(self):
-        self.start_hour
-        self.start_minute
-
-        self.end_hour
-        self.end_minute
+    start_time = 0
+    end_time = 0
 
 class Sallybus():
     def __init__(self):
@@ -17,23 +13,23 @@ class Sallybus():
         self.sunday = []
 
     def add_time_frame(self,day,time_frame):
-        if day == 'monday':
+        if day == 'Montag':
             self.monday.append(time_frame)
 
-        elif day == 'tuesday':
+        elif day == 'Dienstag':
             self.tuesday.append(time_frame)
 
-        elif day == 'wednesday':
+        elif day == 'Mittwoch':
             self.wednesday.append(time_frame)
 
-        elif day == 'thursday':
+        elif day == 'Donnerstag':
             self.thursday.append(time_frame)
 
-        elif day == 'friday':
+        elif day == 'Freitag':
             self.friday.append(time_frame)
 
-        elif day == 'saturday':
+        elif day == 'Samstag':
             self.saturday.append(time_frame)
 
-        elif day == 'sunday':
+        elif day == 'Sonntag':
             self.sunday.append(time_frame)
