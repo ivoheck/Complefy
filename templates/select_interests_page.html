@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Select Interests</title>
+    <title>Which form of examination do you prefer?</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -18,10 +19,83 @@
         h1 {
             font-size: 2rem;
             color: #343a40;
+            margin-bottom: 1rem;
+        }
+        .button-container {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        button {
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            color: white;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button.active {
+            background-color: #28a745; /* Green for active */
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .submit-container {
+            margin-top: auto;
+            margin-bottom: 1rem;
         }
     </style>
 </head>
 <body>
-    <h1>Select Interests</h1>
+    <h1>Which form of examination do you prefer?</h1>
+    <div class="button-container">
+        <button id="essayButton" onclick="togglePreference('essay')">Essays</button>
+        <button id="examButton" onclick="togglePreference('exam')">Exams</button>
+    </div>
+    <div class="submit-container">
+        <button onclick="submitPreferences()">Submit</button>
+    </div>
+
+    <script>
+        const preferences = {
+            essay: false,
+            exam: false
+        };
+
+        function togglePreference(type) {
+            preferences[type] = !preferences[type];
+
+            // Update button appearance
+            const button = document.getElementById(`${type}Button`);
+            if (preferences[type]) {
+                button.classList.add('active');
+            } else {
+                button.classList.remove('active');
+            }
+
+            console.log(`${type} preference is now:`, preferences[type]);
+        }
+
+        function submitPreferences() {
+            fetch('/complefy_chat', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(preferences)
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Response from server:', data);
+                alert('Preferences submitted successfully!');
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('There was an error submitting your preferences.');
+            });
+        }
+    </script>
 </body>
 </html>

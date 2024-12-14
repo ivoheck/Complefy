@@ -45,6 +45,16 @@ def upload_data():
 
     return render_template('select_interests_page.html')
 
+@app.route('/complefy_chat', methods=['POST'])
+def complefy_chat():
+
+    preferences = request.get_json()
+
+    if preferences:
+        session['preferences'] = preferences
+    
+    return render_template('complefy_chat.html')
+
 if __name__ == '__main__':
     # Starte den Flask-Server
     app.run(debug=True)
