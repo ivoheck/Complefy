@@ -1,6 +1,5 @@
 from PyPDF2 import PdfReader
 
-
 class GetCompSubsFromInput():
 
     def __init__(self):
@@ -24,8 +23,9 @@ class GetCompSubsFromInput():
 
 
     #Takes a filepath to a pdf TOR and returns all comps subjects found as strings inside a list
-    def getCompSubsFromTOR(self,file_path):
-        reader = PdfReader(file_path)
+    def getCompSubsFromTOR(self,pdf_content):
+
+        reader = PdfReader(pdf_content)
 
         list_of_finished_comps = []
 
@@ -43,8 +43,7 @@ class GetCompSubsFromInput():
                 list_of_finished_comps.append(comp)
     
         return list_of_finished_comps
-
-
+    
 def main(file_path):
     res = GetCompSubsFromInput().getCompSubsFromTOR(file_path=file_path)
 

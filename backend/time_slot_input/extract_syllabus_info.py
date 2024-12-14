@@ -1,5 +1,5 @@
 import pandas as pd
-from sallybus import Sallybus, TimeFrame
+from backend.time_slot_input.sallybus import Sallybus
 
 
 class GetSallybusInfo():
@@ -7,9 +7,7 @@ class GetSallybusInfo():
     def __init__(self):
         self.weekdays = ['Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag', 'Sonntag']
 
-    def from_myStudy_exel_export(self,file_path):
-        df = pd.read_excel(file_path)
-
+    def from_myStudy_exel_export(self,df):
         sallybus = Sallybus()
 
         current_day = ''
@@ -29,17 +27,16 @@ class GetSallybusInfo():
                 end_h = int(value.split('-')[1].split(':')[0])
                 end_m = int(value.split('-')[1].split(':')[1])
 
-                time_frame = TimeFrame()
-                time_frame.start_time = ((start_h * 60) + start_m)
-                time_frame.end_time = ((end_h * 60) + end_m)
+                time_frame = (((start_h * 60) + start_m),((end_h * 60) + end_m))
                 sallybus.add_time_frame(current_day,time_frame)
 
-        return sallybus
+        return sallybus.as_dict()
 
             
 
 def main(file_path):
-    res = GetSallybusInfo().from_myStudy_exel_export(file_path)
+    df = pd.read_excel(file_path)
+    res = GetSallybusInfo().from_myStudy_exel_export(df)
     print(res.tuesday[0].start_time)
 
 

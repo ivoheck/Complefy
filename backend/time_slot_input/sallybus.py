@@ -1,8 +1,5 @@
-class TimeFrame():
-    start_time = 0
-    end_time = 0
-
 class Sallybus():
+    #Every list contains a tupel of start and end time in minutes a a given appointment
     def __init__(self):
         self.monday = []
         self.tuesday = []
@@ -11,6 +8,17 @@ class Sallybus():
         self.friday = []
         self.saturday = []
         self.sunday = []
+
+    def __str__(self):
+        return (
+        f"monday: {self.monday}, "
+        f"tuesday: {self.tuesday}, "
+        f"wednesday: {self.wednesday}, "
+        f"thursday: {self.thursday}, "
+        f"friday: {self.friday}, "
+        f"saturday: {self.saturday}, "
+        f"sunday: {self.sunday}"
+        )
 
     def add_time_frame(self,day,time_frame):
         if day == 'Montag':
@@ -33,3 +41,14 @@ class Sallybus():
 
         elif day == 'Sonntag':
             self.sunday.append(time_frame)
+
+    def as_dict(self):
+        return {
+            'monday': self.monday,
+            'tuesday' :self.tuesday,
+            'wednesday' : self.wednesday,
+            'thursday' : self.thursday,
+            'friday' : self.friday,
+            'saturday' : self.saturday,
+            'sunday' : self.sunday
+        }
