@@ -13,14 +13,22 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background: url('/staic/images/back.png') no-repeat center center; /* Hintergrundbild */
+            background: url('/static/images/back.png') no-repeat center center; /* Hintergrundbild */
             background-size: cover; /* Hintergrundbild anpassen */
             color: white; /* Weißer Text für bessere Sichtbarkeit */
         }
         .container {
             display: flex;
-            width: 80%;
-            justify-content: space-between;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px; /* Abstand zwischen Containern */
+        }
+        .upload-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px; /* Abstand zwischen den Upload-Sektionen */
         }
         .upload-section {
             width: 45%;
@@ -51,7 +59,7 @@
         }
         .upload-button {
             display: block;
-            margin: 0 auto;
+            margin: 20px auto;
             padding: 10px 20px;
             font-size: 1rem;
             color: #fff;
@@ -67,23 +75,25 @@
 </head>
 <body>
     <div class="container">
-        <form action="/select_interests_page" method="POST" enctype="multipart/form-data" style="width: 100%; text-align: center;">
-            <div class="upload-section">
-                <h2>Upload Syllabus</h2>
-                <div class="drop-area">
-                    Drag & Drop files here
+        <form action="/select_interests_page" method="POST" enctype="multipart/form-data">
+            <div class="upload-row">
+                <div class="upload-section">
+                    <h2>Upload Syllabus</h2>
+                    <div class="drop-area">
+                        Drag & Drop files here
+                    </div>
+                    <input type="file" name="syllabus" accept=".xlsx">
                 </div>
-                <input type="file" name="syllabus" accept=".xlsx">
-            </div>
 
-            <div class="upload-section">
-                <h2>Upload TOR</h2>
-                <div class="drop-area">
-                    Drag & Drop files here
+                <div class="upload-section">
+                    <h2>Upload TOR</h2>
+                    <div class="drop-area">
+                        Drag & Drop files here
+                    </div>
+                    <input type="file" name="tor" accept=".pdf">
                 </div>
-                <input type="file" name="tor" accept=".pdf">
             </div>
-
+            <!-- Upload Button -->
             <button type="submit" class="upload-button">Upload Files</button>
         </form>
     </div>
