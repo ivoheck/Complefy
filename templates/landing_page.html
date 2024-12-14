@@ -3,36 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wechsel zur nächsten Seite</title>
+    <title>Complefy Landing Page</title>
     <style>
         body {
+            margin: 0;
+            padding: 0;
+            background: url('back.png') no-repeat center center; /* Hintergrundbild */
+            background-size: cover; /* Bild an den Bildschirm anpassen */
+            height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            color: white;
+            text-align: center;
+        }
+        .container {
+            position: relative;
+        }
+        .robot-image {
+            width: 400px; /* Roboterbild vergrößert */
+            height: auto;
+            margin-bottom: 20px; /* Abstand zur Schrift */
+        }
+        .title {
+            font-size: 48px;
+            margin: 10px 0; /* Weniger Abstand */
+            font-weight: bold;
+            color: #ffffff;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        .subtitle {
+            font-size: 24px;
+            margin-bottom: 30px;
+            color: #80bfff;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
         }
         .button {
             padding: 20px 40px;
             font-size: 24px;
             color: white;
-            background-color: #007bff;
+            background-color: #ff7f00;
             border: none;
             border-radius: 10px;
             cursor: pointer;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: background-color 0.3s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s, transform 0.2s;
         }
         .button:hover {
-            background-color: #0056b3;
+            background-color: #e96c00;
+            transform: scale(1.05);
         }
     </style>
 </head>
 <body>
-    <button class="button" onclick="window.location.href='/upload_data_page'">
-        Start Complefy
-    </button>
+    <div class="container">
+        <img class="robot-image" src="robot.png" alt="Robot">
+        <div class="title">Press to Start</div>
+        <div class="subtitle">Complefy</div>
+        <button class="button" onclick="window.location.href='/upload_data_page'">Start Complefy</button>
+    </div>
 </body>
 </html>

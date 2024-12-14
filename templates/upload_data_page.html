@@ -13,7 +13,9 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #f8f9fa;
+            background: url('back.png') no-repeat center center; /* Hintergrundbild */
+            background-size: cover; /* Hintergrundbild anpassen */
+            color: white; /* Weißer Text für bessere Sichtbarkeit */
         }
         .container {
             display: flex;
@@ -27,19 +29,25 @@
         .upload-section h2 {
             font-size: 1.5rem;
             margin-bottom: 20px;
+            color: #ffffff; /* Weißer Text */
         }
         .drop-area {
             width: 100%;
             height: 200px;
-            border: 2px dashed #007bff;
+            border: 2px dashed #ffffff; /* Weiße gestrichelte Linie */
             border-radius: 10px;
-            background-color: #e9ecef;
+            background-color: rgba(0, 0, 0, 0.5); /* Halbtransparenter Hintergrund */
             display: flex;
             justify-content: center;
             align-items: center;
-            color: #6c757d;
+            color: #ffffff; /* Weißer Text */
             font-size: 1.2rem;
             margin-bottom: 20px;
+        }
+        input[type="file"] {
+            display: block;
+            margin: 20px auto;
+            color: #ffffff;
         }
         .upload-button {
             display: block;
@@ -65,7 +73,7 @@
                 <div class="drop-area">
                     Drag & Drop files here
                 </div>
-                <input type="file" name="syllabus" accept=".xlsx" style="display: block; margin: 20px auto;">
+                <input type="file" name="syllabus" accept=".xlsx">
             </div>
 
             <div class="upload-section">
@@ -73,7 +81,7 @@
                 <div class="drop-area">
                     Drag & Drop files here
                 </div>
-                <input type="file" name="tor" accept=".pdf" style="display: block; margin: 20px auto;">
+                <input type="file" name="tor" accept=".pdf">
             </div>
 
             <button type="submit" class="upload-button">Upload Files</button>
