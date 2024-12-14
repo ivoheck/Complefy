@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Complefy Landing Page</title>
     <style>
         body {
             margin: 0;
@@ -20,22 +19,16 @@
         }
         .container {
             position: relative;
+            display: inline-block;
         }
         .robot-image {
             width: 400px; /* Roboterbild vergrößert */
             height: auto;
-            margin-bottom: 20px; /* Abstand zur Schrift */
-        }
-        .title {
-            font-size: 48px;
-            margin: 10px 0; /* Weniger Abstand */
-            font-weight: bold;
-            color: #ffffff;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+            margin-bottom: 20px; /* Abstand zum Button */
         }
         .subtitle {
             font-size: 24px;
-            margin-bottom: 30px;
+            margin-bottom: 20px; /* Abstand zum Button angeglichen */
             color: #80bfff;
             text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
         }
@@ -59,9 +52,8 @@
 <body>
     <div class="container">
         <img class="robot-image" src="/static/images/robot.png" alt="Robot">
-        <div class="title">Press to Start</div>
         <div class="subtitle">Complefy</div>
-        <button class="button" onclick="window.location.href='/upload_data_page'">Start Complefy</button>
+        <button class="button" onclick="window.location.href='/upload_data_page'">Press to Start</button>
     </div>
 </body>
 </html>
