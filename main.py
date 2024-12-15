@@ -31,8 +31,8 @@ def upload_data():
 
     try:
         syllabus_data_df = pd.read_excel(BytesIO(syllabus_file.read()))
-        # sallybus = GetSallybusInfo().from_myStudy_exel_export(syllabus_data_df)
-        # session['sallybus'] = sallybus
+        sallybus = GetSallybusInfo().from_myStudy_exel_export(syllabus_data_df)
+        session['sallybus'] = sallybus
     except Exception as e:
         print(f'extracting information from syllabus was not possible: {e}')
 
@@ -53,8 +53,13 @@ def complefy_chat():
     if preferences:
         session['preferences'] = preferences
     
+    print(session)
     return render_template('complefy_chat.html')
 
 if __name__ == '__main__':
     # Starte den Flask-Server
     app.run(debug=True)
+
+
+{'finished_comps': ['Medialitätsorientierte Zugänge zu den Naturwissenschaften', 'Methodenorientierte Zugänge zu den Naturwissenschaften', 'Praxisorientierte Zugänge zu den Naturwissenschaften', 'Medialitätsorientierte Zugänge zu den Sozialwissenschaften', 'Methodenorientierte Zugänge zu den Sozialwissenschaften', 'Praxisorientierte Zugänge zu inter- und transdisziplinären Wissenschaften'], 
+ 'preferences': {'essay': True, 'exam': True}}
