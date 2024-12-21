@@ -1,1 +1,3 @@
 venv/
+secret.py
+backend/llm_connection/secret.py
