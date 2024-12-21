@@ -10,10 +10,10 @@
             margin: 0;
             padding: 0;
             display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            flex-direction: column; /* Vertikale Ausrichtung */
+            justify-content: center; /* Vertikal zentrieren */
+            align-items: center; /* Horizontal zentrieren */
+            height: 100vh; /* Höhe des Viewports verwenden */
             background-color: #f8f9fa;
         }
         h1 {
@@ -42,9 +42,24 @@
         button:hover {
             background-color: #0056b3;
         }
-        .submit-container {
-            margin-top: auto;
+        .input-container {
             margin-bottom: 1rem;
+        }
+        .submit-container {
+            margin-top: 2rem; /* Abstand zum vorherigen Bereich */
+        }
+        #additionalInput {
+            width: 100%;
+            padding: 0.8rem;
+            font-size: 1rem;
+            border: 1px solid #ced4da;
+            border-radius: 30px; /* Rundes Design */
+            box-sizing: border-box;
+            outline: none;
+            transition: border-color 0.3s ease-in-out;
+        }
+        #additionalInput:focus {
+            border-color: #007bff;
         }
     </style>
 </head>
@@ -54,6 +69,12 @@
         <button id="essayButton" onclick="togglePreference('essay')">Essays</button>
         <button id="examButton" onclick="togglePreference('exam')">Exams</button>
     </div>
+    
+    <h1>Provide additional source parameters:</h1>
+    <div class="input-container">
+        <input type="text" id="additionalInput" placeholder="Enter any additional information here...">
+    </div>
+    
     <div class="submit-container">
         <button onclick="submitPreferences()">Submit</button>
     </div>
@@ -61,7 +82,8 @@
     <script>
         const preferences = {
             essay: false,
-            exam: false
+            exam: false,
+            additionalUserPrompt: ''  // Änderung hier
         };
 
         function togglePreference(type) {
@@ -79,6 +101,8 @@
         }
 
         function submitPreferences() {
+            preferences.additionalUserPrompt = document.getElementById('additionalInput').value;
+            
             fetch('/complefy_chat', {
                 method: 'POST',
                 headers: {

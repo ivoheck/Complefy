@@ -61,5 +61,20 @@ if __name__ == '__main__':
     app.run(debug=True)
 
 
-{'finished_comps': ['Medialitätsorientierte Zugänge zu den Naturwissenschaften', 'Methodenorientierte Zugänge zu den Naturwissenschaften', 'Praxisorientierte Zugänge zu den Naturwissenschaften', 'Medialitätsorientierte Zugänge zu den Sozialwissenschaften', 'Methodenorientierte Zugänge zu den Sozialwissenschaften', 'Praxisorientierte Zugänge zu inter- und transdisziplinären Wissenschaften'], 
- 'preferences': {'essay': True, 'exam': True}}
+#Beispiel Session dict
+{'finished_comps': ['Medialitätsorientierte Zugänge zu den Naturwissenschaften', 
+                    'Methodenorientierte Zugänge zu den Naturwissenschaften', 
+                    'Praxisorientierte Zugänge zu den Naturwissenschaften', 
+                    'Medialitätsorientierte Zugänge zu den Sozialwissenschaften', 
+                    'Methodenorientierte Zugänge zu den Sozialwissenschaften', 
+                    'Praxisorientierte Zugänge zu inter- und transdisziplinären Wissenschaften'], 
+ 'preferences': {'essay': True, 
+                 'exam': False, 
+                 'additionalUserPrompt': ''}, #Nutzer Promt für die LLM um weitergehende suche zu realisieren
+ 'sallybus': {'friday': [(855, 1020), (855, 1065), (855, 1065), (855, 1065)], 
+              'monday': [], 
+              'saturday': [], 
+              'sunday': [], 
+              'thursday': [(615, 705), (735, 825), (735, 825), (830, 965), (855, 1065)], 
+              'tuesday': [(885, 1020), (885, 1020), (975, 1065)], 
+              'wednesday': [(855, 1065), (840, 960), (960, 1080)]}}
