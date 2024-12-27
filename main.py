@@ -45,13 +45,18 @@ def upload_data():
 
     return render_template('select_interests_page.html')
 
-@app.route('/complefy_chat', methods=['POST'])
+@app.route('/complefy_chat', methods=['POST','GET'])
 def complefy_chat():
 
-    preferences = request.get_json()
+    essay_preference = request.form.get('essay') == 'true'
+    exam_preference = request.form.get('exam') == 'true'
+    additional_prompt = request.form.get('additionalUserPrompt')
 
-    if preferences:
-        session['preferences'] = preferences
+    session['preferences'] = {
+        'essay': essay_preference,
+        'exam': exam_preference,
+        'additionalUserPrompt': additional_prompt,
+    }
     
     print(session)
     return render_template('complefy_chat.html')
@@ -68,13 +73,18 @@ if __name__ == '__main__':
                     'Medialitätsorientierte Zugänge zu den Sozialwissenschaften', 
                     'Methodenorientierte Zugänge zu den Sozialwissenschaften', 
                     'Praxisorientierte Zugänge zu inter- und transdisziplinären Wissenschaften'], 
+
  'preferences': {'essay': True, 
                  'exam': False, 
                  'additionalUserPrompt': ''}, #Nutzer Promt für die LLM um weitergehende suche zu realisieren
+
  'sallybus': {'friday': [(855, 1020), (855, 1065), (855, 1065), (855, 1065)], 
               'monday': [], 
               'saturday': [], 
               'sunday': [], 
               'thursday': [(615, 705), (735, 825), (735, 825), (830, 965), (855, 1065)], 
               'tuesday': [(885, 1020), (885, 1020), (975, 1065)], 
-              'wednesday': [(855, 1065), (840, 960), (960, 1080)]}}
+              'wednesday': [(855, 1065), (840, 960), (960, 1080)]},
+
+  'additionalUserPrompt': 'Additional Promt'
+              }
