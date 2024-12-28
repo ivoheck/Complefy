@@ -1,10 +1,11 @@
 import sys
 import os
-from flask import Flask, render_template, session, request
+from flask import Flask, render_template, session, request, jsonify
 import pandas as pd
 from io import BytesIO
 from backend.time_slot_input.extract_syllabus_info import GetSallybusInfo
 from backend.tor_input.pdf_to_text import GetCompSubsFromInput
+from backend.llm_connection.llm_connection import LLMConnection, ChatObject
 
 # Füge das Projektverzeichnis zu sys.path hinzu
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -13,6 +14,7 @@ sys.path.insert(0, PROJECT_ROOT)
 app = Flask(__name__)
 # TODO: Ändere den secret key
 app.secret_key = 'your_secret_key'
+llm = LLMConnection()
 
 @app.route('/')
 def home():
@@ -58,8 +60,32 @@ def complefy_chat():
         'additionalUserPrompt': additional_prompt,
     }
     
-    print(session)
+    session['chat'] = ChatObject().get_chat()
+
     return render_template('complefy_chat.html')
+
+
+@app.route('/chat_message', methods=['POST'])
+def handle_chat_message():
+    data = request.get_json()  # Empfängt die Nachricht als JSON
+    message = data.get('message')
+
+    if not message:
+        return jsonify({"error": "No message provided"}), 400
+
+    # Hier kannst du die Nachricht speichern oder weiterverarbeiten
+    print(f"Received message: {message}")
+    
+    question = {"role":"user","content": message}
+
+    awser = llm.chat_completion(session['chat'],question)
+    session['chat'] = ChatObject().add_user_promt(session['chat'],question)
+    session['chat'] = ChatObject().add_respones(session['chat'],awser)
+
+    print(awser)
+    print(type(awser))
+    
+    return jsonify({"status": "success", "message": str(awser)}), 200
 
 if __name__ == '__main__':
     # Starte den Flask-Server

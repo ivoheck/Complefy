@@ -8,8 +8,17 @@
         body {
             margin: 0;
             display: flex;
+            flex-direction: column; /* Der gesamte Body ist nun eine vertikale Flexbox */
             height: 100vh;
             font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex: 1; /* Der Container nimmt den gesamten verfügbaren Raum */
+            gap: 10px;
+            padding: 10px;
+            overflow-y: auto;
         }
 
         .panel {
@@ -22,20 +31,79 @@
         }
 
         .left-panel {
-            flex: 0.8;
-            max-width: 30%;
+            flex: 1;
+            max-width: 20%;
+            max-height: calc(100vh - 110px);
         }
 
         .right-panel {
             flex: 2;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            overflow-y: auto;
+            flex-grow: 1; /* Füllt den verbleibenden Platz aus */
+            max-height: calc(100vh - 110px); /* Maximalhöhe, um den Button-Container zu berücksichtigen */
         }
 
-        .container {
+        .dynamic-container {
+            padding: 10px;
+            background-color: #e0f7fa;
+            border: 1px solid #00796b;
+            border-radius: 5px;
+        }
+
+        .button-container {
+            position: fixed; /* Fixiert den Button-Container am unteren Rand */
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #f9f9f9;
+            padding: 10px;
             display: flex;
             gap: 10px;
-            width: 100%;
-            padding: 10px;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
         }
+
+        .button-container input[type="text"] {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .button-container button {
+            padding: 10px 20px;
+            background-color: #00796b;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .button-container button:hover {
+            background-color: #004d40;
+        }
+
+        .server-response {
+            background-color: #ffe0b2; /* Andere Farbe für die Antwortcontainer */
+            border: 1px solid #ff7043;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .loading-container {
+    padding: 10px;
+    background-color: #e0f7fa;
+    border: 1px solid #00796b;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-align: center;
+    color: #00796b;
+    font-weight: bold;
+}
+
 
         html {
             scroll-behavior: smooth;
@@ -47,13 +115,87 @@
         <div class="panel left-panel">
             <p>Left Panel Content</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget...</p>
-            <!-- Add more content to test scrolling -->
         </div>
-        <div class="panel right-panel">
-            <p>Right Panel Content</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget...</p>
-            <!-- Add more content to test scrolling -->
+        <div class="panel right-panel" id="rightPanel">
+            <div class="dynamic-container">
+                <p>Right Panel Content</p>
+            </div>
         </div>
     </div>
+
+    <div class="button-container">
+        <input type="text" id="messageInput" placeholder="Type your message here">
+        <button id="addContainer">Send</button>
+    </div>
+    
+    <script>
+        document.getElementById('addContainer').addEventListener('click', function() {
+    const inputField = document.getElementById('messageInput');
+    const inputText = inputField.value.trim();
+
+    if (inputText === '') {
+        return;
+    }
+
+    // Füge die gesendete Nachricht direkt hinzu
+    const rightPanel = document.getElementById('rightPanel');
+
+    // Erstelle Container für die Nachricht
+    const userMessageContainer = document.createElement('div');
+    userMessageContainer.classList.add('dynamic-container');
+
+    const userMessage = document.createElement('div');
+    userMessage.classList.add('user-message');
+    userMessage.textContent = 'Du: ' + inputText;
+    userMessageContainer.appendChild(userMessage);
+
+    rightPanel.appendChild(userMessageContainer);
+
+    // Ladeanimation hinzufügen
+    const loadingContainer = document.createElement('div');
+    loadingContainer.classList.add('loading-container');
+    loadingContainer.textContent = 'Wird geladen...';
+    rightPanel.appendChild(loadingContainer);
+
+    // Leere das Eingabefeld
+    inputField.value = '';
+
+    // Sende die Nachricht an das Backend
+    fetch('/chat_message', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ message: inputText })
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.status === 'success') {
+            console.log('Nachricht erfolgreich gesendet:', data.message);
+
+            // Ladeanimation entfernen und Antwort hinzufügen
+            loadingContainer.remove();
+
+            const serverResponseContainer = document.createElement('div');
+            serverResponseContainer.classList.add('server-response'); 
+            serverResponseContainer.textContent = 'Antwort: ' + (data.message || 'Fehler bei Komunikation mit dem Backend');
+            rightPanel.appendChild(serverResponseContainer);
+        } else {
+            console.error('Fehler beim Senden der Nachricht:', data.error);
+        }
+    })
+    .catch(error => {
+        console.error('Fehler beim Senden der Nachricht:', error);
+    });
+});
+
+document.getElementById('messageInput').addEventListener('keyup', function(event) {
+    if (event.key === 'Enter') {
+        document.getElementById('addContainer').click();
+    }
+});
+
+
+    </script>
 </body>
 </html>
