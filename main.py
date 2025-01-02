@@ -4,8 +4,11 @@ from flask import Flask, render_template, session, request, jsonify
 import pandas as pd
 from io import BytesIO
 from backend.time_slot_input.extract_syllabus_info import GetSallybusInfo
+from backend.image_recognition.image_recognition import SallybusInfoFromImage
 from backend.tor_input.pdf_to_text import GetCompSubsFromInput
 from backend.llm_connection.llm_connection import LLMConnection, ChatObject
+from PIL import Image
+import numpy as np
 
 # Füge das Projektverzeichnis zu sys.path hinzu
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -32,9 +35,24 @@ def upload_data():
     tor_file = request.files.get('tor')
 
     try:
-        syllabus_data_df = pd.read_excel(BytesIO(syllabus_file.read()))
-        sallybus = GetSallybusInfo().from_myStudy_exel_export(syllabus_data_df)
-        session['sallybus'] = sallybus
+        if syllabus_file:
+            # Dateiendung ermitteln
+            syllabus_extension = os.path.splitext(syllabus_file.filename)[1].lower()
+            if syllabus_extension == '.xlsx':
+                syllabus_data_df = pd.read_excel(BytesIO(syllabus_file.read()))
+                syllabus = GetSallybusInfo().from_myStudy_exel_export(syllabus_data_df)
+                session['sallybus'] = syllabus
+                print(syllabus)
+                print("sallybus als xlsx erhallten")
+
+            if syllabus_extension == '.png':
+                image = Image.open(BytesIO(syllabus_file.read()))
+                image_np = np.array(image)
+                syllabus = SallybusInfoFromImage(image_np).get_info()
+                print('test')
+                print(syllabus)
+
+
     except Exception as e:
         print(f'extracting information from syllabus was not possible: {e}')
 

@@ -1,11 +1,24 @@
+import os
+import sys
+
+# Verzeichnis des Projekts (Root-Verzeichnis) ermitteln
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '../..'))  # Passe die Anzahl der '..' an
+
+# Projekt-Root zu sys.path hinzufügen, falls noch nicht enthalten
+if project_root not in sys.path:
+    sys.path.insert(0, project_root)
+
 import easyocr
+from PIL import Image
 import cv2
 import numpy as np
+from backend.time_slot_input.sallybus import Sallybus
+
 
 class SallybusInfoFromImage:
 
-    def __init__(self, image_path):
-        self.image_path = image_path
+    def __init__(self, image_np):
+        self.image_np = image_np
 
         self.days = ['Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag']
         self.time = ['8.00', '9.00', '10.00', '11.00', '12.00', '13.00', '14.00', '15.00', '16.00', '17.00', '18.00', '19.00']
@@ -20,18 +33,35 @@ class SallybusInfoFromImage:
         subjects = self.find_subjects()
         clustert_subjects = self.cluster_time_points(subjects)
         time_stamps_coords =  self.get_time_stamps_coords(clustert_subjects)
-        res = self.get_time_stamps_time(time_stamps_coords)
+        time_stamps_minutes = self.get_time_stamps_time(time_stamps_coords)
+        return self.convert_to_sallybus(time_stamps_minutes)
+
+    def convert_to_sallybus(self,time_stamps_minutes):
+        sallybus = Sallybus()
+
+        for day in self.days:
+            day_data = time_stamps_minutes[day]
+
+            for time_data in day_data:
+                sallybus.add_time_frame(day,time_data)
+
+        return sallybus
+
 
     def get_time_stamps_time(self,time_stamps_coords):
         time_stamps_minutes = {}
 
         for day in self.days:
-            data = None
-
-            for time_stamp in time_stamps_coords[day]:
-                data.append(self.get_time_from_coords(time_stamp[0]),self.get_time_from_coords(time_stamp[1]))
+            data = []
+            time_stamp = time_stamps_coords[day]
+            
+            if time_stamp is not None:
+                for i in time_stamp:
+                    data.append((int(self.get_time_from_coords(i[0])),int(self.get_time_from_coords(i[1]))))
 
             time_stamps_minutes[day] = data
+
+        return time_stamps_minutes
 
 
     def get_time_from_coords(self,time_stamp):
@@ -39,10 +69,20 @@ class SallybusInfoFromImage:
         y_8 = int(self.coords['8.00'][1])
         y_9 = int(self.coords['9.00'][1])
 
-
+        h = y_9 - y_8
+        quater = int(h/4)
         
+        if time_stamp <= y_8:
+            return 480 #8 uhr
 
+        res_value = 480
+        time_stamp = time_stamp - y_8
+        while time_stamp > h:
+            time_stamp -= h
+            res_value += 60
 
+        res_value += h * (time_stamp/h)
+        return res_value
 
 
     def get_time_stamps_coords(self,clustert_subjects):
@@ -156,14 +196,16 @@ class SallybusInfoFromImage:
                 print(string_data  + ' found')
 
     def find_subjects(self):
-        image = cv2.imread(self.image_path)
+        #image = cv2.imread(self.image_path)
+
+        image = cv2.cvtColor(self.image_np, cv2.COLOR_RGB2BGR)
 
         y_end = int(self.coords['19.00'][1])
         print('y_end ', y_end)
         min_count = 10
 
         subjects = {}
-        #cords = {}
+        cords = {}
 
         for day in self.days:
             print(day)
@@ -177,14 +219,14 @@ class SallybusInfoFromImage:
             for y in range(y_start,y_end):
                 color = image[y,int(day_coords[0])]
                 if color[0] == 72:
-                    #cords[str(str(day_coords[0]) + str(y))] = [np.float64(day_coords[0]),np.float64(y)]
+                    cords[str(str(day_coords[0]) +' '+ str(y))] = [np.float64(day_coords[0]),np.float64(y)]
                     sub_points.append(y)
 
             subjects[day] = sub_points
             #print(sub_points)
         
+        print(cords)
         return subjects
-        #print(cords)
         
 
     def get_center_point(self,coordinates):
@@ -200,12 +242,14 @@ class SallybusInfoFromImage:
 
     def get_raw_data(self):
         reader = easyocr.Reader(['de'])  
-        results = reader.readtext(self.image_path)
+        results = reader.readtext(self.image_np)
         return results
 
 
 def main():
-    SallybusInfoFromImage('stundenplan.png').get_info()
+    image = Image.open('stundenplan.png')
+    image_np = np.array(image)
+    SallybusInfoFromImage(image_np=image_np).get_info()
 
 if __name__ == '__main__':
     main()
