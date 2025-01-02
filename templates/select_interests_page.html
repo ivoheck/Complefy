@@ -10,16 +10,19 @@
             margin: 0;
             padding: 0;
             display: flex;
-            flex-direction: column; /* Vertikale Ausrichtung */
-            justify-content: center; /* Vertikal zentrieren */
-            align-items: center; /* Horizontal zentrieren */
-            height: 100vh; /* Höhe des Viewports verwenden */
-            background-color: #f8f9fa;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('/static/images/back.png') no-repeat center center;
+            background-size: cover;
+            color: #fff;
         }
         h1 {
             font-size: 2rem;
-            color: #343a40;
-            margin-bottom: 1rem;
+            color: #f8f9fa;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+            margin-bottom: 1.5rem;
         }
         .button-container {
             display: flex;
@@ -27,39 +30,56 @@
             margin-bottom: 2rem;
         }
         button {
-            padding: 0.5rem 1rem;
+            padding: 0.8rem 1.5rem;
             font-size: 1rem;
             color: white;
             background-color: #007bff;
             border: none;
-            border-radius: 5px;
+            border-radius: 30px;
             cursor: pointer;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s, transform 0.2s;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
         }
         button.active {
-            background-color: #28a745; /* Green for active */
+            background-color: #28a745;
+            box-shadow: 2px 2px 15px rgba(0, 255, 0, 0.5);
         }
         button:hover {
             background-color: #0056b3;
+            transform: scale(1.05);
         }
         .input-container {
+            width: 100%;
+            max-width: 500px;
             margin-bottom: 1rem;
-        }
-        .submit-container {
-            margin-top: 2rem; /* Abstand zum vorherigen Bereich */
         }
         #additionalInput {
             width: 100%;
             padding: 0.8rem;
             font-size: 1rem;
             border: 1px solid #ced4da;
-            border-radius: 30px; /* Rundes Design */
+            border-radius: 30px;
             box-sizing: border-box;
             outline: none;
-            transition: border-color 0.3s ease-in-out;
+            transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
         }
         #additionalInput:focus {
             border-color: #007bff;
+            box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+        }
+        .submit-container {
+            margin-top: 2rem;
+        }
+        .submit-container button {
+            padding: 0.8rem 2rem;
+            font-size: 1.2rem;
+            background-color: #17a2b8;
+            border-radius: 30px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        .submit-container button:hover {
+            background-color: #138496;
+            transform: scale(1.05);
         }
     </style>
 </head>
