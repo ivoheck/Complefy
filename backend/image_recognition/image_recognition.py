@@ -45,7 +45,7 @@ class SallybusInfoFromImage:
             for time_data in day_data:
                 sallybus.add_time_frame(day,time_data)
 
-        return sallybus
+        return sallybus.as_dict()
 
 
     def get_time_stamps_time(self,time_stamps_coords):

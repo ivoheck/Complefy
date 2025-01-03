@@ -41,7 +41,7 @@ def upload_data():
             if syllabus_extension == '.xlsx':
                 syllabus_data_df = pd.read_excel(BytesIO(syllabus_file.read()))
                 syllabus = GetSallybusInfo().from_myStudy_exel_export(syllabus_data_df)
-                session['sallybus'] = syllabus
+                session['syllabus'] = syllabus
                 print(syllabus)
                 print("sallybus als xlsx erhallten")
 
@@ -49,6 +49,7 @@ def upload_data():
                 image = Image.open(BytesIO(syllabus_file.read()))
                 image_np = np.array(image)
                 syllabus = SallybusInfoFromImage(image_np).get_info()
+                session['syllabus'] = syllabus
                 print('test')
                 print(syllabus)
 
@@ -65,9 +66,30 @@ def upload_data():
 
     return render_template('select_interests_page.html')
 
-@app.route('/complefy_chat', methods=['POST','GET'])
-def complefy_chat():
+def get_syllabus_frontend(day,time_stamps):
+    start_hours = time_stamps[0] // 60
+    start_mins = time_stamps[0] % 60
 
+    end_hours = time_stamps[1] // 60
+    end_mins = time_stamps[1] % 60
+
+    return {"day": day.capitalize(), "start": f"{start_hours:02}:{start_mins:02}", "end": f"{end_hours:02}:{end_mins:02}"}
+
+@app.route('/api/events')
+def get_events():
+
+    syllabus = []
+    syllabus_data = session['syllabus']
+    print(syllabus_data)
+    for day in syllabus_data:
+        for time_stamps in syllabus_data[day]:
+            syllabus.append(get_syllabus_frontend(day, time_stamps))
+
+    print(syllabus)
+    return jsonify(syllabus)
+
+@app.route('/display_input', methods=['POST'])
+def display_input():
     essay_preference = request.form.get('essay') == 'true'
     exam_preference = request.form.get('exam') == 'true'
     additional_prompt = request.form.get('additionalUserPrompt')
@@ -80,10 +102,14 @@ def complefy_chat():
     
     session['chat'] = ChatObject().get_chat()
 
+    return render_template('display_input_data_page.html')
+
+@app.route('/complefy_chat', methods=['POST','GET'])
+def complefy_chat():
     return render_template('complefy_chat.html')
 
 
-@app.route('/chat_message', methods=['POST'])
+@app.route('/chat_message', methods=['POST','GET'])
 def handle_chat_message():
     data = request.get_json()  # Empfängt die Nachricht als JSON
     message = data.get('message')
