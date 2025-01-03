@@ -105,10 +105,22 @@
             text-align: center;
             color: #00796b;
             font-weight: bold;
+            display: none; /* Wird nur angezeigt, wenn benötigt */
         }
 
-        html {
-            scroll-behavior: smooth;
+        .loading-image {
+            width: 100px;  /* Anpassen der Größe des Ladebildes */
+            height: 100px;
+            animation: rotateAnimation 1s linear infinite;
+        }
+
+        @keyframes rotateAnimation {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
         }
     </style>
 </head>
@@ -131,6 +143,24 @@
     </div>
 
     <script>
+        function typeWriter(element, staticText, dynamicText, speed = 5) {
+            element.innerHTML = staticText;
+            let i = 0;
+            let formattedText = dynamicText.replace(/\n/g, '<br>');
+            let currentText = '';
+
+            function type() {
+                if (i < formattedText.length) {
+                    currentText += formattedText.charAt(i);
+                    element.innerHTML = currentText;
+                    i++;
+                    setTimeout(type, speed);
+                }
+            }
+
+            type();
+        }
+
         document.getElementById('addContainer').addEventListener('click', function() {
             const inputField = document.getElementById('messageInput');
             const inputText = inputField.value.trim();
@@ -141,6 +171,7 @@
 
             const rightPanel = document.getElementById('rightPanel');
 
+            // Erstelle das Container für die Benutzernachricht
             const userMessageContainer = document.createElement('div');
             userMessageContainer.classList.add('dynamic-container');
 
@@ -151,9 +182,13 @@
 
             rightPanel.appendChild(userMessageContainer);
 
+            // Ladeanimation erstellen und hinzufügen
             const loadingContainer = document.createElement('div');
             loadingContainer.classList.add('loading-container');
-            loadingContainer.textContent = 'Wird geladen...';
+            loadingContainer.style.display = 'block'; // Ladeanimation anzeigen
+            loadingContainer.innerHTML = '<img src="/static/images/robot_loding.png" alt="Ladeanimation" class="loading-image">';
+            
+            // Füge die Ladeanimation direkt nach der Benutzernachricht ein
             rightPanel.appendChild(loadingContainer);
 
             inputField.value = '';
@@ -167,15 +202,22 @@
             })
             .then(response => response.json())
             .then(data => {
-                if (data.status === 'success') {
-                    loadingContainer.remove();
+                // Ladeanimation verstecken
+                loadingContainer.style.display = 'none';
 
+                if (data.status === 'success') {
                     const serverResponseContainer = document.createElement('div');
                     serverResponseContainer.classList.add('server-response');
-                    serverResponseContainer.textContent = 'Antwort: ' + (data.message || 'Fehler bei Komunikation mit dem Backend');
+                    const formattedMessage = (data.message || 'Fehler bei Kommunikation mit dem Backend');
+
+                    typeWriter(serverResponseContainer, 'Antwort: ', formattedMessage);
                     rightPanel.appendChild(serverResponseContainer);
                 } else {
+                    const serverResponseContainer = document.createElement('div');
+                    serverResponseContainer.classList.add('server-response');
+                    serverResponseContainer.textContent = 'Fehler beim Senden der Nachricht.';
                     console.error('Fehler beim Senden der Nachricht:', data.error);
+                    rightPanel.appendChild(serverResponseContainer);
                 }
             })
             .catch(error => {
@@ -184,8 +226,9 @@
         });
 
         document.getElementById('messageInput').addEventListener('keyup', function(event) {
-            if (event.key === 'Enter') {
-                document.getElementById('addContainer').click();
+            if (event.key === 'Enter' && !event.shiftKey) {  // Enter ohne Shift-Taste
+                event.preventDefault();  // Verhindert den Zeilenumbruch im Textfeld
+                document.getElementById('addContainer').click();  // Klickt den Button
             }
         });
     </script>
