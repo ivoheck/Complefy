@@ -1,0 +1,97 @@
+(modul){
+   id = 58536
+   name = "Medialitätsorientierte Zugänge zu den Naturwissenschaften"
+   nummer = "51703000"
+   angebot = "Das Modul kann einmal belegt werden."
+   inhalte = "Die Studierenden setzen sich mit theoretischen Positionen und aktuellen Diskursen in naturwissenschaftlichen Disziplinen auseinander. Dabei wird ein weit gefasster Medialitätsbegriff zugrunde gelegt, der verschiedene Formen der textlichen, verbalen oder non-verbalen sowie audiovisuellen Kommunikation beinhaltet. In medialitätsorientierten Veranstaltungen eröffnet sich den Studierenden die Möglichkeit des Lesens und Verstehens ebenso wie zur eigenen Produktion von Texten durch die Erprobung, Entwicklung und Reflexion schriftlicher Ausdrucksmöglichkeiten. Entsprechend bleibt auch der Umgang mit Fremdsprachen nicht auf das Nachdenken über strukturelle Aspekte einer Sprache beschränkt, sondern ist so angelegt, dass die Studierenden ihre Sprachkenntnisse über die thematische Auseinandersetzung mit ausgewählten Inhalte vertiefen, praktisch anwenden und zugleich reflektieren."
+   fachkompetenz = "Die Studierenden verfügen über theoretische Kenntnisse zu naturwissenschaftlichen Positionen und Theorien. Sie sind in der Lage, aktuellen Diskursen zu folgen, einzelne Beiträge inhaltlich zu bewerten, einzuordnen und kritisch zu reflektieren. Sie können sich theoretische Positionen selbständig erarbeiten und weiterführende Überlegungen anstellen, indem sie diese mit anderen Texten in Verbindung setzen bzw. auf diese Bezug nehmen. Zugleich lernen sie mit Blick auf die kommunikative Funktion von Texten verstehen, welche Bedeutung situationsbezogenen „textexternen“ Merkmalen zukommt und welche Rolle sprachliche, „textinterne“ Merkmale spielen."
+   personalkompetenz = "Die Studierenden erlangen mit Hilfe medialitätsorientierter Zugänge (also der Auseinandersetzung mit in Text, Sprache oder Bild gefassten Ideen) eine verbessertes Kommunikationsbewusstsein und verbesserte kommunikative Fähigkeiten. Zugleich steigt mit der Erweiterung verbaler und nonverbaler Ausdrucksmöglichkeiten (z.B. Wahl eines angemessenen Sprachregisters, Codes der nonverbalen Kommunikation, schriftlicher und mündlicher Ausdruck, rhetorische Fähigkeiten – Ideen/ Positionen formulieren/ argumentativ verteidigen) auch die Fähigkeit zum Austausch über kulturelle und sprachliche Grenzen hinweg."
+   lernformen = "Seminargespräch, Vorlesungsbestandteile, Gruppenarbeitsphasen, Kurzreferate, Präsentationen, Plenumsdiskussionen, kleinere Vor- und Nachbereitungsaufgaben (z.B. Protokolle, Selbststudium, Recherche- und Lektürearbeit, Anfertigen einer wissenschaftlichen Arbeit)"
+   credits = 5
+   pruefungsformen = None
+   pruefungsleistungen = None
+   studienleistungen = None
+   dauer = "Dauer: 1 Semester
+Häufigkeit: i.d.R. jedes Semester 
+Einige Lehrveranstaltungen des Moduls werden jedes Semester angeboten, andere Lehrveranstaltungen finden nur alle zwei oder drei Semester statt. In einigen Fällen findet ein Angebot nur einmalig statt. Weiter ist es möglich, dass Angebote aufeinander aufbauen und dann in wechselnden Semestern angeboten werden"
+   voraussetzungen = "Modul &#34;Wissenschaft lehrt Verstehen&#34;"
+   workload_praesenz = 28
+   workload_vornachbereitung = 40
+   workload_studienleistung = 20
+   workload_pruefung = 62
+   workload_summe = None
+   sonstiges = "Für Fragen der ANERKENNUNG VON STUDIENLEISTUNGEN in diesem Modul wenden Sie sich bitte ans TEAM KOMPLEMENTÄRSTUDIUM. Informationen dazu finden Sie unter https://www.leuphana.de/college/studium/ks.html"
+   semester_id = 48
+   modulzuordnungen = 
+      (modulzuordnung_liste){
+         modulzuordnungen[] = 
+            (modulzuordnung){
+               gebiet = 
+                  (gebiet){
+                     id = 10627
+                     name = "Komplementärstudium"
+                     art = "komplement"
+                     studiengang = 
+                        (studiengang){
+                           id = 1223
+                           name = "Lehren und Lernen"
+                           abschluss = "B.A."
+                        }
+                  }
+               semester = "2,3,4,5,6"
+               bereich = "Naturwissenschaftliche Perspektive"
+               bereich_en = None
+            },
+            (modulzuordnung){
+               gebiet = 
+                  (gebiet){
+                     id = 10641
+                     name = "Komplementärstudium"
+                     art = "komplement"
+                     studiengang = 
+                        (studiengang){
+                           id = 1224
+                           name = "Leuphana Bachelor"
+                           abschluss = "B.A./B.Eng./B.Sc./LL.B."
+                        }
+                  }
+               semester = "2,3,4,5,6"
+               bereich = "Naturwissenschaftliche Perspektive"
+               bereich_en = None
+            },
+            (modulzuordnung){
+               gebiet = 
+                  (gebiet){
+                     id = 10852
+                     name = "Komplementärstudium"
+                     art = "komplement"
+                     studiengang = 
+                        (studiengang){
+                           id = 1253
+                           name = "Sozialpädagogik"
+                           abschluss = "B.A."
+                        }
+                  }
+               semester = "4"
+               bereich = "Naturwissenschaftliche Perspektive"
+               bereich_en = None
+            },
+            (modulzuordnung){
+               gebiet = 
+                  (gebiet){
+                     id = 10873
+                     name = "Komplementärstudium"
+                     art = "komplement"
+                     studiengang = 
+                        (studiengang){
+                           id = 1255
+                           name = "Wirtschaftspädagogik"
+                           abschluss = "B.A."
+                        }
+                  }
+               semester = "6"
+               bereich = None
+               bereich_en = None
+            },
+      }
+ }
