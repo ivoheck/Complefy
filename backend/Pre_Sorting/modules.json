@@ -1,0 +1,52 @@
+{
+    "module": [
+        {
+            "id": 58539,
+            "name": "Medialitätsorientierte Zugänge zu den Geisteswissenschaften"
+        },
+        {
+            "id": 58541,
+            "name": "Methodenorientierte Zugänge zu den Geisteswissenschaften"
+        },
+        {
+            "id": 58540,
+            "name": "Praxisorientierte Zugänge zu den Geisteswissenschaften"
+        },
+        {
+            "id": 58533,
+            "name": "Medialitätsorientierte Zugänge zu inter- und transdisziplinären Wissenschaften"
+        },
+        {
+            "id": 58535,
+            "name": "Methodenorientierte Zugänge zu inter- und transdisziplinären Wissenschaften"
+        },
+        {
+            "id": 58534,
+            "name": "Praxisorientierte Zugänge zu inter- und transdisziplinären Wissenschaften"
+        },
+        {
+            "id": 58536,
+            "name": "Medialitätsorientierte Zugänge zu den Naturwissenschaften"
+        },
+        {
+            "id": 58538,
+            "name": "Methodenorientierte Zugänge zu den Naturwissenschaften"
+        },
+        {
+            "id": 58537,
+            "name": "Praxisorientierte Zugänge zu den Naturwissenschaften"
+        },
+        {
+            "id": 58542,
+            "name": "Medialitätsorientierte Zugänge zu den Sozialwissenschaften"
+        },
+        {
+            "id": 58544,
+            "name": "Methodenorientierte Zugänge zu den Sozialwissenschaften"
+        },
+        {
+            "id": 58543,
+            "name": "Praxisorientierte Zugänge zu den Sozialwissenschaften"
+        }
+    ]
+}
