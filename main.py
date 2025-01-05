@@ -79,13 +79,19 @@ def get_syllabus_frontend(day,time_stamps):
 def get_events():
 
     syllabus = []
-    syllabus_data = session['syllabus']
-    print(syllabus_data)
-    for day in syllabus_data:
-        for time_stamps in syllabus_data[day]:
-            syllabus.append(get_syllabus_frontend(day, time_stamps))
 
-    print(syllabus)
+    try:
+        syllabus_data = session['syllabus']
+        print(syllabus_data)
+        for day in syllabus_data:
+            for time_stamps in syllabus_data[day]:
+                syllabus.append(get_syllabus_frontend(day, time_stamps))
+
+        print(syllabus)
+        
+    except Exception as e:
+        print(e)
+
     return jsonify(syllabus)
 
 @app.route('/display_input', methods=['POST'])
