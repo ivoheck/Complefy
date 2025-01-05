@@ -1,8 +1,17 @@
 import json
 import re
+import os
+import sys
+
+# Verzeichnis des Projekts (Root-Verzeichnis) ermitteln
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '../..'))  # Passe die Anzahl der '..' an
+
+# Projekt-Root zu sys.path hinzufügen, falls noch nicht enthalten
+if project_root not in sys.path:
+    sys.path.insert(0, project_root)
 
 # Assuming MyStudyWebService is already implemented and available
-from Service.WebService import MyStudyWebService
+from backend.Service.WebService import MyStudyWebService
 
 # Initialize the web service client
 wsdl_url = "https://mystudy.leuphana.de/mystudy_webservice.wsdl"
@@ -11,9 +20,9 @@ service = MyStudyWebService(wsdl_url)
 # Step 1: Fetch modules for the specified gebiet_id
 def fetch_modules_for_gebiet(gebiet_id):
     try:
-        print(f"Fetching modules for gebiet_id: {gebiet_id}")  # Debugging output
+        #print(f"Fetching modules for gebiet_id: {gebiet_id}")  # Debugging output
         modules = service.get_module_from_gebiet(gebiet_id)  # Corrected function
-        print(f"Raw Modules fetched: {modules}")  # Debugging output
+        #print(f"Raw Modules fetched: {modules}")  # Debugging output
         # Save raw data directly after fetching
         with open("raw_modules.json", "w", encoding="utf-8") as f:
             f.write(str(modules))
@@ -50,7 +59,7 @@ def manual_parse_modules(raw_data):
             if module:
                 modules.append(module)
 
-        print(f"Manually parsed modules: {modules}")
+        #print(f"Manually parsed modules: {modules}")
         return {"module": modules}
     except Exception as e:
         print(f"Error during manual parsing: {e}")
@@ -71,7 +80,7 @@ def extract_module_ids(parsed_modules):
                 print(f"Module missing 'id': {mod}")
     except Exception as e:
         print(f"Error while extracting module IDs: {e}")
-    print(f"Extracted Module IDs: {module_ids}")  # Debugging output
+    #print(f"Extracted Module IDs: {module_ids}")  # Debugging output
     return module_ids
 
 # Step 4: Save modules to a JSON file for inspection
@@ -92,9 +101,9 @@ def fetch_events_for_modules(module_ids):
     events_data = []
     for module_id in module_ids:
         try:
-            print(f"Fetching events for module ID: {module_id}")
+            #print(f"Fetching events for module ID: {module_id}")
             events = service.get_veranstaltungen_from_modul(module_id)
-            print(f"Events for Module {module_id}: {events}")  # Debugging output
+            #print(f"Events for Module {module_id}: {events}")  # Debugging output
             for event in events:
                 events_data.append({
                     "id": event.id,
@@ -140,6 +149,12 @@ def save_to_txt(data, filename):
         print(f"Data successfully saved to {filename}")
     except Exception as e:
         print(f"Error saving data to text file: {e}")
+
+def get_module_ids():
+    gebiet_id = 10641
+    raw_modules = fetch_modules_for_gebiet(gebiet_id)
+    parsed_modules = manual_parse_modules(raw_modules)
+    return extract_module_ids(parsed_modules)
 
 # Main function to coordinate the workflow
 def main():

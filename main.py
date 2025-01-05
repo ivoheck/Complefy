@@ -9,6 +9,7 @@ from backend.tor_input.pdf_to_text import GetCompSubsFromInput
 from backend.llm_connection.llm_connection import LLMConnection, ChatObject
 from PIL import Image
 import numpy as np
+import json
 
 # Füge das Projektverzeichnis zu sys.path hinzu
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -22,7 +23,10 @@ llm = LLMConnection()
 @app.route('/')
 def home():
     # Reset all previously stored data
-    session = None
+    session['syllabus'] = None
+    session['preferences'] = None
+    session['chat'] = None
+    session['preferences'] = None
     return render_template('landing_page.html')
 
 @app.route('/upload_data_page')
@@ -77,7 +81,6 @@ def get_syllabus_frontend(day,time_stamps):
 
 @app.route('/api/events')
 def get_events():
-
     syllabus = []
 
     try:
@@ -88,7 +91,7 @@ def get_events():
                 syllabus.append(get_syllabus_frontend(day, time_stamps))
 
         print(syllabus)
-        
+
     except Exception as e:
         print(e)
 
@@ -112,7 +115,28 @@ def display_input():
 
 @app.route('/complefy_chat', methods=['POST','GET'])
 def complefy_chat():
+
+    with open('backend/Pre_Sorting/modules.json', 'r') as file:
+        modules = json.load(file)
+        modules = modules['module']
+
+    not_finished_ids = [] #id of modules that are not done yet
+
+    try:
+        finished_comps = session['finished_comps']
+        for module in modules:
+            if module['name'] in finished_comps:
+                not_finished_ids.append(module['id'])
+    except:
+        pass
+
+    print(not_finished_ids)
+
     return render_template('complefy_chat.html')
+
+@app.route('/api/results')
+def get_results():
+    pass
 
 
 @app.route('/chat_message', methods=['POST','GET'])
