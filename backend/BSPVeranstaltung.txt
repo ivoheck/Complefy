@@ -1,0 +1,165 @@
+(veranstaltung){
+         id = 1138436
+         name = "Wie funktioniert das Internet?"
+         name_en = "How does the Internet work?"
+         nummer = None
+         inhalt = "Was passiert, wenn ich eine E-Mail versende? Wie kommt eine Website auf mein Handy? Wir alle nutzen das Internet - doch wie funktioniert das  eigentlich?
+
+In dieser Veranstaltung geht es darum zu verstehen, wie das Netz arbeitet, einschliesslich der Implikationen für Privatsphäre und die Datensicherheit.
+
+Im seminaristischer Form erarbeiten die Teilnehmer verschiedene, in einander greifende Themen und erschliessen so den Gesamtkomplex. Diskussion.
+
+Auch Software-Tools zur technischen Analyse von Rechnernetzen werden im Rahmen der Veranstaltung behandelt."
+         ziel = "Ziel ist die Kenntnis der wichtigsten Internet-Konzepte, -Dienste und -Methoden. Einführung in die technologischen Grundlagen des Internets auf konzeptioneller Ebene: es wird ein grundlegendes Verständnis der Funktionsweise des Internet & von IP-Netzwerken vermittelt. 
+
+Hinzu kommen gesellschaftliche Fragestellungen der Internetnutzung, die technisch fundiert diskutiert werden, z.B. Netzneutralität, FakeNews, staatliche Kontrolle vs. Bürgerrechte, Rolle großer Anbieter o.ä."
+         literatur = None
+         teilnahmevoraussetzung = "- aktive Teilnahme (insbes. persönl. Anwesenheit an Vortragsterminen)
+- Bereitschaft, sich mit technologischen Fragen fundiert auseinander zu setzen
+- aktive Bearbeitung von Online-Modulen (blended learning)
+- kein spezielles Informatik-Vorwissen erforderlich"
+         studienleistung = "keine"
+         pruefungsleistung = None
+         sonstiges = "Veranstaltung für Studierende, die NICHT den Minor Soziale Medien und Informationssysteme gewählt haben. 
+
+Wichtiger Hinweis für alle die kein Losglück hatten: 
+Das Vergabeverfahren im Komplementärstudium erfolgt zentral. Aus Gründen der Gleichbehandlung vergebe ich keine Seminarplätze &#34;auf Anfrage&#34;. Das gilt auch für Nachrückerplätze. Ich bitte hierfür um Ihr Verständnis.
+
+Präsenzveranstaltung mit 2 synchronen Online-Terminen! 
+An 2 Terminen gibt es &#34;Workshop&#34;-Sitzungen, die synchron-online stattfinden (Zoom). Hierbei bekommen die Teilnehmer Aufgaben, die in Kleingruppen zu bearbeiten sind. Ziel ist es die internetgestützte Zusammenarbeit im Team zu trainieren. Hierzu wird Zoom (mit Breakout-Sessions) sowie Moodle (für Materialien und Tests) eingesetzt. Die Betreuung erfolgt 100% synchron über Zoom. Eine Aufzeichnung erfolgt nicht.
+
+Teilnahmepflicht bei konstituierender Sitzung."
+         www = None
+         sws = "2"
+         tags = "keine"
+         schueleruni = 0
+         studiumgenerale = 0
+         semester_id = 48
+         lehrveranstaltung = 1
+         veranstaltungsart = 
+            (veranstaltungsart){
+               id = 2
+               kurztext = "S"
+               langtext = "Seminar"
+            }
+         personen = 
+            (person_liste){
+               personen[] = 
+                  (person){
+                     id = 302
+                     vorname = "Guido"
+                     nachname = "Barbian"
+                     titel = "Prof. Dr. rer. nat."
+                  },
+            }
+         termine = 
+            (termin_liste){
+               termine[] = 
+                  (termin){
+                     id = 669984
+                     veranstaltung_id = 1138436
+                     raum = 
+                        (raum){
+                           id = 313
+                           kurztext = "C 6.316 Seminarraum"
+                           langtext = "C 6.316 Seminarraum"
+                           plaetze = "25"
+                           kommentar = "Beamer-Anschlussmöglichkeiten: USB-C, HDMI / Der Raum hat 49,14 qm und 25 Plätze."
+                           beamer = 1
+                           standort = 
+                              (standort){
+                                 id = 2
+                                 kurztext = "UC"
+                                 langtext = "Campus"
+                              }
+                        }
+                     rhythmus = 
+                        (rhythmus){
+                           id = 1
+                           kurztext = "wöch."
+                           langtext = "wöchentlich"
+                        }
+                     beginn_datum = 1743976800
+                     ende_datum = 1752184800
+                     beginn_zeit = 26100
+                     ende_zeit = 31500
+                     tag = "Montag"
+                     string = "wöchentlich | Montag | 08:15 - 09:45 | 07.04.2025 - 11.07.2025 | <a href="https://mystudy.leuphana.de/raumplan/details?raum_id=313">C 6.316 Seminarraum</a>"
+                  },
+            }
+         zuordnungen = 
+            (zuordnungen_liste){
+               zuordnungen[] = 
+                  (zuordnungen){
+                     modul_id = 58536
+                     modul_name = "Medialitätsorientierte Zugänge zu den Naturwissenschaften"
+                     modul_nummer = "51703000"
+                     gebiet_id = 10627
+                     gebiet_name = "Komplementärstudium"
+                     studiengang_id = 1223
+                     studiengang_name = "Lehren und Lernen"
+                     studiengang_abschluss = "B.A."
+                     semester = "2,3,4,5,6"
+                     bereich = None
+                     cp = None
+                     pruefungsnummer = None
+                     pruefungsleistung = None
+                     studienleistung = None
+                  },
+                  (zuordnungen){
+                     modul_id = 58536
+                     modul_name = "Medialitätsorientierte Zugänge zu den Naturwissenschaften"
+                     modul_nummer = "51703000"
+                     gebiet_id = 10641
+                     gebiet_name = "Komplementärstudium"
+                     studiengang_id = 1224
+                     studiengang_name = "Leuphana Bachelor"
+                     studiengang_abschluss = "B.A./B.Eng./B.Sc./LL.B."
+                     semester = "2,3,4,5,6"
+                     bereich = None
+                     cp = None
+                     pruefungsnummer = None
+                     pruefungsleistung = None
+                     studienleistung = None
+                  },
+                  (zuordnungen){
+                     modul_id = 58536
+                     modul_name = "Medialitätsorientierte Zugänge zu den Naturwissenschaften"
+                     modul_nummer = "51703000"
+                     gebiet_id = 10852
+                     gebiet_name = "Komplementärstudium"
+                     studiengang_id = 1253
+                     studiengang_name = "Sozialpädagogik"
+                     studiengang_abschluss = "B.A."
+                     semester = "4"
+                     bereich = None
+                     cp = None
+                     pruefungsnummer = None
+                     pruefungsleistung = None
+                     studienleistung = None
+                  },
+                  (zuordnungen){
+                     modul_id = 58536
+                     modul_name = "Medialitätsorientierte Zugänge zu den Naturwissenschaften"
+                     modul_nummer = "51703000"
+                     gebiet_id = 10873
+                     gebiet_name = "Komplementärstudium"
+                     studiengang_id = 1255
+                     studiengang_name = "Wirtschaftspädagogik"
+                     studiengang_abschluss = "B.A."
+                     semester = "6"
+                     bereich = None
+                     cp = None
+                     pruefungsnummer = None
+                     pruefungsleistung = None
+                     studienleistung = None
+                  },
+            }
+         sprache = 
+            (sprache){
+               id = 6
+               kurztext = "de/en"
+               langtext = "Deutsch/Englisch"
+            }
+      },
+ }

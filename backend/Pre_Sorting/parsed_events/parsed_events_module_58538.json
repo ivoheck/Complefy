@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1138279,
+        "name": "Das Wunder der Metalle – Vielfalt und Eigenschaften der metallischen Werkstoffe",
+        "inhalt": "Metalle sind aus dem alltäglichen Leben nicht mehr wegzudenken. Umso wichtiger ist es, deren besondere Eigenschaften zu kennen. Die Studierenden lernen, wie man die charakteristischen Eigenschaften von Metallen überprüft und auswertet. Dabei werden die Vor- und Nachteile von Metallen herausgearbeitet. Neben mechanischen Eigenschaften wird auch die Energiebilanz von Metallen betrachtet, um diese in einen umweltpolitischen Kontext einordnen zu können. Der Fokus des Seminars liegt auf der methodenorientierten Herangehensweise bei der Durchführung und Auswertung von Laborexperimenten sowie beim Verfassen eines wissenschaftlichen Textes. ",
+        "ziel": "Diese Veranstaltung richtet sich primär an Studierende der Nicht-Ingenieurwissenschaften. Ziel der Veranstaltung ist es, Grundkenntnisse zu metallischen Werkstoffen und ihren modernen Materialprüfmethoden zu vermitteln. ",
+        "semester_id": 48,
+        "termine": []
+    },
+    {
+        "id": 1140113,
+        "name": "Datenbank und Informationsmanagement",
+        "inhalt": "Sei es die Planung des nächsten Urlaubs, der gemütliche Abend zuhause mit einem Film des bevorzugten Streaming-Dienstes oder die Online- Essensbestellung beim Lieblingsitaliener – alltäglich kommen wir, ohne es zu merken, in Kontakt mit den versteckten Säulen der Datenverarbeitung: den Datenbanken. Doch was steckt dahinter und wie genau funktioniert die Verwaltung von Daten wirklich? In diesem Kurs sollen die Konzepte und Arten von Datenbanken beleuchtet sowie anhand einfacher Beispiele der Umgang mit Datenbanken praxisnah erlernt werden.",
+        "ziel": "Die Studierenden: • kennen Grundkonzepte von relationalen Datenbanksystemen, NoSQL-Datenbanken und Informationssystemen und können Systeme entsprechend der jeweiligen Aufgabenstellung sachgerecht auswählen. • können mit Fokus auf technischen Anwendungen selbständig eine einfache Datenbank von der fachlichen Modellierung bis zur Implementierung systematisch erstellen und in ein Informationssystem einbinden • formulieren zielgerichtet Datenbankoperationen, bspw. in SQL, für gegebene Aufgabestellungen. • können Datenbanktransaktionen entwerfen und implementieren",
+        "semester_id": 48,
+        "termine": []
+    },
+    {
+        "id": 1138390,
+        "name": "Der experimentelle Zugang zur Psychologie",
+        "inhalt": "Die Pschologie erforscht Verhalten und Erleben von Menschen. Für eine längere Zeit nach Einführung der Psychologie als Wissenschaftsdisziplin galt die Selbstbeobachtung und mithin der Konstruktivismus als anerkannter Forschungsweg. Der Mainstream der Psychologie hat aber erkannt, dass der einzige, gangbare Weg der Erkenntnisgewinnung in der Psychologie der experimentelle Zugang ist. Die Studierenden lernen die einzelnen Schritte des Experimentierens bezüglich des äußerst komplexen Forschungsgegenstandes der Psychologie kennen und üben die Umsetzung. ",
+        "ziel": "Die Studierenden werden befähigt, einerseits Experimente hinsichtlich ihrerAussagegrenzen zu beurteilen und andererseits eigene Experimente so zu planen und durchzuführen, dass sie mit universitär verfügbaren Methoden zur Beantwortung ihrer Fragestellungen Daten beschaffen, auswerten und interpretieren können. ",
+        "semester_id": 48,
+        "termine": []
+    },
+    {
+        "id": 1140029,
+        "name": "Fortgeschrittene Softwareentwicklung mit Java",
+        "inhalt": "Die Veranstaltung behandelt die fortgeschrittene Programmierung mit Java.    Die Veranstaltung wiederholt kurz die grundlegenden Merkmale von Java. Dazu zählen unter anderem Schlüsselworte, Bezeichner, Operatoren, Datentypen, Kontrollstrukturen, Arrays und Strings. Danach werden ausgesuchte vertiefende Konzepte behandelt.  Es werden ausgesuchte Themen aus folgenden Bereichen behandelt (weiterführende vorbehalten): Kap. 01. Einführung in Java Kap. 02. Sprachelemente und Kontrollstrukturen Kap. 03. Objektorientierung - Klasse und Objekt, Kapselung und Konstruktoren Kap. 04.Objektorientierung - Vererbung, Finale Klassen, Abstrakte Klassen Kap. 05. Interfaces, Adapterklassen Kap. 06. Fehlerbehandlung (Exceptions, Assertions)   Kap. 07. Arrays, Datenstrukturen Kap. 08. Collections-Framework Kap. 09. Generics Kap. 10. Funktionale Programmierung, Lamda Expressions Kap. 11. Stream API Kap. 12. Nebenläufige Programmierung Kap. 13. Design Pattern Kap. 14. Datenbankprogrogrammierung ",
+        "ziel": "Ziel der Veranstaltung ist die Vermittlung von Kenntnissen zur Softwareentwicklung mit Java. Jeder Teilnehmer soll nach Teilnahme der Veranstaltung in der Lage sein, Anwendungen selbstständig mit Java zu entwickeln.",
+        "semester_id": 48,
+        "termine": []
+    },
+    {
+        "id": 1138619,
+        "name": "How Automobile works: Past, Present, and Future (FSL)",
+        "inhalt": "1. The Past: Evolution of Automobiles In this module, we will explore the origins of automobiles and trace their development through key historical milestones: •\tEarly Innovations: From steam-powered vehicles to the Benz Patent-Motorwagen, the world&#39;s first automobile. •\tMass Production Revolution: The impact of Henry Ford&#39;s assembly line and the Model T on making cars accessible to the masses. •\tTechnological Advancements: Innovations in engine technology, chassis design, and safety features during the early to mid-20th century.  2. The Present: Modern Automotive Technology This module focuses on the current state of automotive technology and the innovations that define modern vehicles: •\tEngine and Powertrain Systems: Evolution from internal combustion engines to hybrid and electric powertrains. •\tSafety and Driver Assistance Systems: Advances in safety technologies such as ABS, airbags, collision warning systems, and adaptive cruise control. •\tConnectivity and Infotainment: Integration of GPS navigation, smartphone connectivity, and entertainment systems.  3. The Future: Emerging Trends and Technologies Looking ahead, this module explores the cutting-edge innovations and trends that are shaping the future of automobiles: •\tElectric Vehicles (EVs): The rise of EVs, advancements in battery technology, and infrastructure development. •\tAutonomous Driving: Development of self-driving cars, AI-powered navigation systems, and regulatory challenges. •\tSustainability and Environmental Impact: Efforts towards reducing carbon emissions, sustainable materials, and smart urban mobility solutions. •\tInnovative Designs: Concepts like flying cars, urban mobility solutions, and the integration of AI in vehicles. 4. Practical Applications and Case Studies In this hands-on module, participants will engage in practical demonstrations and case studies to deepen their understanding: •\tHands-on Workshops: Explore the basic mechanics of automobiles, including engine components, drivetrain systems, and vehicle diagnostics. •\tCase Studies: Analyse real-world examples of automotive innovations and their impact on industry trends. •\tProject Work: Collaborate on projects that propose solutions to current challenges in automotive engineering and design.  5. Conclusion: Looking Ahead •\tReflection and Discussion: Review the transformative journey of automobiles and the societal impacts of technological advancements. •\tEthical Considerations: Address ethical dilemmas in autonomous driving, data privacy, and sustainability. •\tCareer Pathways: Explore career opportunities in automotive engineering, design, research, and entrepreneurship.  ",
+        "ziel": "This course will take you on a comprehensive journey through the history of automobiles, explore their current technological advancements, and speculate on the exciting possibilities for the future of transportation. Whether you&#39;re a curious enthusiast, a student of engineering/economics/laws/environments or other faculties who has deep interest in the automotive industry, this course will equip you with a deep understanding of how automobiles work and how they are shaping the future of transportation. ",
+        "semester_id": 48,
+        "termine": []
+    },
+    {
+        "id": 1138542,
+        "name": "Research Methods in Psychology and Management (FSL)",
+        "inhalt": "The course provides an introduction to statistical methods in psychological and management research. The course covers quantitative methods, including research designs, psychometric properties of tests, and statistical analyses of mediation and moderation. Furthermore, the course provides an introduction to developing theoretical models and concepts, operationalizing of constructs, selecting appropriate statistical procedures, and running statistical analyses using R software. Basic knowledge in descriptive and inferential statistics is required.",
+        "ziel": "The aim of the course is to provide skills in research design and in statistical analyses with a focus on quantitative methods to address research questions in psychology and management.",
+        "semester_id": 48,
+        "termine": []
+    },
+    {
+        "id": 1139194,
+        "name": "Smart Home Basics",
+        "inhalt": "Die Technik ist so weit fortgeschritten, dass man heute Computer in Alltagsgegenstände einbauen kann, etwa in LED-Leuchten, Thermostatventilen; Lichtschalter werden ersetzt durch &#34;Panels&#34; und Smartphone-Apps. Das Smart Home kann man aber auch selbst aufbauen oder um eigene Komponenten erweitern. Es ist möglich, sehr einfach einen winzigen Microcomputer um Sensoren (Temperatur, Bewegung, Energieverbrauch etc.) auszustatten, Aktoren wie Leuchtdioden oder Relais (z.b. als Schalter zu Ein- und Ausschalten von 240V-Leitungen) zu ergänzen und zu programmieren. Dazu besteht die Hardware (hoffentlich Raspberry Pi Pico) aus einem USB-Anschluss zum Anschluss an ein Laptop (benötigt man für das Programmieren), einem Anschluss für Spannungsversorgung und vor allem vielen Input- und Outputanschlüsse für die Sensoren und Aktoren. NICHT vorausgesetzt werden Hard- und Softwarekenntnisse, es ist auch nicht notwendig zu wissen, wie man Hardware aufbaut (&#34;löten&#34;). Im Vordergrund stehen kreative computerbasierte Lösungen für das Smart Home. Das fängt an bei einfachen Blicklichtern, Energieverbrauchsmessungen, Temperaturmessungen, CO2-und VOC-Messungen, Feinstaubmessungen... Im Internet finden sich zahlreiche Beispiele, was man alles mit diesen kleinen Microcomputern machen kann. In einer letzten Phase des Seminars werden Fragen der Zukunft der Gesellschaft und Nachhaltigkeit behandelt (Open Source und Open Hardware, Maker-Communities in der Gesellschaft, Green IT, Technik-Trends wie Matter usw.).",
+        "ziel": "Im Vordergrund steht der kreative Umgang mit moderner Technik. Das Anwendungsfeld &#34;Smart Home&#34; dient uns als Orientierung. Gleichwohl werden, nebenläufig, eine Reihe wichtiger Erfahrungen gemacht: anfassbare Hardware, deren Aufbau man nachvollziehen kann, Grundkenntnisse auf dem Gebiet der Elektronik (Anschluss einer Leuchtdiode), Entwickeln kleiner Programme in Python, die dann auf der Hardware laufen. Der erste Teil der Veranstaltung dient dazu, die StudentInnen in die Lage zu versetzen, die zur Verfügung gestellte Hardware um einfache Sensoren und Aktoren zu erweitern und in einfachen Programmen zu nutzen. Dazu sollen so genannte Starter-Kits zur Verfügung gestellt werden, die alles Notwendige dafür enthalten (Steckbrett, Kabel, Widerstände, LEDs usw.). Der zweite Teil dient dann der Realisierung studentischer Projekte. Diese können sein: Energiesparen, Heimautomatisierung, innovative Anzeigen (z.B. CO2- oder VOC-Ampeln)...",
+        "semester_id": 48,
+        "termine": []
+    },
+    {
+        "id": 1140006,
+        "name": "Time Series Analysis (FSL)",
+        "inhalt": "The course deals with the two core topics of time series analysis: Description of the nature of certain variables and its prediction. We consider different data generating processes, estimation and testing procedures and we apply them to mainly economic research questions. We use R!  Theoretical Concepts - Stationary Autoregressive-Moving Average (ARMA) Processes - Nonstationary Time Series and Unit Roots - Cointegration and Testing Cointegration  Empirical Applications - Interest Rate Parity - Bubbles and Explosive Time Series - Financial Risk Management",
+        "ziel": "Students should be able to conduct their own empirical research with R.",
+        "semester_id": 48,
+        "termine": []
+    }
+]
