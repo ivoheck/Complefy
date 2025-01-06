@@ -27,6 +27,8 @@ def home():
     session['preferences'] = None
     session['chat'] = None
     session['preferences'] = None
+    session['finished_comps'] = None
+    session['pre_sorted_comps'] = None
     return render_template('landing_page.html')
 
 @app.route('/upload_data_page')
@@ -115,28 +117,53 @@ def display_input():
 
 @app.route('/complefy_chat', methods=['POST','GET'])
 def complefy_chat():
+    #get_pre_sorted_comps()
+    return render_template('complefy_chat.html')
+
+def get_pre_sorted_comps():
 
     with open('backend/Pre_Sorting/modules.json', 'r') as file:
         modules = json.load(file)
         modules = modules['module']
 
-    not_finished_ids = [] #id of modules that are not done yet
+    finished_ids = [] #id of modules that done
+    not_finished_ids = []
+    
+    finished_comps = session.get('finished_comps', []) or []
+    for module in modules:
+        if module['name'] in finished_comps:
+            finished_ids.append(module['id'])
+        else:
+            not_finished_ids.append(module['id'])
 
-    try:
-        finished_comps = session['finished_comps']
-        for module in modules:
-            if module['name'] in finished_comps:
-                not_finished_ids.append(module['id'])
-    except:
-        pass
+    #reducing to one id for testing resons
+    #not_finished_ids = [not_finished_ids[1]]
+    pre_sorted_comps = []
+    for id in not_finished_ids:
+        with open(f'backend/Pre_Sorting/parsed_events/parsed_events_module_{str(id)}.json','r') as file:
+            for item in json.load(file):
+                pre_sorted_comps.append(item)
+    
+    #Reduziert ergebnisse auf 10
+    pre_sorted_comps = pre_sorted_comps[0:30]
 
-    print(not_finished_ids)
-
-    return render_template('complefy_chat.html')
+    return pre_sorted_comps
 
 @app.route('/api/results')
-def get_results():
-    pass
+def get_best_matching_comps():
+    
+    best_matching_comps = []
+        
+    comp ={'name':'Queer Digital Cultures (FSL)',
+           'inhalt_short': None,
+           'inhalt': 'Digital media, digital technologies and digital infrastructures shape contemporary culture in many and far-reaching ways. This seminar examines their impact on &#39;queer&#39; culture in particular – understood here as both LGBT (i.e. lesbian, gay, bisexual and transgender) cultures as well as, more broadly, cultures that contest or subvert dominant norms around gender and sexuality. Students will explore recent efforts to theorise the relationship between transformations in information, digital and other technologies, and transformations in the fields of gender and sexuality. They will examine recent empirical as well as theoretically-informed work on the ways that digital media and technologies are shaping queer life and culture. And they will address the extent to which the study of digital cultures can be productively approached from a queer perspective.  Issues that will be explored include the following: •\tThe role of digital media in transgender self-representation •\tHow social media hashtags (like #lesbian) can facilitate both the production of community and the (de-)stabilisation of identity categories •\tHow LGBT and queer intimacies are being transformed through dating and ‘hook-up’ apps (such as Tinder and Grindr) •\tDigital labour and online pornography •\tThe possibilities and limits of digital queer activism •\tHistories of the transgender internet',
+           'ziel_short': None,
+           'ziel': 'Learning objectives •\tEngage critically with queer and trans approaches to digital culture and to digital and information technologies •\tReflect on the role played by digital cultures, technologies and infrastructures in subjectivation, in the production and/or (de-)stabilisation of gender, sexual and other identities, and in shaping queer life (broadly conceived) •\tGain an introduction to recent empirical and theoretically-informed research in this field',
+           }
+    
+    best_matching_comps.append(comp)
+
+    return jsonify(best_matching_comps)
 
 
 @app.route('/chat_message', methods=['POST','GET'])
@@ -152,14 +179,21 @@ def handle_chat_message():
     
     question = {"role":"user","content": message}
 
-    awser = llm.chat_completion(session['chat'],question)
-    session['chat'] = ChatObject().add_user_promt(session['chat'],question)
-    session['chat'] = ChatObject().add_respones(session['chat'],awser)
+    #awser = llm.chat_completion(session['chat'],question)
+    #session['chat'] = ChatObject().add_user_promt(session['chat'],question)
+    #session['chat'] = ChatObject().add_respones(session['chat'],awser)
 
-    print(awser)
-    print(type(awser))
-    
-    return jsonify({"status": "success", "message": str(awser)}), 200
+    #print(awser)
+    #print(type(awser))
+
+    awser = 'Update results'
+    try:
+        results = LLMConnection().get_results(input_comps=get_pre_sorted_comps(),input_promt=message)
+
+    except:
+        return jsonify({"status": "success", "message": "Error with LLM","results":[]}), 200
+  
+    return jsonify({"status": "success", "message": str(awser),"results_string":results[1],'results':results[0]}), 200
 
 if __name__ == '__main__':
     # Starte den Flask-Server

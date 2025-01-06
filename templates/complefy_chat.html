@@ -126,9 +126,8 @@
 </head>
 <body>
     <div class="container">
-        <div class="panel left-panel">
+        <div class="panel left-panel" id="leftPanel">
             <p>Left Panel Content</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget...</p>
         </div>
         <div class="panel right-panel" id="rightPanel">
             <div class="dynamic-container">
@@ -212,6 +211,16 @@
 
                     typeWriter(serverResponseContainer, 'Antwort: ', formattedMessage);
                     rightPanel.appendChild(serverResponseContainer);
+                    
+                    leftPanel.innerHTML = '';
+                    if(data.results != null){
+                        for (const element of data.results){
+                            addToLeftPanel(element.name,element.inhalt)
+                        }
+                    }else{
+                        addToLeftPanel(data.results_string,'')
+                    }
+                    
                 } else {
                     const serverResponseContainer = document.createElement('div');
                     serverResponseContainer.classList.add('server-response');
@@ -231,6 +240,19 @@
                 document.getElementById('addContainer').click();  // Klickt den Button
             }
         });
+
+        function addToLeftPanel(title,inhalt) {
+            const leftPanel = document.getElementById('leftPanel');
+
+            const newContent = document.createElement('div');
+            newContent.classList.add('dynamic-container'); // Optional, um den gleichen Stil zu verwenden
+
+            const content = `<strong>${title}<strong><br><br>${inhalt}`;
+            newContent.innerHTML = content; // Nutze innerHTML, um Zeilenumbrüche als HTML zu rendern
+
+            leftPanel.appendChild(newContent);
+        }
+
     </script>
 </body>
 </html>
