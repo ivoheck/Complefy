@@ -145,7 +145,7 @@ def get_pre_sorted_comps():
                 pre_sorted_comps.append(item)
     
     #Reduziert ergebnisse auf 30
-    pre_sorted_comps = pre_sorted_comps[0:20]
+    pre_sorted_comps = pre_sorted_comps[0:30]
 
     return pre_sorted_comps
 
