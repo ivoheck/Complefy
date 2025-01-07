@@ -218,7 +218,7 @@ class SallybusInfoFromImage:
 
             for y in range(y_start,y_end):
                 color = image[y,int(day_coords[0])]
-                if color[0] == 72:
+                if color[0] >= 69 and color[0] <=78:
                     cords[str(str(day_coords[0]) +' '+ str(y))] = [np.float64(day_coords[0]),np.float64(y)]
                     sub_points.append(y)
 
