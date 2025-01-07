@@ -68,6 +68,19 @@ class LLMConnection():
 
         return chat_completion.choices[0].message.content
     
+    def get_result_awnser(self,message,results):
+        chat = [{"role":"system","content":"You are a helpful assistant"}]
+
+        promt = """
+                generire eine kurze antwort nachricht für basirend auf der aufforderung des nutzers und der ergebnisse, soetws wie: hier sind die ergebnisse...
+                nim auch kurz bezug auf die gefundenen ergebnisse
+            """
+        promt += "die ergebnisse sind follgende: " + str(results)
+        promt += "die aufforderung des nutzer ist: " + message
+        complete_promt = {"role":"user","content":promt}
+        
+        return self.chat_completion(chat=chat,question=complete_promt)
+        
     def get_results(self,input_comps,input_promt):
         chat = [{"role":"system","content":"You are a helpful assistant"}]
                  

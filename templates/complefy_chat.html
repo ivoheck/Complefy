@@ -34,9 +34,10 @@
         }
 
         .left-panel {
-            flex: 1;
-            max-width: 20%;
+            flex: 7;
+            max-width: 70%;
             max-height: calc(100vh - 110px);
+            gap: 10px;
         }
 
         .right-panel {
@@ -111,7 +112,7 @@
         .loading-image {
             width: 100px;  /* Anpassen der Größe des Ladebildes */
             height: 100px;
-            animation: rotateAnimation 1s linear infinite;
+            animation: rotateAnimation 1.5s linear infinite;
         }
 
         @keyframes rotateAnimation {
@@ -247,7 +248,7 @@
             const newContent = document.createElement('div');
             newContent.classList.add('dynamic-container'); // Optional, um den gleichen Stil zu verwenden
 
-            const content = `<strong>${title}<strong><br><br>${inhalt}`;
+            const content = `<strong>${title}</strong><br><br>${inhalt}`;
             newContent.innerHTML = content; // Nutze innerHTML, um Zeilenumbrüche als HTML zu rendern
 
             leftPanel.appendChild(newContent);

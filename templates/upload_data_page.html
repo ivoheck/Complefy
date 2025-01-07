@@ -16,6 +16,7 @@
             background: url('/static/images/back.png') no-repeat center center; /* Hintergrundbild */
             background-size: cover; /* Hintergrundbild anpassen */
             color: white; /* Weißer Text für bessere Sichtbarkeit */
+            position: relative;
         }
         .container {
             display: flex;
@@ -71,11 +72,34 @@
         .upload-button:hover {
             background-color: #0056b3;
         }
+
+        .loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: none; /* Standardmäßig versteckt */
+            justify-content: center;
+            align-items: center;
+        }
+
+        .loader img {
+            width: 100px; /* Größe des Bildes anpassen */
+            height: 100px;
+            animation: spin 1.5s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <form action="/select_interests_page" method="POST" enctype="multipart/form-data">
+        <form id="upload-form" action="/select_interests_page" method="POST" enctype="multipart/form-data">
             <div class="upload-row">
                 <div class="upload-section">
                     <h2>Upload Syllabus</h2>
@@ -97,5 +121,17 @@
             <button type="submit" class="upload-button">Upload Files</button>
         </form>
     </div>
+
+    <div class="loader" id="loader">
+        <img src="/static/images/robot_loding.png" alt="Loading...">
+    </div>
+
+    <script>
+        document.getElementById("upload-form").addEventListener("submit", function(e) {
+            e.preventDefault();
+            document.getElementById("loader").style.display = "flex";
+            this.submit();
+        });
+    </script>
 </body>
 </html>
