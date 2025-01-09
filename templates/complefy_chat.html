@@ -55,6 +55,7 @@
             background-color: #e0f7fa;
             border: 1px solid #00796b;
             border-radius: 5px;
+            margin-bottom: 20px;
         }
 
         .button-container {
@@ -216,7 +217,7 @@
                     leftPanel.innerHTML = '';
                     if(data.results != null){
                         for (const element of data.results){
-                            addToLeftPanel(element.name,element.inhalt)
+                            addToLeftPanel(element.name,element.inhalt,element.id)
                         }
                     }else{
                         addToLeftPanel(data.results_string,'')
@@ -242,13 +243,15 @@
             }
         });
 
-        function addToLeftPanel(title,inhalt) {
+        function addToLeftPanel(title,inhalt,id) {
             const leftPanel = document.getElementById('leftPanel');
+            const base_link = "https://mystudy.leuphana.de/veranstaltungInformation/show?veranstaltung_id="
 
             const newContent = document.createElement('div');
             newContent.classList.add('dynamic-container'); // Optional, um den gleichen Stil zu verwenden
 
-            const content = `<strong>${title}</strong><br><br>${inhalt}`;
+            const content = `<strong>${title}</strong><br><br>${inhalt}<br><br>
+            <a href="${base_link}${id}" target="_blank">${base_link}${id}</a>`;
             newContent.innerHTML = content; // Nutze innerHTML, um Zeilenumbrüche als HTML zu rendern
 
             leftPanel.appendChild(newContent);

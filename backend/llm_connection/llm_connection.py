@@ -12,6 +12,7 @@ from openai import OpenAI
 from secret import api_key
 import json
 import ast
+from backend.llm_connection import promts
 
 
 class ChatObject():
@@ -36,6 +37,7 @@ class LLMConnection():
         base_url = "https://chat-ai.academiccloud.de/v1"
         
         self.model = "meta-llama-3.1-8b-instruct"
+        self.model_lama_70 = "meta-llama-3.1-70b-instruct"
         self.client = OpenAI(
             api_key = api_key,
             base_url = base_url
@@ -52,7 +54,7 @@ class LLMConnection():
         return text_completion.choices[0].text
         
 
-    def chat_completion(self,chat,question):
+    def chat_completion(self,chat,question,model):
 
         chat = None
         print(question)
@@ -61,7 +63,7 @@ class LLMConnection():
 
         chat_completion = self.client.chat.completions.create(
             messages=[chat,question],
-            model= self.model,
+            model= model,
         )
 
         return chat_completion.choices[0].message.content
@@ -77,88 +79,16 @@ class LLMConnection():
         promt += "die aufforderung des nutzer ist: " + message
         complete_promt = {"role":"user","content":promt}
         
-        return self.chat_completion(chat=chat,question=complete_promt)
+        return self.chat_completion(chat=chat,question=complete_promt,model=self.model_lama_70)
         
     def get_results(self,input_comps,input_promt):
         chat = [{"role":"system","content":"You are a helpful assistant"}]
                  
-        promt =   """ Ich werde dir eine Liste von Einträgen im JSON-Format bereitstellen. Deine Aufgabe ist es, aus dieser Liste die fünf Einträge auszuwählen, die am besten zu einem weiteren gegebenen Text (Kontext-Prompt) passen. Du sollst dabei nur den Textinhalt (ohne die `id`- und `semester_id`-Felder) berücksichtigen und die Einträge nach ihrer Relevanz für den gegebenen Kontext bewerten.
-
-### Anforderungen:
-1. **Input**: Du erhältst die folgende JSON-Struktur:
-   ```json
-   [
-       {
-           "id": <integer>,
-           "name": <string>,
-           "inhalt": <string>,
-           "ziel": <string>,
-           "semester_id": <integer>,
-           "termine": <array>
-       },
-       ...
-   ]
-                 Jeder Eintrag enthält die oben genannten Felder.
-                 Für die Bewertung der Relevanz sind ausschließlich die Felder name, inhalt, ziel und termine relevant.
-                 Ignoriere die Felder id und semester_id.
-
-                 Kontext-Prompt: Ein zusätzlicher Text wird als Kontext bereitgestellt. Die Relevanz eines Eintrags wird durch den Grad bestimmt, wie gut die Inhalte des Eintrags (name, inhalt, ziel, termine) zum Kontext-Prompt passen.
-
-                 Output: Gib die fünf relevantesten Einträge zurück, basierend auf ihrer Übereinstimmung mit dem Kontext-Prompt. Das Format des Outputs soll wie folgt aussehen:
-                 [
-    {
-        "name": <string>,
-        "inhalt": <string>,
-        "ziel": <string>,
-        "termine": <array>
-    },
-    ...
-]
-                 Beispiel:
-                Falls die Eingabeliste folgende Struktur hat:
-                 
-                 [
-    {
-        "id": 1,
-        "name": "Beispielkurs 1",
-        "inhalt": "Dies ist ein "Kurs" über Philosophie.",
-        "ziel": "Ein besseres "Verständnis der Philosophie zu erlangen." ",
-        "semester_id": 101,
-        "termine": []
-    },
-    {
-        "id": 2,
-        "name": "Beispielkurs 2",
-        "inhalt": "Ein Kurs über "Datenanalyse mit Python".",
-        "ziel": "Grundlagen der Datenanalyse zu erlernen.",
-        "semester_id": 102,
-        "termine": []
-    }
-]
-                 Und der Kontext lautet: "Bitte finde Kurse, die sich mit Philosophie befassen."
-
-                Dann sollte die Rückgabe folgende Struktur haben:
-                 
-                 [
-    {
-        "name": "Beispielkurs 1",
-        "inhalt": "Dies ist ein Kurs über Philosophie.",
-        "ziel": "Ein besseres Verständnis der Philosophie zu erlangen.",
-        "termine": []
-    }
-]
-                 
-                 Wichtig:
-Gib nur die fünf relevantesten Einträge in for eine eizigen json zurück.
-Halte die Struktur des Outputs strikt ein.
-Falls keine fünf relevanten Einträge gefunden werden können, gib nur die gefundenen zurück.
-Es soll immer nur EINE EINZIGE Json mit den ergebnissen zurück gegeben werden.
-Entfährne alle anführungszeichen aus den values der json.
-Hier ist die JSON-Datenstruktur, auf die du die obigen Anweisungen anwenden sollst:"""
+        promt =  promts.get_result
                  
         promt = promt + f"{input_comps} Der Kontext-Prompt lautet: {input_promt}"
         complete_promt = {"role":"user","content":promt}
-        result =  self.chat_completion(chat=chat,question=complete_promt)
+        result =  self.chat_completion(chat=chat,question=complete_promt,model=self.model)
         start_index = result.find('[')  # Finde den Anfang der JSON-Daten
         end_index = result.rfind(']') + 1  # Finde das Ende der JSON-Daten
 
