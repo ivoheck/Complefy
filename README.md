@@ -13,3 +13,4 @@ git clone git@github.com:ivoheck/Complefy.git
 sudo docker build -t complefy-app .´
 sudo docker run --name complefy-app-container complefy-app
 ```
+#### Web page will be published (locally) on http://172.17.0.2:5004 
