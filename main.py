@@ -144,7 +144,7 @@ def get_pre_sorted_comps():
             for item in json.load(file):
                 pre_sorted_comps.append(item)
     
-    #Reduziert ergebnisse auf 30
+    #Reduziert ergebnisse auf 20
     pre_sorted_comps = pre_sorted_comps[0:30]
 
     return pre_sorted_comps
@@ -179,7 +179,8 @@ def handle_chat_message():
 
 if __name__ == '__main__':
     # Starte den Flask-Server
-    app.run(debug=True)
+    #app.run(debug=False)
+    app.run(host='0.0.0.0', port=5004)
 
 
 #Beispiel Session dict

@@ -30,8 +30,6 @@ class ChatObject():
     def get_chat(self):
         return self.chat
 
-        
- 
 
 class LLMConnection():
     def __init__(self):
