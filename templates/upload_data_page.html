@@ -13,9 +13,9 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background: url('/static/images/back.png') no-repeat center center; /* Hintergrundbild */
-            background-size: cover; /* Hintergrundbild anpassen */
-            color: white; /* Weißer Text für bessere Sichtbarkeit */
+            background: url('/static/images/back.png') no-repeat center center;
+            background-size: cover;
+            color: white;
             position: relative;
         }
         .container {
@@ -23,40 +23,53 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            gap: 20px; /* Abstand zwischen Containern */
+            gap: 20px;
         }
         .upload-row {
             display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 20px; /* Abstand zwischen den Upload-Sektionen */
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 20px;
+            width: 100%;
+            max-width: 900px;
         }
         .upload-section {
             width: 45%;
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: stretch;
         }
         .upload-section h2 {
             font-size: 1.5rem;
             margin-bottom: 20px;
-            color: #ffffff; /* Weißer Text */
+            color: #ffffff;
         }
         .drop-area {
             width: 100%;
             height: 200px;
-            border: 2px dashed #ffffff; /* Weiße gestrichelte Linie */
+            border: 2px dashed #ffffff;
             border-radius: 10px;
-            background-color: rgba(0, 0, 0, 0.5); /* Halbtransparenter Hintergrund */
+            background-color: rgba(0, 0, 0, 0.5);
             display: flex;
             justify-content: center;
             align-items: center;
-            color: #ffffff; /* Weißer Text */
+            color: #ffffff;
             font-size: 1.2rem;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
+        }
+        .drop-area.dragover {
+            background-color: rgba(0, 123, 255, 0.5);
         }
         input[type="file"] {
-            display: block;
-            margin: 20px auto;
+            display: none;
+        }
+        .file-name {
+            margin-top: 10px;
+            font-size: 1rem;
             color: #ffffff;
+            text-align: center;
         }
         .upload-button {
             display: block;
@@ -72,7 +85,6 @@
         .upload-button:hover {
             background-color: #0056b3;
         }
-
         .loader {
             position: fixed;
             top: 0;
@@ -80,20 +92,23 @@
             width: 100%;
             height: 100%;
             background-color: rgba(0, 0, 0, 0.7);
-            display: none; /* Standardmäßig versteckt */
+            display: none;
             justify-content: center;
             align-items: center;
         }
-
         .loader img {
-            width: 100px; /* Größe des Bildes anpassen */
+            width: 100px;
             height: 100px;
             animation: spin 1.5s linear infinite;
         }
-
         @keyframes spin {
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
+        }
+        .file-type-info {
+            font-size: 0.9rem;
+            color: #aaaaaa;
+            margin-top: -10px;
         }
     </style>
 </head>
@@ -102,31 +117,69 @@
         <form id="upload-form" action="/select_interests_page" method="POST" enctype="multipart/form-data">
             <div class="upload-row">
                 <div class="upload-section">
-                    <h2>Upload Syllabus</h2>
-                    <div class="drop-area">
+                    <h2>Upload Timetable</h2>
+                    <div class="drop-area" id="syllabusDropArea">
                         Drag & Drop files here
+                        <input type="file" id="syllabusInput" name="syllabus" accept=".xlsx,.png">
                     </div>
-                    <input type="file" name="syllabus" accept=".xlsx,.png">
+                    <div class="file-type-info">Only .png files</div>
+                    <div class="file-name" id="syllabusFileName"></div>
                 </div>
-
                 <div class="upload-section">
-                    <h2>Upload TOR</h2>
-                    <div class="drop-area">
+                    <h2>Upload Transcript</h2>
+                    <div class="drop-area" id="torDropArea">
                         Drag & Drop files here
+                        <input type="file" id="torInput" name="tor" accept=".pdf">
                     </div>
-                    <input type="file" name="tor" accept=".pdf">
+                    <div class="file-type-info">Only .pdf files</div>
+                    <div class="file-name" id="torFileName"></div>
                 </div>
             </div>
-            <!-- Upload Button -->
             <button type="submit" class="upload-button">Upload Files</button>
         </form>
     </div>
-
     <div class="loader" id="loader">
         <img src="/static/images/robot_loding.png" alt="Loading...">
     </div>
-
     <script>
+        function setupDropArea(dropAreaId, inputId, fileNameId) {
+            const dropArea = document.getElementById(dropAreaId);
+            const fileInput = document.getElementById(inputId);
+            const fileNameDisplay = document.getElementById(fileNameId);
+
+            dropArea.addEventListener("dragover", (event) => {
+                event.preventDefault();
+                dropArea.classList.add("dragover");
+            });
+
+            dropArea.addEventListener("dragleave", () => {
+                dropArea.classList.remove("dragover");
+            });
+
+            dropArea.addEventListener("drop", (event) => {
+                event.preventDefault();
+                dropArea.classList.remove("dragover");
+                const files = event.dataTransfer.files;
+                if (files.length > 0) {
+                    fileInput.files = files;
+                    fileNameDisplay.textContent = files[0].name;
+                }
+            });
+
+            dropArea.addEventListener("click", () => {
+                fileInput.click();
+            });
+
+            fileInput.addEventListener("change", () => {
+                if (fileInput.files.length > 0) {
+                    fileNameDisplay.textContent = fileInput.files[0].name;
+                }
+            });
+        }
+
+        setupDropArea("syllabusDropArea", "syllabusInput", "syllabusFileName");
+        setupDropArea("torDropArea", "torInput", "torFileName");
+
         document.getElementById("upload-form").addEventListener("submit", function(e) {
             e.preventDefault();
             document.getElementById("loader").style.display = "flex";

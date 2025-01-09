@@ -7,9 +7,11 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
             margin: 0;
             padding: 20px;
+            background: url('/static/images/back.png') no-repeat center top;
+            background-size: cover;
+            color: white;
         }
 
         .calendar {
@@ -22,9 +24,10 @@
 
         .day {
             padding: 20px;
-            background-color: #fff;
+            background-color: rgba(255, 255, 255, 0.9);
             border-radius: 5px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            color: black;
         }
 
         .day-header {
@@ -46,22 +49,23 @@
             display: block;
             margin: 20px auto;
             padding: 10px 20px;
-            background-color: #00796b;
+            background-color: #007bff; /* Standardfarbe */
             color: white;
             border: none;
             border-radius: 5px;
             font-size: 16px;
             cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
         }
 
         .continue-button:hover {
-            background-color: #004d40;
+            background-color: #0056b3; /* Hover-Farbe */
         }
     </style>
 </head>
 <body>
 
-    <h1 style="text-align: center;">Syllabus</h1>
+    <h1 style="text-align: center;">Timetable</h1>
 
     <div class="calendar" id="calendar"></div>
 
