@@ -78,15 +78,17 @@
 
         .button-container button {
             padding: 10px 20px;
-            background-color: #00796b;
+            background-color: #007bff; /* Standardfarbe */
             color: #fff;
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
         }
 
         .button-container button:hover {
-            background-color: #004d40;
+            background-color: #0056b3; /* Hover-Farbe */
+            transform: scale(1.05);
         }
 
         .server-response {
@@ -106,11 +108,11 @@
             text-align: center;
             color: #00796b;
             font-weight: bold;
-            display: none; /* Wird nur angezeigt, wenn benötigt */
+            display: none;
         }
 
         .loading-image {
-            width: 100px;  /* Anpassen der Größe des Ladebildes */
+            width: 100px;
             height: 100px;
             animation: rotateAnimation 1.5s linear infinite;
         }
@@ -171,7 +173,6 @@
 
             const rightPanel = document.getElementById('rightPanel');
 
-            // Erstelle das Container für die Benutzernachricht
             const userMessageContainer = document.createElement('div');
             userMessageContainer.classList.add('dynamic-container');
 
@@ -182,13 +183,11 @@
 
             rightPanel.appendChild(userMessageContainer);
 
-            // Ladeanimation erstellen und hinzufügen
             const loadingContainer = document.createElement('div');
             loadingContainer.classList.add('loading-container');
-            loadingContainer.style.display = 'block'; // Ladeanimation anzeigen
+            loadingContainer.style.display = 'block';
             loadingContainer.innerHTML = '<img src="/static/images/robot_loding.png" alt="Ladeanimation" class="loading-image">';
-            
-            // Füge die Ladeanimation direkt nach der Benutzernachricht ein
+
             rightPanel.appendChild(loadingContainer);
 
             inputField.value = '';
@@ -202,7 +201,6 @@
             })
             .then(response => response.json())
             .then(data => {
-                // Ladeanimation verstecken
                 loadingContainer.style.display = 'none';
 
                 if (data.status === 'success') {
@@ -212,7 +210,7 @@
 
                     typeWriter(serverResponseContainer, 'Antwort: ', formattedMessage);
                     rightPanel.appendChild(serverResponseContainer);
-                    
+
                     leftPanel.innerHTML = '';
                     if(data.results != null){
                         for (const element of data.results){
@@ -221,7 +219,7 @@
                     }else{
                         addToLeftPanel(data.results_string,'')
                     }
-                    
+
                 } else {
                     const serverResponseContainer = document.createElement('div');
                     serverResponseContainer.classList.add('server-response');
@@ -236,9 +234,9 @@
         });
 
         document.getElementById('messageInput').addEventListener('keyup', function(event) {
-            if (event.key === 'Enter' && !event.shiftKey) {  // Enter ohne Shift-Taste
-                event.preventDefault();  // Verhindert den Zeilenumbruch im Textfeld
-                document.getElementById('addContainer').click();  // Klickt den Button
+            if (event.key === 'Enter' && !event.shiftKey) {
+                event.preventDefault();
+                document.getElementById('addContainer').click();
             }
         });
 
@@ -246,14 +244,13 @@
             const leftPanel = document.getElementById('leftPanel');
 
             const newContent = document.createElement('div');
-            newContent.classList.add('dynamic-container'); // Optional, um den gleichen Stil zu verwenden
+            newContent.classList.add('dynamic-container');
 
             const content = `<strong>${title}</strong><br><br>${inhalt}`;
-            newContent.innerHTML = content; // Nutze innerHTML, um Zeilenumbrüche als HTML zu rendern
+            newContent.innerHTML = content;
 
             leftPanel.appendChild(newContent);
         }
-
     </script>
 </body>
 </html>
