@@ -105,6 +105,11 @@
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
+        .file-type-info {
+            font-size: 0.9rem;
+            color: #aaaaaa;
+            margin-top: -10px;
+        }
     </style>
 </head>
 <body>
@@ -117,6 +122,7 @@
                         Drag & Drop files here
                         <input type="file" id="syllabusInput" name="syllabus" accept=".xlsx,.png">
                     </div>
+                    <div class="file-type-info">Only .png files</div>
                     <div class="file-name" id="syllabusFileName"></div>
                 </div>
                 <div class="upload-section">
@@ -125,6 +131,7 @@
                         Drag & Drop files here
                         <input type="file" id="torInput" name="tor" accept=".pdf">
                     </div>
+                    <div class="file-type-info">Only .pdf files</div>
                     <div class="file-name" id="torFileName"></div>
                 </div>
             </div>
