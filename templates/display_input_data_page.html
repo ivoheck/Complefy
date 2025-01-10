@@ -36,7 +36,7 @@
             text-align: center;
         }
 
-        .event {
+        .entry {
             margin-top: 10px;
             background-color: #00796b;
             color: white;
@@ -61,6 +61,30 @@
         .continue-button:hover {
             background-color: #0056b3; /* Hover-Farbe */
         }
+
+        .list-container {
+            width: 600px; /* Breite des Containers */
+            margin: 0 auto; /* Zentriert den Container */
+            padding: 10px; /* Abstand innerhalb des Containers */
+            border: 2px solid #ccc; /* Umrandung */
+            border-radius: 8px; /* Abgerundete Ecken */
+            background-color: #f9f9f9; /* Hintergrundfarbe */
+            display: flex; /* Flexbox, Standard */
+            flex-direction: column; /* Elemente vertikal anordnen */
+            gap: 10px; /* Abstand zwischen Elementen */
+            font-weight: bold;
+        }
+
+        /* Einzelne Elemente */
+        .list-item {
+            padding: 10px; /* Abstand innerhalb des Elements */
+            background-color: #eaeaea; /* Hintergrundfarbe */
+            border: 1px solid #bbb; /* Umrandung */
+            border-radius: 4px; /* Abgerundete Ecken */
+            font-size: 16px; /* Schriftgröße */
+            text-align: left; /* Text linksbündig */
+            color: black;
+        }
     </style>
 </head>
 <body>
@@ -69,16 +93,23 @@
 
     <div class="calendar" id="calendar"></div>
 
+    <h1 style="text-align: center;">Finished complementary subject</h1>
+
+    <div class="list-container"></div>
+
     <button class="continue-button" onclick="window.location.href='/complefy_chat';">Continue</button>
 
     <script>
-        fetch('/api/events')
+        fetch('/api/data')
             .then(response => response.json())
-            .then(events => {
-                console.log('Fetched Events:', events);
+            .then(data => {
+                console.log('Fetched Events:', data);
 
                 const daysOfWeek = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
                 const calendarEl = document.getElementById('calendar');
+
+                const syllabus = data.syllabus;
+                const finished_comps = data.finished_comps || [];
 
                 function generateCalendar() {
                     let currentDay = new Date();
@@ -96,18 +127,18 @@
                         dayHeader.innerText = dayName;  // Show the weekday name
                         dayElement.appendChild(dayHeader);
 
-                        const dayEvents = events.filter(event => event.day === dayName); // Filter events for the current day
-                        if (dayEvents.length > 0) {
-                            dayEvents.forEach(event => {
-                                let eventElement = document.createElement('div');
-                                eventElement.classList.add('event');
-                                eventElement.innerText = `${event.start} - ${event.end}`; // Display only the times
-                                dayElement.appendChild(eventElement);
+                        const dayEntry = syllabus.filter(entry => entry.day === dayName); // Filter events for the current day
+                        if (dayEntry.length > 0) {
+                            dayEntry.forEach(entry => {
+                                let entryElement = document.createElement('div');
+                                entryElement.classList.add('entry');
+                                entryElement.innerText = `${entry.start} - ${entry.end}`; // Display only the times
+                                dayElement.appendChild(entryElement);
                             });
                         } else {
-                            let noEventElement = document.createElement('div');
-                            noEventElement.innerText = 'No Events';
-                            dayElement.appendChild(noEventElement); // Display "No Events" for days without events
+                            let noEntryElement = document.createElement('div');
+                            noEntryElement.innerText = 'No Entrys';
+                            dayElement.appendChild(noEntryElement); // Display "No Events" for days without events
                         }
 
                         calendarEl.appendChild(dayElement);
@@ -115,9 +146,28 @@
                     }
                 }
 
+                function generateList(){
+                    const container = document.querySelector('.list-container');
+
+                    if (finished_comps.length > 0){
+                        finished_comps.forEach(text => {
+                            const div = document.createElement('div'); 
+                            div.className = 'list-item'; 
+                            div.textContent = text; 
+                            container.appendChild(div);
+                        });
+                    }else{
+                        const div = document.createElement('div'); 
+                        div.className = 'list-item'; 
+                        div.textContent = "No items found"; 
+                        container.appendChild(div);
+                    }
+                }
+
+                generateList();
                 generateCalendar();
             })
-            .catch(error => console.error('Error fetching events:', error));
+            .catch(error => console.error('Error fetching data:', error));
     </script>
 
 </body>

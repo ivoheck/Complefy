@@ -81,9 +81,12 @@ def get_syllabus_frontend(day,time_stamps):
 
     return {"day": day.capitalize(), "start": f"{start_hours:02}:{start_mins:02}", "end": f"{end_hours:02}:{end_mins:02}"}
 
-@app.route('/api/events')
+@app.route('/api/data')
 def get_events():
+    data = {}
     syllabus = []
+    finished_comps = []
+    
 
     try:
         syllabus_data = session['syllabus']
@@ -97,7 +100,16 @@ def get_events():
     except Exception as e:
         print(e)
 
-    return jsonify(syllabus)
+    try:
+        finished_comps = session['finished_comps']
+
+    except Exception as e:
+        print(e)
+
+    data['syllabus'] = syllabus
+    data['finished_comps'] = finished_comps
+
+    return jsonify(data)
 
 @app.route('/display_input', methods=['POST'])
 def display_input():
