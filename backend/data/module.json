@@ -1,0 +1,1046 @@
+[
+    {
+        "id": 58539,
+        "name": "Medialitätsorientierte Zugänge zu den Geisteswissenschaften",
+        "nummer": "21703000",
+        "angebot": "Das Modul kann einmal belegt werden.",
+        "inhalte": "Die Studierenden befassen sich mit theoretischen Positionen und erörtern aktuelle, in geisteswissenschaftlichen Disziplinen geführte Debatten. In der Auseinandersetzung mit den Theorien und Kontroversen sowie in deren kritischen Diskussion und Vertiefung kann auf verschiedene Medien zurückgegriffen werden, u.a. Texte, Bilder, audiovisuelle oder digitale Medien. Fremdsprachige Kurse sind darauf angelegt, dass Studierende ihre Sprachkenntnisse über die thematische Auseinandersetzung mit ausgewählten Inhalten vertiefen, praktisch anwenden und zugleich reflektieren, sie sind nicht auf strukturelle Aspekte einer Sprache beschränkt.",
+        "fachkompetenz": "Die Studierenden verfügen über theoretische Kenntnisse zu geisteswissenschaftlichen Positionen und Theorien. Sie sind in der Lage aktuellen Diskursen und Debatten zu folgen, einzelne Beiträge inhaltlich zu bewerten, einzuordnen und kritisch zu reflektieren. Sie können sich theoretische Positionen selbständig erarbeiten und weiterführende Überlegungen anstellen, indem sie diese mit anderen Texten und Medien in Verbindung setzen bzw. auf diese Bezug nehmen.",
+        "personalkompetenz": "Die Studierenden erwerben die Fähigkeit in verschiedenen Medien dargelegte Theorien, Debatten und Ideen zu verstehen und kritisch zu reflektieren. In der Auseinandersetzung mit Texten, Sprache und Bild erlangen sie ein verbessertes Kommunikationsbewusstsein und verbesserte kommunikative Fähigkeiten. Zugleich erweitern sie ihre verbalen und nonverbalen Ausdrucksmöglichkeiten, z.B. in der Wahl eines angemessenen Sprachregisters, Codes der nonverbalen Kommunikation, schriftlicher und mündlicher Ausdruck, rhetorische Fähigkeiten – Ideen/ Positionen formulieren/ argumentativ verteidigen.",
+        "lernformen": "Seminargespräch, Vorlesungsbestandteile, Gruppenarbeitsphasen, Kurzreferate, Präsentationen, Plenumsdiskussionen, kleinere Vor- und Nachbereitungsaufgaben (z.B. Protokolle, Selbststudium, Recherche- und Lektürearbeit, Anfertigen einer wissenschaftlichen Arbeit)",
+        "credits": 5,
+        "pruefungsformen": null,
+        "pruefungsleistungen": null,
+        "studienleistungen": null,
+        "dauer": "Dauer: 1 Semester\r\nHäufigkeit: i.d.R. jedes Semester \r\nEinige Lehrveranstaltungen des Moduls werden jedes Semester angeboten, andere Lehrveranstaltungen finden nur alle zwei oder drei Semester statt. In einigen Fällen findet ein Angebot nur einmalig statt. In Ausnahmefällen ist es möglich, dass Angebote aufeinander aufbauen und dann in wechselnden Semestern angeboten werden",
+        "voraussetzungen": "Modul &#34;Wissenschaft lehrt Verstehen&#34;",
+        "workload_praesenz": 28,
+        "workload_vornachbereitung": 40,
+        "workload_studienleistung": 20,
+        "workload_pruefung": 62,
+        "workload_summe": null,
+        "sonstiges": "Für Fragen der ANERKENNUNG VON STUDIENLEISTUNGEN in diesem Modul wenden Sie sich bitte ans TEAM KOMPLEMENTÄRSTUDIUM. Informationen dazu finden Sie unter https://www.leuphana.de/college/studium/ks.html",
+        "semester_id": 48,
+        "modulzuordnungen": {
+            "modulzuordnungen": [
+                {
+                    "gebiet": {
+                        "id": 10627,
+                        "name": "Komplementärstudium",
+                        "art": "komplement",
+                        "studiengang": {
+                            "id": 1223,
+                            "name": "Lehren und Lernen",
+                            "abschluss": "B.A."
+                        }
+                    },
+                    "semester": "2,3,4,5,6",
+                    "bereich": "Geisteswissenschaftliche Perspektive",
+                    "bereich_en": null
+                },
+                {
+                    "gebiet": {
+                        "id": 10641,
+                        "name": "Komplementärstudium",
+                        "art": "komplement",
+                        "studiengang": {
+                            "id": 1224,
+                            "name": "Leuphana Bachelor",
+                            "abschluss": "B.A./B.Eng./B.Sc./LL.B."
+                        }
+                    },
+                    "semester": "2,3,4,5,6",
+                    "bereich": "Geisteswissenschaftliche Perspektive",
+                    "bereich_en": null
+                },
+                {
+                    "gebiet": {
+                        "id": 10852,
+                        "name": "Komplementärstudium",
+                        "art": "komplement",
+                        "studiengang": {
+                            "id": 1253,
+                            "name": "Sozialpädagogik",
+                            "abschluss": "B.A."
+                        }
+                    },
+                    "semester": "4",
+                    "bereich": "Geisteswissenschaftliche Perspektive",
+                    "bereich_en": null
+                },
+                {
+                    "gebiet": {
+                        "id": 10873,
+                        "name": "Komplementärstudium",
+                        "art": "komplement",
+                        "studiengang": {
+                            "id": 1255,
+                            "name": "Wirtschaftspädagogik",
+                            "abschluss": "B.A."
+                        }
+                    },
+                    "semester": "6",
+                    "bereich": null,
+                    "bereich_en": null
+                }
+            ]
+        }
+    },
+    {
+        "id": 58541,
+        "name": "Methodenorientierte Zugänge zu den Geisteswissenschaften",
+        "nummer": "21701000",
+        "angebot": "Das Modul kann einmal belegt werden.",
+        "inhalte": "Die Perspektive führt anhand ausgesuchter Beispiele in geisteswissenschaftliche Methoden und dahinterliegende Denkfiguren ein. Im Vordergrund steht die Frage, mit welchen Herangehensweisen u.a. kulturelle, geistige, mediale, soziale, historische oder politische Phänomene deutend verstanden, systematisch auf Gesetzmäßigkeiten hin erforscht und erklärt werden und wie die gewonnenen Erkenntnisse nutzbar gemacht werden. Dabei werden auch die Entstehung, Verwendung und Bewertung bestimmter Methoden im Hinblick auf Individuen und Gesellschaft kritisch diskutiert.",
+        "fachkompetenz": "Die Studierenden lernen spezifische geisteswissenschaftliche Methoden in der wissenschaftlichen Erkenntnisgewinnung einzusetzen. Sie verstehen, wie unterschiedliche methodische Zugänge mit bestimmten Aspekten geisteswissenschaftlicher Denkfiguren zusammenhängen und u.a. kulturelle, geistige, mediale, soziale, historische oder politische Phänomene untersuchen.\r\nDie Studierenden sind in der Lage, Wege geisteswissenschaftlicher Erkenntnisgewinnung nachzuvollziehen und die Anwendung spezifischer Methoden in verschiedenen Forschungskontexten, Diskursen und Debatten zu erkennen und kritisch zu reflektieren.",
+        "personalkompetenz": "Die Studierenden sind in der Lage, Wege der geisteswissenschaftlichen Erkenntnisgewinnung zu verstehen und sich aktiv in aktuelle Debatten über die Entstehung, Verwendung und Bewertung bestimmter Methoden im Hinblick auf deren Wirkung einzubringen. Die Studierenden verfügen über die Fähigkeit, komplexe fachbezogene Fragen und Probleme über die eigene wissenschaftliche Disziplin hinaus gegenüber Fachleuten argumentativ zu vertreten und mit ihnen weiterzuentwickeln.\r\nDie Studierenden können eigene und fremde Arbeitsprozesse und -ergebnisse mit Blick auf die ihnen zugrunde liegenden Methoden aus verschiedenen wissenschaftlichen Perspektiven reflektieren. Sie können vorausschauend und verantwortlich in Expertenteams arbeiten und dabei ihre disziplinäre methodische Expertise in angemessener Form vertreten.",
+        "lernformen": "Seminargespräch, Vorlesungsbestandteile, Gruppenarbeitsphasen, Kurzreferate, Präsentationen, Plenumsdiskussionen, kleinere Vor- und Nachbereitungsaufgaben (z.B. Protokolle, Selbststudium, Recherche- und Lektürearbeit, Anfertigen einer wissenschaftlichen Arbeit)",
+        "credits": 5,
+        "pruefungsformen": null,
+        "pruefungsleistungen": null,
+        "studienleistungen": null,
+        "dauer": "Dauer: 1 Semester\r\nHäufigkeit: i.d.R. jedes Semester \r\nEinige Lehrveranstaltungen des Moduls werden jedes Semester angeboten, andere Lehrveranstaltungen finden nur alle zwei oder drei Semester statt. In einigen Fällen findet ein Angebot nur einmalig statt. In Ausnahmefällen ist es möglich, dass Angebote aufeinander aufbauen und dann in wechselnden Semestern angeboten werden",
+        "voraussetzungen": "Module „Wissenschaft kennt disziplinäre Grenzen“ und „Wissenschaft nutzt Methoden I“ (bzw. ab WS21/22: „Wissenschaft produziert: Methodisches Wissen&#34;)",
+        "workload_praesenz": 28,
+        "workload_vornachbereitung": 40,
+        "workload_studienleistung": 20,
+        "workload_pruefung": 62,
+        "workload_summe": null,
+        "sonstiges": "Für Fragen der ANERKENNUNG VON STUDIENLEISTUNGEN in diesem Modul wenden Sie sich bitte ans TEAM KOMPLEMENTÄRSTUDIUM. Informationen dazu finden Sie unter https://www.leuphana.de/college/studium/ks.html",
+        "semester_id": 48,
+        "modulzuordnungen": {
+            "modulzuordnungen": [
+                {
+                    "gebiet": {
+                        "id": 10627,
+                        "name": "Komplementärstudium",
+                        "art": "komplement",
+                        "studiengang": {
+                            "id": 1223,
+                            "name": "Lehren und Lernen",
+                            "abschluss": "B.A."
+                        }
+                    },
+                    "semester": "2,3,4,5,6",
+                    "bereich": "Geisteswissenschaftliche Perspektive",
+                    "bereich_en": null
+                },
+                {
+                    "gebiet": {
+                        "id": 10641,
+                        "name": "Komplementärstudium",
+                        "art": "komplement",
+                        "studiengang": {
+                            "id": 1224,
+                            "name": "Leuphana Bachelor",
+                            "abschluss": "B.A./B.Eng./B.Sc./LL.B."
+                        }
+                    },
+                    "semester": "2,3,4,5,6",
+                    "bereich": "Geisteswissenschaftliche Perspektive",
+                    "bereich_en": null
+                },
+                {
+                    "gebiet": {
+                        "id": 10852,
+                        "name": "Komplementärstudium",
+                        "art": "komplement",
+                        "studiengang": {
+                            "id": 1253,
+                            "name": "Sozialpädagogik",
+                            "abschluss": "B.A."
+                        }
+                    },
+                    "semester": "4",
+                    "bereich": "Geisteswissenschaftliche Perspektive",
+                    "bereich_en": null
+                },
+                {
+                    "gebiet": {
+                        "id": 10873,
+                        "name": "Komplementärstudium",
+                        "art": "komplement",
+                        "studiengang": {
+                            "id": 1255,
+                            "name": "Wirtschaftspädagogik",
+                            "abschluss": "B.A."
+                        }
+                    },
+                    "semester": "6",
+                    "bereich": null,
+                    "bereich_en": null
+                }
+            ]
+        }
+    },
+    {
+        "id": 58540,
+        "name": "Praxisorientierte Zugänge zu den Geisteswissenschaften",
+        "nummer": "21702000",
+        "angebot": "Das Modul kann einmal belegt werden.",
+        "inhalte": "Die Lehrveranstaltungen in diesem Modul befassen sich mit der Konzeption, Planung und/oder der Durchführung von Projekten und Fallbeispielen aus der Praxis. Dabei stehen Kooperationen mit Institutionen und Personen im Mittelpunkt, die für Geisteswissenschaftler_innen mögliche Praxisfelder bieten, bspw. im Bereich Theater, Kunstinstitutionen, Verlagswesen sowie Medien und Presse oder auch Politik. Anhand von Fallbeispielen, konkreten Projekten oder in Form begleiteter Praktika wird den Studierenden die Möglichkeit gegeben, das im Studium erworbene Wissen anzuwenden und praktische Erfahrungen zu sammeln. Dabei kann fachbezogenes Studieren auch mit gesellschaftlichem Engagement verknüpft (Service Learning) und praxisrelevante Kompetenzen erworben werden. In den Lehrveranstaltungen setzen sich die Studierenden aber auch auf theoretischer Ebene mit Methoden, Vorgehensweisen und Kompetenzen für die Praxis auseinander.",
+        "fachkompetenz": "Die Studierenden lernen Konzepte zu erstellen und umzusetzen und wissen welche Schritte in einer Projektumsetzung zu beachten sind. Sie verfügen über theoretische und praktische Kenntnisse gängiger Strukturen und Abläufe der Projektarbeit sowie spezifischer Praxisinstitutionen und können diese kritisch reflektieren. Sie können ein ausgearbeitetes Konzept umsetzen und ggf. erforderliche Modifizierungen daran vornehmen. Die Studierenden sammeln Erfahrungen im Umgang mit Akteur_innen und Institutionen aus der Praxis und lernen diese Erfahrungen zu reflektieren.",
+        "personalkompetenz": "Die Studierenden verfügen über praktische Erfahrungen der projektbezogenen Zusammenarbeit in einem Team sowie mit externen Praxispartnern_innen. Sie kennen die damit verbundenen Anforderungen an Kommunikation, Verantwortungsübernahme und Verlässlichkeit. Sie sind sensibel gegenüber unterschiedlichen sozialen und gesellschaftlichen Wertesystemen und können daraus resultierende Sicht- und Handlungsweisen von Projektbeteiligten reflektieren. \r\nDie Studierenden sind fähig, sich über disziplinäre Grenzen hinweg auszutauschen, können vorausschauend und verantwortlich in Expertenteams arbeiten und sind kritik- und konfliktfähig. Die Studierenden sind zum Denken in komplexen Zusammenhängen fähig, sind lernbereit und offen für unbekannte Methoden und Vorgehensweisen und verfügen über lösungsorientierte Handlungskompetenz.",
+        "lernformen": "Seminargespräch, Vorlesungsbestandteile, Gruppenarbeitsphasen, Kurzreferate, Präsentationen, Plenumsdiskussionen, kleinere Vor- und Nachbereitungsaufgaben (z.B. Protokolle, Selbststudium, Recherche- und Lektürearbeit, Anfertigen einer wissenschaftlichen Arbeit)",
+        "credits": 5,
+        "pruefungsformen": null,
+        "pruefungsleistungen": null,
+        "studienleistungen": null,
+        "dauer": "Dauer: 1 Semester\r\nHäufigkeit: i.d.R. jedes Semester \r\nEinige Lehrveranstaltungen des Moduls werden jedes Semester angeboten, andere Lehrveranstaltungen finden nur alle zwei oder drei Semester statt. In einigen Fällen findet ein Angebot nur einmalig statt. Die Studierenden verfügen über praktische Erfahrungen der projektbezogenen Zusammenarbeit in einem Team sowie mit externen Praxispartnern_innen. Sie kennen die damit verbundenen Anforderungen an Kommunikation, Verantwortungsübernahme und Verlässlichkeit. Sie sind sensibel gegenüber unterschiedlichen sozialen und gesellschaftlichen Wertesystemen und können daraus resultierende Sicht- und Handlungsweisen von Projektbeteiligten reflektieren. \r\nDie Studierenden sind fähig, sich über disziplinäre Grenzen hinweg auszutauschen, können vorausschauend und verantwortlich in Expertenteams arbeiten und sind kritik- und konfliktfähig. Die Studierenden sind zum Denken in komplexen Zusammenhängen fähig, sind lernbereit und offen für unbekannte Methoden und Vorgehensweisen und verfügen über lösungsorientierte Handlungskompetenz. \r\nist es möglich, dass Angebote aufeinander aufbauen und dann in wechselnden Semestern angeboten werden",
+        "voraussetzungen": "Projektseminar des Moduls &#34;Wissenschaft trägt Verantwortung&#34;",
+        "workload_praesenz": 28,
+        "workload_vornachbereitung": 40,
+        "workload_studienleistung": 20,
+        "workload_pruefung": 62,
+        "workload_summe": null,
+        "sonstiges": "Für Fragen der ANERKENNUNG VON STUDIENLEISTUNGEN in diesem Modul wenden Sie sich bitte ans TEAM KOMPLEMENTÄRSTUDIUM. Informationen dazu finden Sie unter https://www.leuphana.de/college/studium/ks.html",
+        "semester_id": 48,
+        "modulzuordnungen": {
+            "modulzuordnungen": [
+                {
+                    "gebiet": {
+                        "id": 10627,
+                        "name": "Komplementärstudium",
+                        "art": "komplement",
+                        "studiengang": {
+                            "id": 1223,
+                            "name": "Lehren und Lernen",
+                            "abschluss": "B.A."
+                        }
+                    },
+                    "semester": "2,3,4,5,6",
+                    "bereich": "Geisteswissenschaftliche Perspektive",
+                    "bereich_en": null
+                },
+                {
+                    "gebiet": {
+                        "id": 10641,
+                        "name": "Komplementärstudium",
+                        "art": "komplement",
+                        "studiengang": {
+                            "id": 1224,
+                            "name": "Leuphana Bachelor",
+                            "abschluss": "B.A./B.Eng./B.Sc./LL.B."
+                        }
+                    },
+                    "semester": "2,3,4,5,6",
+                    "bereich": "Geisteswissenschaftliche Perspektive",
+                    "bereich_en": null
+                },
+                {
+                    "gebiet": {
+                        "id": 10852,
+                        "name": "Komplementärstudium",
+                        "art": "komplement",
+                        "studiengang": {
+                            "id": 1253,
+                            "name": "Sozialpädagogik",
+                            "abschluss": "B.A."
+                        }
+                    },
+                    "semester": "4",
+                    "bereich": "Geisteswissenschaftliche Perspektive",
+                    "bereich_en": null
+                },
+                {
+                    "gebiet": {
+                        "id": 10873,
+                        "name": "Komplementärstudium",
+                        "art": "komplement",
+                        "studiengang": {
+                            "id": 1255,
+                            "name": "Wirtschaftspädagogik",
+                            "abschluss": "B.A."
+                        }
+                    },
+                    "semester": "6",
+                    "bereich": null,
+                    "bereich_en": null
+                }
+            ]
+        }
+    },
+    {
+        "id": 58533,
+        "name": "Medialitätsorientierte Zugänge zu inter- und transdisziplinären Wissenschaften",
+        "nummer": "11703000",
+        "angebot": "Das Modul kann einmal belegt werden.",
+        "inhalte": "Die Studierenden setzen sich mit theoretischen Positionen und aktuellen Debatten an den Schnittstellen unterschiedlicher Wissens-, Wert- und Handlungsfelder zwischen wissenschaftlichen Disziplinen bzw. zwischen Wissenschaft und anderen gesellschaftlichen Teilsystemen auseinander. Die thematische Auseinandersetzung und Vertiefung kann dabei anhand verschiedener Medien stattfinden, u. a.  Texte, Bilder, audiovisuelle oder digitale Medien. In medialitätsorientierten Veranstaltungen liegt der Fokus auf der Diskussion von grenzüberschreitenden Theorien und Diskursen. Entsprechend bleibt auch der Umgang mit Fremdsprachen nicht auf das Nachdenken über strukturelle Aspekte einer Sprache beschränkt, sondern ist so angelegt, dass die Studierenden ihre Sprachkenntnisse über die thematische Auseinandersetzung mit ausgewählten Inhalten vertiefen, praktisch anwenden und zugleich im Rahmen eines permanenten inhaltlichen Übersetzungsvorgangs reflektieren.",
+        "fachkompetenz": "Die Studierenden verfügen über theoretische Kenntnisse zu inter- und transdisziplinären Positionen und Theorien und wissen, dass für eine gelingende grenzüberschreitende Kommunikation eine gemeinsame Sprache zur Beschreibung und Lösung der Probleme gefunden wird und dass Kriterien, beispielsweise zur Bewertung der Qualität der wissenschaftlichen Leistung, geteilt werden müssen.\r\nDie Studierenden sind in der Lage, aktuellen Diskursen zur Wahrnehmung und zum Umgang mit Grenzen bzw. mehreren Wirklichkeiten zu folgen, einzelne Beiträge inhaltlich zu bewerten, einzuordnen und kritisch zu reflektieren. Sie können sich theoretische Positionen selbständig erarbeiten und weiterführende Überlegungen anstellen, indem sie diese mit anderen Texten in Verbindung setzen bzw. auf diese Bezug nehmen. Zugleich lernen sie mit Blick auf die kommunikative Funktion von Texten verstehen, welche Bedeutung situationsbezogenen „textexternen“ Merkmalen zukommt und welche Rolle sprachliche, „textinterne“ Merkmale spielen.",
+        "personalkompetenz": "Die Studierenden erlangen mit Hilfe medialitätsorientierter Zugänge – also der Auseinandersetzung mit in Text, Sprache oder Bild gefassten Ideen – ein verbessertes Kommunikationsbewusstsein und verbesserte kommunikative Fähigkeiten. Zugleich steigt mit der Erweiterung verbaler und nonverbaler Ausdrucksmöglichkeiten (z.B. Wahl eines angemessenen Sprachregisters, Codes der nonverbalen Kommunikation, schriftlicher und mündlicher Ausdruck, rhetorische Fähigkeiten – Ideen/ Positionen formulieren/ argumentativ verteidigen) auch die Fähigkeit zum Austausch über kulturelle und sprachliche Grenzen hinweg.",
+        "lernformen": "Seminargespräch, Vorlesungsbestandteile, Gruppenarbeitsphasen, Kurzreferate, Präsentationen, Plenumsdiskussionen, kleinere Vor- und Nachbereitungsaufgaben (z.B. Protokolle, Selbststudium, Recherche- und Lektürearbeit, Anfertigen einer wissenschaftlichen Arbeit)",
+        "credits": 5,
+        "pruefungsformen": null,
+        "pruefungsleistungen": null,
+        "studienleistungen": null,
+        "dauer": "Dauer: 1 Semester\r\nHäufigkeit: i.d.R. jedes Semester \r\nEinige Lehrveranstaltungen des Moduls werden jedes Semester angeboten, andere Lehrveranstaltungen finden nur alle zwei oder drei Semester statt. In einigen Fällen findet ein Angebot nur einmalig statt. Weiter ist es möglich, dass Angebote aufeinander aufbauen und dann in wechselnden Semestern angeboten werden",
+        "voraussetzungen": "Modul &#34;Wissenschaft lehrt Verstehen&#34;",
+        "workload_praesenz": 28,
+        "workload_vornachbereitung": 40,
+        "workload_studienleistung": 20,
+        "workload_pruefung": 62,
+        "workload_summe": null,
+        "sonstiges": "Für Fragen der ANERKENNUNG VON STUDIENLEISTUNGEN in diesem Modul wenden Sie sich bitte ans TEAM KOMPLEMENTÄRSTUDIUM. Informationen dazu finden Sie unter https://www.leuphana.de/college/studium/ks.html",
+        "semester_id": 48,
+        "modulzuordnungen": {
+            "modulzuordnungen": [
+                {
+                    "gebiet": {
+                        "id": 10627,
+                        "name": "Komplementärstudium",
+                        "art": "komplement",
+                        "studiengang": {
+                            "id": 1223,
+                            "name": "Lehren und Lernen",
+                            "abschluss": "B.A."
+                        }
+                    },
+                    "semester": "2,3,4,5,6",
+                    "bereich": "Inter- und transdisziplinäre Perspektive",
+                    "bereich_en": null
+                },
+                {
+                    "gebiet": {
+                        "id": 10641,
+                        "name": "Komplementärstudium",
+                        "art": "komplement",
+                        "studiengang": {
+                            "id": 1224,
+                            "name": "Leuphana Bachelor",
+                            "abschluss": "B.A./B.Eng./B.Sc./LL.B."
+                        }
+                    },
+                    "semester": "2,3,4,5,6",
+                    "bereich": "Inter- und transdisziplinäre Perspektive",
+                    "bereich_en": null
+                },
+                {
+                    "gebiet": {
+                        "id": 10852,
+                        "name": "Komplementärstudium",
+                        "art": "komplement",
+                        "studiengang": {
+                            "id": 1253,
+                            "name": "Sozialpädagogik",
+                            "abschluss": "B.A."
+                        }
+                    },
+                    "semester": "4",
+                    "bereich": "Inter- und transdisziplinäre Perspektive",
+                    "bereich_en": null
+                },
+                {
+                    "gebiet": {
+                        "id": 10873,
+                        "name": "Komplementärstudium",
+                        "art": "komplement",
+                        "studiengang": {
+                            "id": 1255,
+                            "name": "Wirtschaftspädagogik",
+                            "abschluss": "B.A."
+                        }
+                    },
+                    "semester": "6",
+                    "bereich": null,
+                    "bereich_en": null
+                }
+            ]
+        }
+    },
+    {
+        "id": 58535,
+        "name": "Methodenorientierte Zugänge zu inter- und transdisziplinären Wissenschaften",
+        "nummer": "11701000",
+        "angebot": "Das Modul kann einmal belegt werden.",
+        "inhalte": "Das Modul führt in die Zusammenarbeit zwischen mehreren voneinander unabhängigen Einzelwissenschaften bzw. zwischen Wissenschaft und nichtakademischen Akteuren ein. Im Fokus steht dabei die methodengeleitete Integration verschiedener Wissensbestände und damit einhergehender zusammenführender Lösungsstrategien auf der Basis eines fächerübergreifenden Verständigungsprozesses. Bei diesem Zusammenspiel zwischen Disziplinen oder gar zwischen Wissenschafts- und gesellschaftlichen Handlungsakteuren steht an der jeweiligen Schnittstelle die Suche nach einer gemeinsamen Sprache zur Problembeschreibung und -lösung sowie nach geeigneten Methoden zur Bewertung der wissenschaftlichen Qualität im Mittelpunkt. Entsprechend ist in inter- und transdisziplinären Kontexten die Frage zentral, worin deren erkenntnistheoretischer und/oder legitimatorischer Mehrwert gegenüber mono- oder multidisziplinärem Vorgehen besteht.",
+        "fachkompetenz": "Die Studierenden haben auf der Basis ihrer methodischen Kenntnisse verstanden, warum Analysen und Lösungen komplexer Fragestellungen nicht allein von einer wissenschaftlichen Disziplin erarbeitet werden können und sind dazu bereit, über eine rein fachspezifische Orientierung hinauszugehen. Sie können grundlegende epistemologische Spezifika/Charakteristika ihrer eigenen wissenschaftlichen Disziplin ebenso wie die anderer Disziplinen benennen und zu bestimmten Methoden in Beziehung setzen.\r\nDie Studierenden sind in der Lage, Systemwissen (verstanden als Wissen über Strukturen, Funktionen, Prozesse und Wirkungszusammenhänge) und Orientierungs- bzw. Zielwissen (in Form von Bewertungen, ethischen Orientierungen, Denken in Alternativen und vorausschauendem Denken) miteinander zu verknüpfen und auf diese Weise Wissensbestände unterschiedlicher Disziplinen mit ihren spezifischen Methoden für die Bearbeitung komplexer Fragestellungen zu nutzen.",
+        "personalkompetenz": "Die Studierenden sind offen für unbekannte Methoden und Vorgehensweisen und bereit, sich mit den Entstehungshintergründen wissenschaftlicher Methoden auseinanderzusetzen. Sie haben gelernt komplexe Zusammenhänge zu erkennen, können vorausschauend und verantwortlich in fach- bzw. domänenübergreifenden Expertenteams arbeiten und dabei ihre disziplinäre methodische Expertise in angemessener Form vertreten.",
+        "lernformen": "Seminargespräch, Vorlesungsbestandteile, Gruppenarbeitsphasen, Kurzreferate, Präsentationen, Plenumsdiskussionen, kleinere Vor- und Nachbereitungsaufgaben (z.B. Protokolle, Selbststudium, Recherche- und Lektürearbeit, Anfertigen einer wissenschaftlichen Arbeit)",
+        "credits": 5,
+        "pruefungsformen": null,
+        "pruefungsleistungen": null,
+        "studienleistungen": null,
+        "dauer": "Dauer: 1 Semester\r\nHäufigkeit: i.d.R. jedes Semester \r\nEinige Lehrveranstaltungen des Moduls werden jedes Semester angeboten, andere Lehrveranstaltungen finden nur alle zwei oder drei Semester statt. In einigen Fällen findet ein Angebot nur einmalig statt. Weiter ist es möglich, dass Angebote aufeinander aufbauen und dann in wechselnden Semestern angeboten werden",
+        "voraussetzungen": "Module „Wissenschaft kennt disziplinäre Grenzen“ und „Wissenschaft nutzt Methoden I“ (bzw. ab WS21/22: „Wissenschaft produziert: Methodisches Wissen&#34;)",
+        "workload_praesenz": 28,
+        "workload_vornachbereitung": 40,
+        "workload_studienleistung": 20,
+        "workload_pruefung": 62,
+        "workload_summe": null,
+        "sonstiges": "Für Fragen der ANERKENNUNG VON STUDIENLEISTUNGEN in diesem Modul wenden Sie sich bitte ans TEAM KOMPLEMENTÄRSTUDIUM. Informationen dazu finden Sie unter https://www.leuphana.de/college/studium/ks.html",
+        "semester_id": 48,
+        "modulzuordnungen": {
+            "modulzuordnungen": [
+                {
+                    "gebiet": {
+                        "id": 10627,
+                        "name": "Komplementärstudium",
+                        "art": "komplement",
+                        "studiengang": {
+                            "id": 1223,
+                            "name": "Lehren und Lernen",
+                            "abschluss": "B.A."
+                        }
+                    },
+                    "semester": "2,3,4,5,6",
+                    "bereich": "Inter- und transdisziplinäre Perspektive",
+                    "bereich_en": null
+                },
+                {
+                    "gebiet": {
+                        "id": 10641,
+                        "name": "Komplementärstudium",
+                        "art": "komplement",
+                        "studiengang": {
+                            "id": 1224,
+                            "name": "Leuphana Bachelor",
+                            "abschluss": "B.A./B.Eng./B.Sc./LL.B."
+                        }
+                    },
+                    "semester": "2,3,4,5,6",
+                    "bereich": "Inter- und transdisziplinäre Perspektive",
+                    "bereich_en": null
+                },
+                {
+                    "gebiet": {
+                        "id": 10852,
+                        "name": "Komplementärstudium",
+                        "art": "komplement",
+                        "studiengang": {
+                            "id": 1253,
+                            "name": "Sozialpädagogik",
+                            "abschluss": "B.A."
+                        }
+                    },
+                    "semester": "4",
+                    "bereich": "Inter- und transdisziplinäre Perspektive",
+                    "bereich_en": null
+                },
+                {
+                    "gebiet": {
+                        "id": 10873,
+                        "name": "Komplementärstudium",
+                        "art": "komplement",
+                        "studiengang": {
+                            "id": 1255,
+                            "name": "Wirtschaftspädagogik",
+                            "abschluss": "B.A."
+                        }
+                    },
+                    "semester": "6",
+                    "bereich": null,
+                    "bereich_en": null
+                }
+            ]
+        }
+    },
+    {
+        "id": 58534,
+        "name": "Praxisorientierte Zugänge zu inter- und transdisziplinären Wissenschaften",
+        "nummer": "11702000",
+        "angebot": "Das Modul kann einmal belegt werden.",
+        "inhalte": "In den Lehrveranstaltungen dieses Moduls werden grenzüberschreitende Praxiserfahrungen gesammelt, Konzepte und Projekte entwickelt, geplant und teilweise auch durchgeführt. Die Praxiserfahrungen sind dabei in interdisziplinären Bereichen angesiedelt, die im Grenzbereich zwischen verschiedenen wissenschaftlichen Disziplinen liegen oder sie überschreiten im Rahmen transdisziplinärer Kooperationen die Grenzen der Wissenschaftsdomäne, um mit Praxispartner_innen anderer gesellschaftlicher Teilsysteme zusammenzuarbeiten. \r\nAnhand von Fallbeispielen, konkreten Projekten oder in Form begleiteter Praktika wird den Studierenden die Möglichkeit gegeben, das im Studium erworbene Wissen anzuwenden und praktische Erfahrungen zu sammeln. Dabei kann ein fachbezogenes Studium mit gesellschaftlichem Engagement verknüpft werden (Service Learning) und berufsrelevante Kompetenzen erworben werden. In den Lehrveranstaltungen findet zudem eine Reflexion der Praxiserfahrung statt, die eine Rückbindung des in der Praxis erworbenen Wissens an das Studium und dort vermittelte Inhalten ermöglicht und somit eine Verknüpfung zwischen Studium und Praxis herstellt.",
+        "fachkompetenz": "Die Studierenden wissen, was ein ausgereiftes Projektkonzept beinhalten muss und haben theoretische und praktische Kenntnisse über gängige Strukturen und Abläufe der Projektarbeit. Sie kennen und respektieren Zwischenräume und Übergangszonen zwischen unterschiedlichen Wissens- und Wertedomänen und gehen kreativ mit ihnen um. Die Studierenden können ein ausgearbeitetes Konzept umsetzen und ggf. erforderliche Modifizierungen daran vornehmen. Die Studierenden kennen Planungsmethoden und Strategien der Projektarbeit und haben Erfahrungen mit der Übertragung und Anwendung zentraler Themenbereiche wie Formulierung eines Zielsystems, Budgeterstellung, Kapazitäts-, Zeit- und Maßnahmenplanung etc. auf ein Fallbeispiel oder ein konkretes Projekt gesammelt. Sie haben ein tieferes Verständnis für prozessorientierte Strukturen entwickelt und wissen, was eine ergebnisorientierte Vorgehensweise insbesondere hinsichtlich des Umgangs mit Grenzen bzw. mehreren Wirklichkeiten erfordert.",
+        "personalkompetenz": "Die Studierenden verfügen über praktische Erfahrungen der projektbezogenen Zusammenarbeit in einem Team und kennen die damit verbundenen Anforderungen an Kommunikation, Verantwortungsübernahme und Verlässlichkeit. Sie sind sensibel gegenüber unterschiedlichen sozialen und gesellschaftlichen Wertesystemen und können daraus resultierende Sicht- und Handlungsweisen von Projektbeteiligten reflektieren. \r\nDie Studierenden sind fähig, sich über disziplinäre Grenzen hinweg auszutauschen, können vorausschauend und verantwortlich in Expertenteams arbeiten und sind kritik- und konfliktfähig. Die Studierenden sind zum Denken in komplexen Zusammenhängen fähig, sind lernbereit und offen für unbekannte Methoden und Vorgehensweisen und verfügen über lösungsorientierte Handlungskompetenz.",
+        "lernformen": "Seminargespräch, Vorlesungsbestandteile, Gruppenarbeitsphasen, Kurzreferate, Präsentationen, Plenumsdiskussionen, kleinere Vor- und Nachbereitungsaufgaben (z.B. Protokolle, Selbststudium, Recherche- und Lektürearbeit, Anfertigen einer wissenschaftlichen Arbeit)",
+        "credits": 5,
+        "pruefungsformen": null,
+        "pruefungsleistungen": null,
+        "studienleistungen": null,
+        "dauer": "Dauer: 1 Semester\r\nHäufigkeit: i.d.R. jedes Semester \r\nEinige Lehrveranstaltungen des Moduls werden jedes Semester angeboten, andere Lehrveranstaltungen finden nur alle zwei oder drei Semester statt. In einigen Fällen findet ein Angebot nur einmalig statt. Weiter ist es möglich, dass Angebote aufeinander aufbauen und dann in wechselnden Semestern angeboten werden",
+        "voraussetzungen": "Projektseminar des Moduls &#34;Wissenschaft trägt Verantwortung&#34;",
+        "workload_praesenz": 28,
+        "workload_vornachbereitung": 40,
+        "workload_studienleistung": 20,
+        "workload_pruefung": 62,
+        "workload_summe": null,
+        "sonstiges": "Für Fragen der ANERKENNUNG VON STUDIENLEISTUNGEN in diesem Modul wenden Sie sich bitte ans TEAM KOMPLEMENTÄRSTUDIUM. Informationen dazu finden Sie unter https://www.leuphana.de/college/studium/ks.html",
+        "semester_id": 48,
+        "modulzuordnungen": {
+            "modulzuordnungen": [
+                {
+                    "gebiet": {
+                        "id": 10627,
+                        "name": "Komplementärstudium",
+                        "art": "komplement",
+                        "studiengang": {
+                            "id": 1223,
+                            "name": "Lehren und Lernen",
+                            "abschluss": "B.A."
+                        }
+                    },
+                    "semester": "2,3,4,5,6",
+                    "bereich": "Inter- und transdisziplinäre Perspektive",
+                    "bereich_en": null
+                },
+                {
+                    "gebiet": {
+                        "id": 10641,
+                        "name": "Komplementärstudium",
+                        "art": "komplement",
+                        "studiengang": {
+                            "id": 1224,
+                            "name": "Leuphana Bachelor",
+                            "abschluss": "B.A./B.Eng./B.Sc./LL.B."
+                        }
+                    },
+                    "semester": "2,3,4,5,6",
+                    "bereich": "Inter- und transdisziplinäre Perspektive",
+                    "bereich_en": null
+                },
+                {
+                    "gebiet": {
+                        "id": 10852,
+                        "name": "Komplementärstudium",
+                        "art": "komplement",
+                        "studiengang": {
+                            "id": 1253,
+                            "name": "Sozialpädagogik",
+                            "abschluss": "B.A."
+                        }
+                    },
+                    "semester": "4",
+                    "bereich": "Inter- und transdisziplinäre Perspektive",
+                    "bereich_en": null
+                },
+                {
+                    "gebiet": {
+                        "id": 10873,
+                        "name": "Komplementärstudium",
+                        "art": "komplement",
+                        "studiengang": {
+                            "id": 1255,
+                            "name": "Wirtschaftspädagogik",
+                            "abschluss": "B.A."
+                        }
+                    },
+                    "semester": "6",
+                    "bereich": null,
+                    "bereich_en": null
+                }
+            ]
+        }
+    },
+    {
+        "id": 58536,
+        "name": "Medialitätsorientierte Zugänge zu den Naturwissenschaften",
+        "nummer": "51703000",
+        "angebot": "Das Modul kann einmal belegt werden.",
+        "inhalte": "Die Studierenden setzen sich mit theoretischen Positionen und aktuellen Diskursen in naturwissenschaftlichen Disziplinen auseinander. Dabei wird ein weit gefasster Medialitätsbegriff zugrunde gelegt, der verschiedene Formen der textlichen, verbalen oder non-verbalen sowie audiovisuellen Kommunikation beinhaltet. In medialitätsorientierten Veranstaltungen eröffnet sich den Studierenden die Möglichkeit des Lesens und Verstehens ebenso wie zur eigenen Produktion von Texten durch die Erprobung, Entwicklung und Reflexion schriftlicher Ausdrucksmöglichkeiten. Entsprechend bleibt auch der Umgang mit Fremdsprachen nicht auf das Nachdenken über strukturelle Aspekte einer Sprache beschränkt, sondern ist so angelegt, dass die Studierenden ihre Sprachkenntnisse über die thematische Auseinandersetzung mit ausgewählten Inhalte vertiefen, praktisch anwenden und zugleich reflektieren.",
+        "fachkompetenz": "Die Studierenden verfügen über theoretische Kenntnisse zu naturwissenschaftlichen Positionen und Theorien. Sie sind in der Lage, aktuellen Diskursen zu folgen, einzelne Beiträge inhaltlich zu bewerten, einzuordnen und kritisch zu reflektieren. Sie können sich theoretische Positionen selbständig erarbeiten und weiterführende Überlegungen anstellen, indem sie diese mit anderen Texten in Verbindung setzen bzw. auf diese Bezug nehmen. Zugleich lernen sie mit Blick auf die kommunikative Funktion von Texten verstehen, welche Bedeutung situationsbezogenen „textexternen“ Merkmalen zukommt und welche Rolle sprachliche, „textinterne“ Merkmale spielen.",
+        "personalkompetenz": "Die Studierenden erlangen mit Hilfe medialitätsorientierter Zugänge (also der Auseinandersetzung mit in Text, Sprache oder Bild gefassten Ideen) eine verbessertes Kommunikationsbewusstsein und verbesserte kommunikative Fähigkeiten. Zugleich steigt mit der Erweiterung verbaler und nonverbaler Ausdrucksmöglichkeiten (z.B. Wahl eines angemessenen Sprachregisters, Codes der nonverbalen Kommunikation, schriftlicher und mündlicher Ausdruck, rhetorische Fähigkeiten – Ideen/ Positionen formulieren/ argumentativ verteidigen) auch die Fähigkeit zum Austausch über kulturelle und sprachliche Grenzen hinweg.",
+        "lernformen": "Seminargespräch, Vorlesungsbestandteile, Gruppenarbeitsphasen, Kurzreferate, Präsentationen, Plenumsdiskussionen, kleinere Vor- und Nachbereitungsaufgaben (z.B. Protokolle, Selbststudium, Recherche- und Lektürearbeit, Anfertigen einer wissenschaftlichen Arbeit)",
+        "credits": 5,
+        "pruefungsformen": null,
+        "pruefungsleistungen": null,
+        "studienleistungen": null,
+        "dauer": "Dauer: 1 Semester\r\nHäufigkeit: i.d.R. jedes Semester \r\nEinige Lehrveranstaltungen des Moduls werden jedes Semester angeboten, andere Lehrveranstaltungen finden nur alle zwei oder drei Semester statt. In einigen Fällen findet ein Angebot nur einmalig statt. Weiter ist es möglich, dass Angebote aufeinander aufbauen und dann in wechselnden Semestern angeboten werden",
+        "voraussetzungen": "Modul &#34;Wissenschaft lehrt Verstehen&#34;",
+        "workload_praesenz": 28,
+        "workload_vornachbereitung": 40,
+        "workload_studienleistung": 20,
+        "workload_pruefung": 62,
+        "workload_summe": null,
+        "sonstiges": "Für Fragen der ANERKENNUNG VON STUDIENLEISTUNGEN in diesem Modul wenden Sie sich bitte ans TEAM KOMPLEMENTÄRSTUDIUM. Informationen dazu finden Sie unter https://www.leuphana.de/college/studium/ks.html",
+        "semester_id": 48,
+        "modulzuordnungen": {
+            "modulzuordnungen": [
+                {
+                    "gebiet": {
+                        "id": 10627,
+                        "name": "Komplementärstudium",
+                        "art": "komplement",
+                        "studiengang": {
+                            "id": 1223,
+                            "name": "Lehren und Lernen",
+                            "abschluss": "B.A."
+                        }
+                    },
+                    "semester": "2,3,4,5,6",
+                    "bereich": "Naturwissenschaftliche Perspektive",
+                    "bereich_en": null
+                },
+                {
+                    "gebiet": {
+                        "id": 10641,
+                        "name": "Komplementärstudium",
+                        "art": "komplement",
+                        "studiengang": {
+                            "id": 1224,
+                            "name": "Leuphana Bachelor",
+                            "abschluss": "B.A./B.Eng./B.Sc./LL.B."
+                        }
+                    },
+                    "semester": "2,3,4,5,6",
+                    "bereich": "Naturwissenschaftliche Perspektive",
+                    "bereich_en": null
+                },
+                {
+                    "gebiet": {
+                        "id": 10852,
+                        "name": "Komplementärstudium",
+                        "art": "komplement",
+                        "studiengang": {
+                            "id": 1253,
+                            "name": "Sozialpädagogik",
+                            "abschluss": "B.A."
+                        }
+                    },
+                    "semester": "4",
+                    "bereich": "Naturwissenschaftliche Perspektive",
+                    "bereich_en": null
+                },
+                {
+                    "gebiet": {
+                        "id": 10873,
+                        "name": "Komplementärstudium",
+                        "art": "komplement",
+                        "studiengang": {
+                            "id": 1255,
+                            "name": "Wirtschaftspädagogik",
+                            "abschluss": "B.A."
+                        }
+                    },
+                    "semester": "6",
+                    "bereich": null,
+                    "bereich_en": null
+                }
+            ]
+        }
+    },
+    {
+        "id": 58538,
+        "name": "Methodenorientierte Zugänge zu den Naturwissenschaften",
+        "nummer": "51701000",
+        "angebot": "Das Modul kann einmal belegt werden.",
+        "inhalte": "Die Perspektive führt anhand ausgesuchter Beispiele in naturwissenschaftliche Methoden und dahinterliegende Denkfiguren ein. Im Vordergrund steht die Frage, mit welchen Herangehensweisen Naturphänomene systematisch auf Gesetzmäßigkeiten hin erforscht und erklärt werden und wie die gewonnenen Erkenntnisse in den Gesundheits-, Agrar- oder Technischen Wissenschaften nutzbar gemacht werden. Dabei werden auch die Entstehung, Verwendung und Bewertung bestimmter Technik(en) im Hinblick auf Individuen und Gesellschaft kritisch diskutiert.",
+        "fachkompetenz": "Wissen \r\nDie Studierenden haben verinnerlicht, wie unterschiedliche methodische Zugänge mit bestimmten Aspekten naturwissenschaftlicher Denkfiguren zusammenhängen. \r\nDie Studierenden sind in der Lage, Wege naturwissenschaftlicher Erkenntnisgewinnung nachzuvollziehen und dessen Nutzbarmachung für Technik, Medizin oder Umweltschutz mit Blick auf mögliche Folgewirkungen zu reflektieren.\r\n\r\nFertigkeiten\r\nDie Studierenden lernen natur- und ingenieurwissenschaftliche Methoden so einzusetzen, dass sie zielorientiertes Planungs- und Handlungswissen gewinnen.\r\nDie Studierenden können grundlegende epistemologische Spezifika/Charakteristika ihrer eigenen wissenschaftlichen Disziplin (Major) ebenso wie die anderer Disziplinen benennen und zu bestimmten Methoden in Beziehung setzen.",
+        "personalkompetenz": "Sozialkompetenz\r\nDie Studierenden sind in der Lage, naturwissenschaftliche Wege der Erkenntnisgewinnung zu verstehen und sich aktiv in aktuelle Debatten über die Entstehung, Verwendung und Bewertung bestimmter Technik(en) im Hinblick auf Folgewirkungen einzubringen.\r\nDie Studierenden verfügen über die Fähigkeit, komplexe fachbezogene Probleme und Lösungen über die eigene wissenschaftliche Disziplin hinaus gegenüber Fachleuten argumentativ zu vertreten und mit ihnen weiterzuentwickeln.\r\n\r\nSelbstständigkeit\r\nDie Studierenden können eigene und fremde Arbeitsprozesse und -ergebnisse mit Blick auf die ihnen zugrunde liegenden Methoden aus verschiedenen wissenschaftlichen Perspektiven reflektieren. \r\nDie Studierenden können vorausschauend und verantwortlich in Expertenteams arbeiten und dabei ihre disziplinäre methodische Expertise in angemessener Form vertreten.",
+        "lernformen": "Seminargespräch, Vorlesungsbestandteile, Gruppenarbeitsphasen, Kurzreferate, Präsentationen, Plenumsdiskussionen, kleinere Vor- und Nachbereitungsaufgaben (z.B. Protokolle, Selbststudium, Recherche- und Lektürearbeit, Anfertigen einer wissenschaftlichen Arbeit)",
+        "credits": 5,
+        "pruefungsformen": null,
+        "pruefungsleistungen": null,
+        "studienleistungen": null,
+        "dauer": "Dauer: 1 Semester\r\nHäufigkeit: i.d.R. jedes Semester \r\nEinige Lehrveranstaltungen des Moduls werden jedes Semester angeboten, andere Lehrveranstaltungen finden nur alle zwei oder drei Semester statt. In einigen Fällen findet ein Angebot nur einmalig statt. Weiter ist es möglich, dass Angebote aufeinander aufbauen und dann in wechselnden Semestern angeboten werden",
+        "voraussetzungen": "Module „Wissenschaft kennt disziplinäre Grenzen“ und „Wissenschaft nutzt Methoden I“ (bzw. ab WS21/22: „Wissenschaft produziert: Methodisches Wissen&#34;)",
+        "workload_praesenz": 28,
+        "workload_vornachbereitung": 40,
+        "workload_studienleistung": 20,
+        "workload_pruefung": 62,
+        "workload_summe": null,
+        "sonstiges": "Für Fragen der ANERKENNUNG VON STUDIENLEISTUNGEN in diesem Modul wenden Sie sich bitte ans TEAM KOMPLEMENTÄRSTUDIUM. Informationen dazu finden Sie unter https://www.leuphana.de/college/studium/ks.html",
+        "semester_id": 48,
+        "modulzuordnungen": {
+            "modulzuordnungen": [
+                {
+                    "gebiet": {
+                        "id": 10627,
+                        "name": "Komplementärstudium",
+                        "art": "komplement",
+                        "studiengang": {
+                            "id": 1223,
+                            "name": "Lehren und Lernen",
+                            "abschluss": "B.A."
+                        }
+                    },
+                    "semester": "2,3,4,5,6",
+                    "bereich": "Naturwissenschaftliche Perspektive",
+                    "bereich_en": null
+                },
+                {
+                    "gebiet": {
+                        "id": 10641,
+                        "name": "Komplementärstudium",
+                        "art": "komplement",
+                        "studiengang": {
+                            "id": 1224,
+                            "name": "Leuphana Bachelor",
+                            "abschluss": "B.A./B.Eng./B.Sc./LL.B."
+                        }
+                    },
+                    "semester": "2,3,4,5,6",
+                    "bereich": "Naturwissenschaftliche Perspektive",
+                    "bereich_en": null
+                },
+                {
+                    "gebiet": {
+                        "id": 10852,
+                        "name": "Komplementärstudium",
+                        "art": "komplement",
+                        "studiengang": {
+                            "id": 1253,
+                            "name": "Sozialpädagogik",
+                            "abschluss": "B.A."
+                        }
+                    },
+                    "semester": "4",
+                    "bereich": "Naturwissenschaftliche Perspektive",
+                    "bereich_en": null
+                },
+                {
+                    "gebiet": {
+                        "id": 10873,
+                        "name": "Komplementärstudium",
+                        "art": "komplement",
+                        "studiengang": {
+                            "id": 1255,
+                            "name": "Wirtschaftspädagogik",
+                            "abschluss": "B.A."
+                        }
+                    },
+                    "semester": "6",
+                    "bereich": null,
+                    "bereich_en": null
+                }
+            ]
+        }
+    },
+    {
+        "id": 58537,
+        "name": "Praxisorientierte Zugänge zu den Naturwissenschaften",
+        "nummer": "51702000",
+        "angebot": "Das Modul kann einmal belegt werden.",
+        "inhalte": "Die Lehrveranstaltungen in diesem Modul befassen sich mit der Konzeption, Planung und/oder der Durchführung von naturwissenschaftlich orientierten Projekten bzw. es stehen entsprechende Praxispartnerschaften im Mittelpunkt. Anhand von Fallbeispielen, konkreten Projekten oder in Form begleiteter Praktika wird den Studierenden die Möglichkeit gegeben, das im Studium erworbene Wissen anzuwenden und praktische Erfahrungen zu sammeln, handlungsorientierte Methoden wie das Projektmanagement zu erproben, fachbezogenes Studieren mit gesellschaftlichem Engagement zu verknüpfen (Service Learning) und berufsrelevante Kompetenzen zu erwerben. In den Lehrveranstaltungen setzen sich die Studierenden aber auch auf theoretischer Ebene mit Methoden, Vorgehensweisen und Kompetenzen für die Praxis auseinander.",
+        "fachkompetenz": "Die Studierenden wissen, was ein ausgereiftes Projektkonzept beinhalten muss und haben theoretische und praktische Kenntnisse über gängige Strukturen und Abläufe der Projektarbeit. Sie können ein ausgearbeitetes Konzept umsetzen und ggf. erforderliche Modifizierungen daran vornehmen. Die Studierenden kennen Planungsmethoden und Strategien der Projektarbeit und haben Erfahrungen mit der Übertragung und Anwendung zentraler Themenbereiche wie Formulierung eines Zielsystems, Budgeterstellung, Kapazitäts-, Zeit- und Maßnahmenplanung etc. auf ein Fallbeispiel oder ein konkretes Projekt gesammelt. Sie haben ein tieferes Verständnis für prozessorientierte Strukturen entwickelt und wissen, was eine ergebnisorientierte Vorgehensweise erfordert.",
+        "personalkompetenz": "Die Studierenden verfügen über praktische Erfahrungen der projektbezogenen Zusammenarbeit in einem Team und kennen die damit verbundenen Anforderungen an Kommunikation, Verantwortungsübernahme und Verlässlichkeit. Sie sind sensibel gegenüber unterschiedlichen sozialen und gesellschaftlichen Wertesystemen und können daraus resultierende Sicht- und Handlungsweisen von Projektbeteiligten reflektieren. \r\nDie Studierenden sind fähig, sich über disziplinäre Grenzen hinweg auszutauschen, können vorausschauend und verantwortlich in Expertenteams arbeiten und sind kritik- und konfliktfähig. Die Studierenden sind zum Denken in komplexen Zusammenhängen fähig, sind lernbereit und offen für unbekannte Methoden und Vorgehensweisen und verfügen über lösungsorientierte Handlungskompetenz.",
+        "lernformen": "Seminargespräch, Vorlesungsbestandteile, Gruppenarbeitsphasen, Kurzreferate, Präsentationen, Plenumsdiskussionen, kleinere Vor- und Nachbereitungsaufgaben (z.B. Protokolle, Selbststudium, Recherche- und Lektürearbeit, Anfertigen einer wissenschaftlichen Arbeit)",
+        "credits": 5,
+        "pruefungsformen": null,
+        "pruefungsleistungen": null,
+        "studienleistungen": null,
+        "dauer": "Dauer: 1 Semester\r\nHäufigkeit: i.d.R. jedes Semester \r\nEinige Lehrveranstaltungen des Moduls werden jedes Semester angeboten, andere Lehrveranstaltungen finden nur alle zwei oder drei Semester statt. In einigen Fällen findet ein Angebot nur einmalig statt. Weiter ist es möglich, dass Angebote aufeinander aufbauen und dann in wechselnden Semestern angeboten werden",
+        "voraussetzungen": "Projektseminar im Rahmen des Moduls &#34;Wissenschaft trägt Verantwortung&#34;",
+        "workload_praesenz": 28,
+        "workload_vornachbereitung": 40,
+        "workload_studienleistung": 20,
+        "workload_pruefung": 62,
+        "workload_summe": null,
+        "sonstiges": "Für Fragen der ANERKENNUNG VON STUDIENLEISTUNGEN in diesem Modul wenden Sie sich bitte ans TEAM KOMPLEMENTÄRSTUDIUM. Informationen dazu finden Sie unter https://www.leuphana.de/college/studium/ks.html",
+        "semester_id": 48,
+        "modulzuordnungen": {
+            "modulzuordnungen": [
+                {
+                    "gebiet": {
+                        "id": 10627,
+                        "name": "Komplementärstudium",
+                        "art": "komplement",
+                        "studiengang": {
+                            "id": 1223,
+                            "name": "Lehren und Lernen",
+                            "abschluss": "B.A."
+                        }
+                    },
+                    "semester": "2,3,4,5,6",
+                    "bereich": "Naturwissenschaftliche Perspektive",
+                    "bereich_en": null
+                },
+                {
+                    "gebiet": {
+                        "id": 10641,
+                        "name": "Komplementärstudium",
+                        "art": "komplement",
+                        "studiengang": {
+                            "id": 1224,
+                            "name": "Leuphana Bachelor",
+                            "abschluss": "B.A./B.Eng./B.Sc./LL.B."
+                        }
+                    },
+                    "semester": "2,3,4,5,6",
+                    "bereich": "Naturwissenschaftliche Perspektive",
+                    "bereich_en": null
+                },
+                {
+                    "gebiet": {
+                        "id": 10852,
+                        "name": "Komplementärstudium",
+                        "art": "komplement",
+                        "studiengang": {
+                            "id": 1253,
+                            "name": "Sozialpädagogik",
+                            "abschluss": "B.A."
+                        }
+                    },
+                    "semester": "4",
+                    "bereich": "Naturwissenschaftliche Perspektive",
+                    "bereich_en": null
+                },
+                {
+                    "gebiet": {
+                        "id": 10873,
+                        "name": "Komplementärstudium",
+                        "art": "komplement",
+                        "studiengang": {
+                            "id": 1255,
+                            "name": "Wirtschaftspädagogik",
+                            "abschluss": "B.A."
+                        }
+                    },
+                    "semester": "6",
+                    "bereich": null,
+                    "bereich_en": null
+                }
+            ]
+        }
+    },
+    {
+        "id": 58542,
+        "name": "Medialitätsorientierte Zugänge zu den Sozialwissenschaften",
+        "nummer": "26703000",
+        "angebot": "Das Modul kann einmal belegt werden.",
+        "inhalte": "Die Studierenden setzen sich mit theoretischen Positionen und aktuellen Diskursen in sozialwissenschaftlichen Disziplinen auseinander. Dabei wird ein weit gefasster Medialitätsbegriff zugrunde gelegt, der verschiedene Formen der textlichen, verbalen oder non-verbalen sowie audiovisuellen Kommunikation beinhaltet. In medialitätsorientierten Veranstaltungen eröffnet sich den Studierenden die Möglichkeit des Lesens und Verstehens ebenso wie zur eigenen Produktion von Texten durch die Erprobung, Entwicklung und Reflexion schriftlicher Ausdrucksmöglichkeiten. Entsprechend bleibt auch der Umgang mit Fremdsprachen nicht auf das Nachdenken über strukturelle Aspekte einer Sprache beschränkt, sondern ist so angelegt, dass die Studierenden ihre Sprachkenntnisse über die thematische Auseinandersetzung mit ausgewählten Inhalten vertiefen, praktisch anwenden und zugleich reflektieren.",
+        "fachkompetenz": "Die Studierenden verfügen über theoretische Kenntnisse zu sozialwissenschaftlichen Positionen und Theorien. Sie sind in der Lage, aktuellen Diskursen zu folgen, einzelne Beiträge inhaltlich zu bewerten, einzuordnen und kritisch zu reflektieren. Sie können sich theoretische Positionen selbständig erarbeiten und weiterführende Überlegungen anstellen, indem sie diese mit anderen Texten in Verbindung setzen bzw. auf diese Bezug nehmen. Zugleich lernen sie mit Blick auf die kommunikative Funktion von Texten verstehen, welche Bedeutung situationsbezogenen „textexternen“ Merkmalen zukommt und welche Rolle sprachliche, „textinterne“ Merkmale spielen.",
+        "personalkompetenz": "Die Studierenden erlangen mit Hilfe medialitätsorientierter Zugänge (also der Auseinandersetzung mit in Text, Sprache oder Bild gefassten Ideen) eine verbessertes Kommunikationsbewusstsein und verbesserte kommunikative Fähigkeiten. Zugleich steigt mit der Erweiterung verbaler und nonverbaler Ausdrucksmöglichkeiten (z.B. Wahl eines angemessenen Sprachregisters, Codes der nonverbalen Kommunikation, schriftlicher und mündlicher Ausdruck, rhetorische Fähigkeiten – Ideen/ Positionen formulieren/ argumentativ verteidigen) auch die Fähigkeit zum Austausch über kulturelle und sprachliche Grenzen hinweg.",
+        "lernformen": "Seminargespräch, Vorlesungsbestandteile, Gruppenarbeitsphasen, Kurzreferate, Präsentationen, Plenumsdiskussionen, kleinere Vor- und Nachbereitungsaufgaben (z.B. Protokolle, Selbststudium, Recherche- und Lektürearbeit, Anfertigen einer wissenschaftlichen Arbeit)",
+        "credits": 5,
+        "pruefungsformen": null,
+        "pruefungsleistungen": null,
+        "studienleistungen": null,
+        "dauer": "Dauer: 1 Semester\r\nHäufigkeit: i.d.R. jedes Semester \r\nEinige Lehrveranstaltungen des Moduls werden jedes Semester angeboten, andere Lehrveranstaltungen finden nur alle zwei oder drei Semester statt. In einigen Fällen findet ein Angebot nur einmalig statt. In Ausnahmefällen ist es möglich, dass Angebote aufeinander aufbauen und dann in wechselnden Semestern angeboten werden",
+        "voraussetzungen": "Modul &#34;Wissenschaft lehrt Verstehen&#34;",
+        "workload_praesenz": 28,
+        "workload_vornachbereitung": 40,
+        "workload_studienleistung": 20,
+        "workload_pruefung": 62,
+        "workload_summe": null,
+        "sonstiges": "Für Fragen der ANERKENNUNG VON STUDIENLEISTUNGEN in diesem Modul wenden Sie sich bitte ans TEAM KOMPLEMENTÄRSTUDIUM. Informationen dazu finden Sie unter https://www.leuphana.de/college/studium/ks.html",
+        "semester_id": 48,
+        "modulzuordnungen": {
+            "modulzuordnungen": [
+                {
+                    "gebiet": {
+                        "id": 10627,
+                        "name": "Komplementärstudium",
+                        "art": "komplement",
+                        "studiengang": {
+                            "id": 1223,
+                            "name": "Lehren und Lernen",
+                            "abschluss": "B.A."
+                        }
+                    },
+                    "semester": "2,3,4,5,6",
+                    "bereich": "Sozialwissenschaftliche Perspektive",
+                    "bereich_en": null
+                },
+                {
+                    "gebiet": {
+                        "id": 10641,
+                        "name": "Komplementärstudium",
+                        "art": "komplement",
+                        "studiengang": {
+                            "id": 1224,
+                            "name": "Leuphana Bachelor",
+                            "abschluss": "B.A./B.Eng./B.Sc./LL.B."
+                        }
+                    },
+                    "semester": "2,3,4,5,6",
+                    "bereich": "Sozialwissenschaftliche Perspektive",
+                    "bereich_en": null
+                },
+                {
+                    "gebiet": {
+                        "id": 10852,
+                        "name": "Komplementärstudium",
+                        "art": "komplement",
+                        "studiengang": {
+                            "id": 1253,
+                            "name": "Sozialpädagogik",
+                            "abschluss": "B.A."
+                        }
+                    },
+                    "semester": "4",
+                    "bereich": "Sozialwissenschaftliche Perspektive",
+                    "bereich_en": null
+                },
+                {
+                    "gebiet": {
+                        "id": 10873,
+                        "name": "Komplementärstudium",
+                        "art": "komplement",
+                        "studiengang": {
+                            "id": 1255,
+                            "name": "Wirtschaftspädagogik",
+                            "abschluss": "B.A."
+                        }
+                    },
+                    "semester": "6",
+                    "bereich": null,
+                    "bereich_en": null
+                }
+            ]
+        }
+    },
+    {
+        "id": 58544,
+        "name": "Methodenorientierte Zugänge zu den Sozialwissenschaften",
+        "nummer": "26701000",
+        "angebot": null,
+        "inhalte": "Die Perspektive führt anhand ausgesuchter Beispiele in sozialwissenschaftliche Methoden und dahinterliegende Denkfiguren ein. Im Vordergrund steht die Frage, mit welchen Herangehensweisen soziale Phänomene systematisch auf Gesetzmäßigkeiten hin erforscht und erklärt werden und wie die gewonnenen Erkenntnisse nutzbar gemacht werden. Dabei werden auch die Entstehung, Verwendung und Bewertung bestimmter Technik(en) im Hinblick auf Individuen und Gesellschaft kritisch diskutiert.",
+        "fachkompetenz": "Die Studierenden haben verinnerlicht, wie unterschiedliche methodische Zugänge mit bestimmten Aspekten sozialwissenschaftlicher Denkfiguren zusammenhängen. \r\nDie Studierenden sind in der Lage, Wege sozialwissenschaftlicher Erkenntnisgewinnung nachzuvollziehen und dessen Nutzbarmachung mit Blick auf mögliche Folgewirkungen zu reflektieren.\r\n\r\nDie Studierenden lernen sozialwissenschaftliche Methoden so einzusetzen, dass sie zielorientiertes Planungs- und Handlungswissen gewinnen \r\nDie Studierenden können grundlegende epistemologische Spezifika/Charakteristika ihrer eigenen wissenschaftlichen Disziplin (Major) ebenso wie die anderer Disziplinen benennen und zu bestimmten Methoden in Beziehung setzen",
+        "personalkompetenz": "Die Studierenden sind in der Lage, sozialwissenschaftliche Wege der Erkenntnisgewinnung zu verstehen und sich aktiv in aktuelle Debatten über die Entstehung, Verwendung und Bewertung bestimmter Technik(en) im Hinblick auf Folgewirkungen für einzubringen. Die Studierenden verfügen über die Fähigkeit, komplexe fachbezogene Probleme und Lösungen über die eigene wissenschaftliche Disziplin hinaus gegenüber Fachleuten argumentativ zu vertreten und mit ihnen weiterzuentwickeln.\r\nDie Studierenden können eigene und fremde Arbeitsprozesse und -ergebnisse mit Blick auf die ihnen zugrunde liegenden Methoden aus verschiedenen wissenschaftlichen Perspektiven reflektieren. \r\nDie Studierenden können vorausschauend und verantwortlich in Expertenteams arbeiten und dabei ihre disziplinäre methodische Expertise in angemessener Form vertreten.",
+        "lernformen": "Seminargespräch, Vorlesungsbestandteile, Gruppenarbeitsphasen, Kurzreferate, Präsentationen, Plenumsdiskussionen, kleinere Vor- und Nachbereitungsaufgaben (z.B. Protokolle, Selbststudium, Recherche- und Lektürearbeit, Anfertigen einer wissenschaftlichen Arbeit)",
+        "credits": 5,
+        "pruefungsformen": null,
+        "pruefungsleistungen": null,
+        "studienleistungen": null,
+        "dauer": "Dauer: 1 Semester\r\nHäufigkeit: i.d.R. jedes Semester \r\nEinige Lehrveranstaltungen des Moduls werden jedes Semester angeboten, andere Lehrveranstaltungen finden nur alle zwei oder drei Semester statt. In einigen Fällen findet ein Angebot nur einmalig statt. In Ausnahmefällen ist es möglich, dass Angebote aufeinander aufbauen und dann in wechselnden Semestern angeboten werden",
+        "voraussetzungen": "Module „Wissenschaft kennt disziplinäre Grenzen“ und „Wissenschaft nutzt Methoden I“ (bzw. ab WS21/22: „Wissenschaft produziert: Methodisches Wissen&#34;)",
+        "workload_praesenz": 28,
+        "workload_vornachbereitung": 40,
+        "workload_studienleistung": 20,
+        "workload_pruefung": 62,
+        "workload_summe": null,
+        "sonstiges": "Für Fragen der ANERKENNUNG VON STUDIENLEISTUNGEN in diesem Modul wenden Sie sich bitte ans TEAM KOMPLEMENTÄRSTUDIUM. Informationen dazu finden Sie unter https://www.leuphana.de/college/studium/ks.html",
+        "semester_id": 48,
+        "modulzuordnungen": {
+            "modulzuordnungen": [
+                {
+                    "gebiet": {
+                        "id": 10627,
+                        "name": "Komplementärstudium",
+                        "art": "komplement",
+                        "studiengang": {
+                            "id": 1223,
+                            "name": "Lehren und Lernen",
+                            "abschluss": "B.A."
+                        }
+                    },
+                    "semester": "2,3,4,5,6",
+                    "bereich": "Sozialwissenschaftliche Perspektive",
+                    "bereich_en": null
+                },
+                {
+                    "gebiet": {
+                        "id": 10641,
+                        "name": "Komplementärstudium",
+                        "art": "komplement",
+                        "studiengang": {
+                            "id": 1224,
+                            "name": "Leuphana Bachelor",
+                            "abschluss": "B.A./B.Eng./B.Sc./LL.B."
+                        }
+                    },
+                    "semester": "2,3,4,5,6",
+                    "bereich": "Sozialwissenschaftliche Perspektive",
+                    "bereich_en": null
+                },
+                {
+                    "gebiet": {
+                        "id": 10852,
+                        "name": "Komplementärstudium",
+                        "art": "komplement",
+                        "studiengang": {
+                            "id": 1253,
+                            "name": "Sozialpädagogik",
+                            "abschluss": "B.A."
+                        }
+                    },
+                    "semester": "4",
+                    "bereich": "Sozialwissenschaftliche Perspektive",
+                    "bereich_en": null
+                },
+                {
+                    "gebiet": {
+                        "id": 10873,
+                        "name": "Komplementärstudium",
+                        "art": "komplement",
+                        "studiengang": {
+                            "id": 1255,
+                            "name": "Wirtschaftspädagogik",
+                            "abschluss": "B.A."
+                        }
+                    },
+                    "semester": "6",
+                    "bereich": null,
+                    "bereich_en": null
+                }
+            ]
+        }
+    },
+    {
+        "id": 58543,
+        "name": "Praxisorientierte Zugänge zu den Sozialwissenschaften",
+        "nummer": "26702000",
+        "angebot": "Das Modul kann einmal belegt werden.",
+        "inhalte": "In den Lehrveranstaltungen dieses Moduls werden Praxiserfahrungen gesammelt, Konzepte und Projekte entwickelt, geplant und teilweise auch durchgeführt. Die Praxiserfahrungen sind dabei in Bereichen angesiedelt, die einen Anknüpfungspunkt an die Sozialwissenschaften bieten. Die Zusammenarbeit mit entsprechenden Praxispartner_innen ist möglich.\r\nAnhand von Fallbeispielen, konkreten Projekten oder in Form begleiteter Praktika wird den Studierenden die Möglichkeit gegeben, das im Studium erworbene Wissen anzuwenden und praktische Erfahrungen zu sammeln. Dabei kann ein fachbezogenes Studium mit gesellschaftlichem Engagement verknüpft werden (Service Learning) und berufsrelevante Kompetenzen erworben werden. In den Lehrveranstaltungen findet zudem eine Reflexion der Praxiserfahrung statt, die eine Rückbindung des in der Praxis erworbenen Wissens an das Studium und dort vermittelte Inhalte ermöglicht und somit eine Verknüpfung zwischen Studium und Praxis herstellt.",
+        "fachkompetenz": "Die Studierenden wissen, was ein ausgereiftes Projektkonzept beinhalten muss und haben theoretische und praktische Kenntnisse über gängige Strukturen und Abläufe der Projektarbeit. Sie können ein ausgearbeitetes Konzept umsetzen und ggf. erforderliche Modifizierungen daran vornehmen. Die Studierenden kennen Planungsmethoden und Strategien der Projektarbeit und haben Erfahrungen mit der Übertragung und Anwendung zentraler Themenbereiche wie Formulierung eines Zielsystems, Budgeterstellung, Kapazitäts-, Zeit- und Maßnahmenplanung etc. auf ein Fallbeispiel oder ein konkretes Projekt gesammelt. Sie haben ein tieferes Verständnis für prozessorientierte Strukturen entwickelt und wissen, was eine ergebnisorientierte Vorgehensweise erfordert.",
+        "personalkompetenz": "Die Studierenden verfügen über praktische Erfahrungen der projektbezogenen Zusammenarbeit in einem Team und kennen die damit verbundenen Anforderungen an Kommunikation, Verantwortungsübernahme und Verlässlichkeit. Sie sind sensibel gegenüber unterschiedlichen sozialen und gesellschaftlichen Wertesystemen und können daraus resultierende Sicht- und Handlungsweisen von Projektbeteiligten reflektieren. \r\nDie Studierenden sind fähig, sich über disziplinäre Grenzen hinweg auszutauschen, können vorausschauend und verantwortlich in Expertenteams arbeiten und sind kritik- und konfliktfähig. Die Studierenden sind zum Denken in komplexen Zusammenhängen fähig, sind lernbereit und offen für unbekannte Methoden und Vorgehensweisen und verfügen über lösungsorientierte Handlungskompetenz.",
+        "lernformen": "Seminargespräch, Vorlesungsbestandteile, Gruppenarbeitsphasen, Kurzreferate, Präsentationen, Plenumsdiskussionen, kleinere Vor- und Nachbereitungsaufgaben (z.B. Protokolle, Selbststudium, Recherche- und Lektürearbeit, Anfertigen einer wissenschaftlichen Arbeit)",
+        "credits": 5,
+        "pruefungsformen": null,
+        "pruefungsleistungen": null,
+        "studienleistungen": null,
+        "dauer": "Dauer: 1 Semester\r\nHäufigkeit: i.d.R. jedes Semester \r\nEinige Lehrveranstaltungen des Moduls werden jedes Semester angeboten, andere Lehrveranstaltungen finden nur alle zwei oder drei Semester statt. In einigen Fällen findet ein Angebot nur einmalig statt. In Ausnahmefällen ist es möglich, dass Angebote aufeinander aufbauen und dann in wechselnden Semestern angeboten werden",
+        "voraussetzungen": "Projektseminar des Moduls &#34;Wissenschaft trägt Verantwortung&#34;",
+        "workload_praesenz": 28,
+        "workload_vornachbereitung": 40,
+        "workload_studienleistung": 20,
+        "workload_pruefung": 62,
+        "workload_summe": null,
+        "sonstiges": "Für Fragen der ANERKENNUNG VON STUDIENLEISTUNGEN in diesem Modul wenden Sie sich bitte ans TEAM KOMPLEMENTÄRSTUDIUM. Informationen dazu finden Sie unter https://www.leuphana.de/college/studium/ks.html",
+        "semester_id": 48,
+        "modulzuordnungen": {
+            "modulzuordnungen": [
+                {
+                    "gebiet": {
+                        "id": 10627,
+                        "name": "Komplementärstudium",
+                        "art": "komplement",
+                        "studiengang": {
+                            "id": 1223,
+                            "name": "Lehren und Lernen",
+                            "abschluss": "B.A."
+                        }
+                    },
+                    "semester": "2,3,4,5,6",
+                    "bereich": "Sozialwissenschaftliche Perspektive",
+                    "bereich_en": null
+                },
+                {
+                    "gebiet": {
+                        "id": 10641,
+                        "name": "Komplementärstudium",
+                        "art": "komplement",
+                        "studiengang": {
+                            "id": 1224,
+                            "name": "Leuphana Bachelor",
+                            "abschluss": "B.A./B.Eng./B.Sc./LL.B."
+                        }
+                    },
+                    "semester": "2,3,4,5,6",
+                    "bereich": "Sozialwissenschaftliche Perspektive",
+                    "bereich_en": null
+                },
+                {
+                    "gebiet": {
+                        "id": 10852,
+                        "name": "Komplementärstudium",
+                        "art": "komplement",
+                        "studiengang": {
+                            "id": 1253,
+                            "name": "Sozialpädagogik",
+                            "abschluss": "B.A."
+                        }
+                    },
+                    "semester": "4",
+                    "bereich": "Sozialwissenschaftliche Perspektive",
+                    "bereich_en": null
+                },
+                {
+                    "gebiet": {
+                        "id": 10873,
+                        "name": "Komplementärstudium",
+                        "art": "komplement",
+                        "studiengang": {
+                            "id": 1255,
+                            "name": "Wirtschaftspädagogik",
+                            "abschluss": "B.A."
+                        }
+                    },
+                    "semester": "6",
+                    "bereich": null,
+                    "bereich_en": null
+                }
+            ]
+        }
+    }
+]

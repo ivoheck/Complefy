@@ -1,6 +1,9 @@
 import json
 import re
+import os
+import sys
 
+sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
 # Assuming MyStudyWebService is already implemented and available
 from Service.WebService import MyStudyWebService
 
@@ -146,10 +149,10 @@ def main():
     gebiet_id = 10641
     raw_modules = fetch_modules_for_gebiet(gebiet_id)
     parsed_modules = manual_parse_modules(raw_modules)  # Manually parse raw data
-    save_modules_to_json(parsed_modules, "modules.json")  # Save modules for inspection
+    save_modules_to_json(parsed_modules, "modulestest.json")  # Save modules for inspection
     module_ids = extract_module_ids(parsed_modules)
     events_data = fetch_events_for_modules(module_ids)
-    save_to_txt(events_data, "veranstaltungen.txt")
+    save_to_txt(events_data, "veranstaltungentest.txt")
 
 if __name__ == "__main__":
     main()
