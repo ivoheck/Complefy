@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Calendar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: url('/static/images/back.png') no-repeat center top;
+            background-size: cover;
+            color: white;
+        }
+
+        .calendar {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr); /* 7 columns for the weekdays */
+            gap: 10px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .day {
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            color: black;
+        }
+
+        .day-header {
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .entry {
+            margin-top: 10px;
+            background-color: #00796b;
+            color: white;
+            padding: 5px;
+            border-radius: 3px;
+            font-size: 14px;
+        }
+
+        .continue-button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #007bff; /* Standardfarbe */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .continue-button:hover {
+            background-color: #0056b3; /* Hover-Farbe */
+        }
+
+        .list-container {
+            width: 600px; /* Breite des Containers */
+            margin: 0 auto; /* Zentriert den Container */
+            padding: 10px; /* Abstand innerhalb des Containers */
+            border: 2px solid #ccc; /* Umrandung */
+            border-radius: 8px; /* Abgerundete Ecken */
+            background-color: #f9f9f9; /* Hintergrundfarbe */
+            display: flex; /* Flexbox, Standard */
+            flex-direction: column; /* Elemente vertikal anordnen */
+            gap: 10px; /* Abstand zwischen Elementen */
+            font-weight: bold;
+        }
+
+        /* Einzelne Elemente */
+        .list-item {
+            padding: 10px; /* Abstand innerhalb des Elements */
+            background-color: #eaeaea; /* Hintergrundfarbe */
+            border: 1px solid #bbb; /* Umrandung */
+            border-radius: 4px; /* Abgerundete Ecken */
+            font-size: 16px; /* Schriftgröße */
+            text-align: left; /* Text linksbündig */
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 style="text-align: center;">Timetable</h1>
+
+    <div class="calendar" id="calendar"></div>
+
+    <h1 style="text-align: center;">Finished complementary subject</h1>
+
+    <div class="list-container"></div>
+
+    <button class="continue-button" onclick="window.location.href='/complefy_chat';">Continue</button>
+
+    <script>
+        fetch('/api/data')
+            .then(response => response.json())
+            .then(data => {
+                console.log('Fetched Events:', data);
+
+                const daysOfWeek = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+                const calendarEl = document.getElementById('calendar');
+
+                const syllabus = data.syllabus;
+                const finished_comps = data.finished_comps || [];
+
+                function generateCalendar() {
+                    let currentDay = new Date();
+                    // Set current day to the most recent Monday
+                    currentDay.setDate(currentDay.getDate() - currentDay.getDay() + 1); // 1 = Monday (getDay() returns 0 for Sunday)
+
+                    for (let i = 0; i < 7; i++) {
+                        let dayName = daysOfWeek[(currentDay.getDay() + 6) % 7]; // Ensure Monday is the first day
+
+                        let dayElement = document.createElement('div');
+                        dayElement.classList.add('day');
+
+                        let dayHeader = document.createElement('div');
+                        dayHeader.classList.add('day-header');
+                        dayHeader.innerText = dayName;  // Show the weekday name
+                        dayElement.appendChild(dayHeader);
+
+                        const dayEntry = syllabus.filter(entry => entry.day === dayName); // Filter events for the current day
+                        if (dayEntry.length > 0) {
+                            dayEntry.forEach(entry => {
+                                let entryElement = document.createElement('div');
+                                entryElement.classList.add('entry');
+                                entryElement.innerText = `${entry.start} - ${entry.end}`; // Display only the times
+                                dayElement.appendChild(entryElement);
+                            });
+                        } else {
+                            let noEntryElement = document.createElement('div');
+                            noEntryElement.innerText = 'No Entrys';
+                            dayElement.appendChild(noEntryElement); // Display "No Events" for days without events
+                        }
+
+                        calendarEl.appendChild(dayElement);
+                        currentDay.setDate(currentDay.getDate() + 1); // Move to the next day
+                    }
+                }
+
+                function generateList(){
+                    const container = document.querySelector('.list-container');
+
+                    if (finished_comps.length > 0){
+                        finished_comps.forEach(text => {
+                            const div = document.createElement('div'); 
+                            div.className = 'list-item'; 
+                            div.textContent = text; 
+                            container.appendChild(div);
+                        });
+                    }else{
+                        const div = document.createElement('div'); 
+                        div.className = 'list-item'; 
+                        div.textContent = "No items found"; 
+                        container.appendChild(div);
+                    }
+                }
+
+                generateList();
+                generateCalendar();
+            })
+            .catch(error => console.error('Error fetching data:', error));
+    </script>
+
+</body>
+</html>

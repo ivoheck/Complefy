@@ -9,6 +9,7 @@ from backend.tor_input.pdf_to_text import GetCompSubsFromInput
 from backend.llm_connection.llm_connection import LLMConnection, ChatObject
 from PIL import Image
 import numpy as np
+import json
 
 # Füge das Projektverzeichnis zu sys.path hinzu
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -22,7 +23,12 @@ llm = LLMConnection()
 @app.route('/')
 def home():
     # Reset all previously stored data
-    session = None
+    session['syllabus'] = None
+    session['preferences'] = None
+    session['chat'] = None
+    session['preferences'] = None
+    session['finished_comps'] = None
+    session['pre_sorted_comps'] = None
     return render_template('landing_page.html')
 
 @app.route('/upload_data_page')
@@ -41,7 +47,7 @@ def upload_data():
             if syllabus_extension == '.xlsx':
                 syllabus_data_df = pd.read_excel(BytesIO(syllabus_file.read()))
                 syllabus = GetSallybusInfo().from_myStudy_exel_export(syllabus_data_df)
-                session['sallybus'] = syllabus
+                session['syllabus'] = syllabus
                 print(syllabus)
                 print("sallybus als xlsx erhallten")
 
@@ -49,6 +55,7 @@ def upload_data():
                 image = Image.open(BytesIO(syllabus_file.read()))
                 image_np = np.array(image)
                 syllabus = SallybusInfoFromImage(image_np).get_info()
+                session['syllabus'] = syllabus
                 print('test')
                 print(syllabus)
 
@@ -65,9 +72,47 @@ def upload_data():
 
     return render_template('select_interests_page.html')
 
-@app.route('/complefy_chat', methods=['POST','GET'])
-def complefy_chat():
+def get_syllabus_frontend(day,time_stamps):
+    start_hours = time_stamps[0] // 60
+    start_mins = time_stamps[0] % 60
 
+    end_hours = time_stamps[1] // 60
+    end_mins = time_stamps[1] % 60
+
+    return {"day": day.capitalize(), "start": f"{start_hours:02}:{start_mins:02}", "end": f"{end_hours:02}:{end_mins:02}"}
+
+@app.route('/api/data')
+def get_events():
+    data = {}
+    syllabus = []
+    finished_comps = []
+    
+
+    try:
+        syllabus_data = session['syllabus']
+        print(syllabus_data)
+        for day in syllabus_data:
+            for time_stamps in syllabus_data[day]:
+                syllabus.append(get_syllabus_frontend(day, time_stamps))
+
+        print(syllabus)
+
+    except Exception as e:
+        print(e)
+
+    try:
+        finished_comps = session['finished_comps']
+
+    except Exception as e:
+        print(e)
+
+    data['syllabus'] = syllabus
+    data['finished_comps'] = finished_comps
+
+    return jsonify(data)
+
+@app.route('/display_input', methods=['POST'])
+def display_input():
     essay_preference = request.form.get('essay') == 'true'
     exam_preference = request.form.get('exam') == 'true'
     additional_prompt = request.form.get('additionalUserPrompt')
@@ -80,10 +125,44 @@ def complefy_chat():
     
     session['chat'] = ChatObject().get_chat()
 
+    return render_template('display_input_data_page.html')
+
+@app.route('/complefy_chat', methods=['POST','GET'])
+def complefy_chat():
+    #get_pre_sorted_comps()
     return render_template('complefy_chat.html')
 
+def get_pre_sorted_comps():
 
-@app.route('/chat_message', methods=['POST'])
+    with open('backend/Pre_Sorting/modules.json', 'r') as file:
+        modules = json.load(file)
+        modules = modules['module']
+
+    finished_ids = [] #id of modules that done
+    not_finished_ids = []
+    
+    finished_comps = session.get('finished_comps', []) or []
+    for module in modules:
+        if module['name'] in finished_comps:
+            finished_ids.append(module['id'])
+        else:
+            not_finished_ids.append(module['id'])
+
+    #reducing to one id for testing resons
+    #not_finished_ids = [not_finished_ids[1]]
+    pre_sorted_comps = []
+    for id in not_finished_ids:
+        with open(f'backend/Pre_Sorting/parsed_events/parsed_events_module_{str(id)}.json','r') as file:
+            for item in json.load(file):
+                pre_sorted_comps.append(item)
+    
+    #Reduziert ergebnisse auf 20
+    pre_sorted_comps = pre_sorted_comps[0:30]
+
+    return pre_sorted_comps
+
+
+@app.route('/chat_message', methods=['POST','GET'])
 def handle_chat_message():
     data = request.get_json()  # Empfängt die Nachricht als JSON
     message = data.get('message')
@@ -93,21 +172,27 @@ def handle_chat_message():
 
     # Hier kannst du die Nachricht speichern oder weiterverarbeiten
     print(f"Received message: {message}")
-    
-    question = {"role":"user","content": message}
 
-    awser = llm.chat_completion(session['chat'],question)
-    session['chat'] = ChatObject().add_user_promt(session['chat'],question)
-    session['chat'] = ChatObject().add_respones(session['chat'],awser)
+    try:
+        results = LLMConnection().get_results(input_comps=get_pre_sorted_comps(),input_promt=message)
 
-    print(awser)
-    print(type(awser))
+    except:
+        return jsonify({"status": "success", "message": "Error with LLM result","results":[]}), 200
     
-    return jsonify({"status": "success", "message": str(awser)}), 200
+    #question = {"role":"user","content":message}
+    awser = llm.get_result_awnser(message=message,results=results)
+    #session['chat'] = ChatObject().add_user_promt(session['chat'],question)
+    #session['chat'] = ChatObject().add_respones(session['chat'],awser)
+
+    #print(awser)
+    #print(type(awser))
+
+    return jsonify({"status": "success", "message": str(awser),"results_string":results[1],'results':results[0]}), 200
 
 if __name__ == '__main__':
     # Starte den Flask-Server
-    app.run(debug=True)
+    #app.run(debug=False)
+    app.run(host='0.0.0.0', port=5004)
 
 
 #Beispiel Session dict
