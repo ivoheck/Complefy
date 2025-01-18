@@ -215,10 +215,10 @@
                     leftPanel.innerHTML = '';
                     if(data.results != null){
                         for (const element of data.results){
-                            addToLeftPanel(element.name,element.inhalt,element.id)
+                            addToLeftPanel(element.name,element.inhalt,element.id,element.date_string)
                         }
                     }else{
-                        addToLeftPanel(data.results_string,'')
+                        addToLeftPanel(data.results_string,'','')
                     }
 
                 } else {
@@ -241,7 +241,7 @@
             }
         });
 
-        function addToLeftPanel(title,inhalt,id) {
+        function addToLeftPanel(title,inhalt,id,date_string) {
             const leftPanel = document.getElementById('leftPanel');
             const base_link = "https://mystudy.leuphana.de/veranstaltungInformation/show?veranstaltung_id="
 
@@ -249,7 +249,8 @@
             newContent.classList.add('dynamic-container');
 
             const content = `<strong>${title}</strong><br><br>${inhalt}<br><br>
-            <a href="${base_link}${id}" target="_blank">${base_link}${id}</a>`;
+            <a href="${base_link}${id}" target="_blank">${base_link}${id}</a><br><br>
+            ${date_string}`;
             newContent.innerHTML = content;
 
             leftPanel.appendChild(newContent);

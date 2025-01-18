@@ -132,9 +132,24 @@ def complefy_chat():
     #get_pre_sorted_comps()
     return render_template('complefy_chat.html')
 
+def to_german_day(day):
+    days_translation = {
+        'Montag': 'monday',
+        'Dienstag': 'tuesday',
+        'Mittwoch': 'wednesday',
+        'Donnerstag': 'thursday',
+        'Freitag': 'friday',
+        'Samstag': 'saturday',
+        'Sonntag': 'sunday'
+    }
+    return days_translation.get(day, 'Unknown day')
+
+def to_minutes(seconds):
+    return int(seconds/60)
+
 def get_pre_sorted_comps():
 
-    with open('backend/Pre_Sorting/modules.json', 'r') as file:
+    with open('backend/data/modules.json', 'r') as file:
         modules = json.load(file)
         modules = modules['module']
 
@@ -152,13 +167,45 @@ def get_pre_sorted_comps():
     #not_finished_ids = [not_finished_ids[1]]
     pre_sorted_comps = []
     for id in not_finished_ids:
-        with open(f'backend/Pre_Sorting/parsed_events/parsed_events_module_{str(id)}.json','r') as file:
-            for item in json.load(file):
-                pre_sorted_comps.append(item)
-    
-    #Reduziert ergebnisse auf 20
-    pre_sorted_comps = pre_sorted_comps[0:30]
+        with open(f'backend/data/veranstaltungen_json/veranstaltungen_{str(id)}.json','r') as file:
+            
 
+            for item in json.load(file):
+
+                data = {'id': item['id'],
+                        'name': item['name'],
+                        'inhalt': item['inhalt'],
+                        #'date_string': item['termine']['termine'][0]['string']
+                    }
+
+                try:
+                    data['date_string'] = item['termine']['termine'][0]['string']
+                    data_day = to_german_day(item['termine']['termine'][0]['tag'])
+                    data_start_time = to_minutes(item['termine']['termine'][0]['beginn_zeit'])
+                    data_end_time = to_minutes(item['termine']['termine'][0]['ende_zeit'])
+
+                    if session['syllabus'] is not None:
+                        time_confict = False
+                        for i in session['syllabus'][data_day]:
+                            start_time = i[0]
+                            end_time = i[1]
+                            if data_start_time > start_time and data_start_time < end_time or data_end_time > start_time and data_end_time < end_time:
+                                time_confict = True
+                            
+                        if not time_confict:
+                            pre_sorted_comps.append(data) 
+
+                    else:
+                       pre_sorted_comps.append(data) 
+
+                except Exception as e:
+                    data['data_string'] = 'No dates found'
+                    pre_sorted_comps.append(data)
+
+    
+    #Reduziert ergebnisse auf 30
+    print(len(pre_sorted_comps))
+    pre_sorted_comps = pre_sorted_comps[0:30]
     return pre_sorted_comps
 
 
@@ -176,7 +223,8 @@ def handle_chat_message():
     try:
         results = LLMConnection().get_results(input_comps=get_pre_sorted_comps(),input_promt=message)
 
-    except:
+    except Exception as e:
+        print(e)
         return jsonify({"status": "success", "message": "Error with LLM result","results":[]}), 200
     
     #question = {"role":"user","content":message}

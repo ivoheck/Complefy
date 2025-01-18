@@ -1,0 +1,1348 @@
+[
+    {
+        "id": 1141657,
+        "name": "30 Jahre Halle für Kunst Lüneburg: De/Konstruktion eines Archivs",
+        "name_en": "30 Years of Halle für Kunst Lüneburg: De/Constructing an Archive",
+        "nummer": null,
+        "inhalt": "Anlässlich des 30-jährigen Bestehens der Halle für Kunst Lüneburg e. V. sind Studierende eingeladen, gemeinsam verschiedene strukturelle Ausprägungen und Schlüsselmomente in der Historie des Vereins in den Blick zu nehmen. Der Fokus soll dabei nicht nur auf der Institution selbst, sondern auch auf der Entwicklung spekulativer Ideen für die Ausgestaltung von zukünftigen Strukturen und Prozessen liegen. Dazu werden sowohl die Bedingungen der künstlerischen als auch die der kuratorischen Praxis kritisch reflektiert. \r\n\r\nAusgangspunkt des Seminars sind Dokumente, Bildzeugnisse, Schriftstücke und künstlerische Werke aus dem Archiv der Halle für Kunst Lüneburg, die gemeinsam gesichtet, interpretiert und kontextualisiert werden. Das Archivmaterial wird ergänzt und hinterfragt durch Gespräche mit (ehemaligen) Akteur:innen, welche den Verein über die Jahre hinweg geprägt haben. \r\n\r\nIm Vordergrund der Archivrecherche und der Interviews stehen die materiellen wie immateriellen Formen der Zusammenarbeit, die die Halle für Kunst Lüneburg auszeichnen. Welche Rhythmen, Konstellationen und Strukturen haben die Institution geprägt, und wie ließen sich diese neu denken? Wie manifestiert sich die gemeinsame Arbeitspraxis auf inhaltlicher Ebene und welche Ökonomien sind damit verbunden? In welchem Verhältnis stehen Künstler:innen, Kurator:innen und Publikum sowie ihre institutionellen Bezugsrahmen zueinander? Aus der gemeinsamen Forschungsarbeit gehen die diversen Support-Strukturen, auf denen sich die kulturelle Praxis stützt, hervor — fachlicher, sozialer, administrativer, architektonischer sowie finanzieller Art.\r\n\r\nDiese gemeinsame Erschließung des Archivs, die Gespräche mit Zeitzeug:innen und mögliche Zukunftsmodelle der Halle für Kunst Lüneburg werden in einem ergebnisoffenen Publikationsformat präsentiert und zusammengefasst, das anlässlich des 30-jährigen Jubiläums erscheinen wird. ",
+        "ziel": "Das praxisorientierte Seminar soll den Studierenden die Kompetenz vermitteln, eine inhaltliche Reflexion über mögliche Formen und Strukturen der Zusammenarbeit im Kulturbereich in einen praktischen Kontext zu überführen. Das partizipative Format beinhaltet die eigenständige Sichtung und Auswertung von Archivmaterialien und die Erarbeitung und Durchführung qualitativer Interviews mit Zeitzeug:innen sowie deren Aufbereitung und Kontextualisierung im Rahmen einer Publikation, die anlässlich des 30-jährigen Jubiläums der Halle für Kunst Lüneburg erscheinen wird. Die Studierenden sollen sich insofern Kenntnisse im Umgang mit Archivmaterialien sowie ihrer Auswertung aneignen. Unter Einbezug von einschlägiger Forschungsliteratur und anhand von diskurs- und institutionsanalytischen Methoden werden dabei etablierte und spekulative Modelle der kulturellen Praxis diskutiert, die am Beispiel der Halle für Kunst Lüneburg einen konkreten Bezugsrahmen finden. In diesem Prozess werden Studierende dazu angeregt, ihre eigene Position kritisch zu reflektieren und sich im Feld der kulturellen Produktion selbst zu situieren.",
+        "literatur": null,
+        "teilnahmevoraussetzung": null,
+        "studienleistung": null,
+        "pruefungsleistung": null,
+        "sonstiges": null,
+        "www": null,
+        "sws": "2",
+        "tags": "keine",
+        "schueleruni": 0,
+        "studiumgenerale": 0,
+        "semester_id": 48,
+        "lehrveranstaltung": 1,
+        "veranstaltungsart": {
+            "id": 2,
+            "kurztext": "S",
+            "langtext": "Seminar"
+        },
+        "personen": {
+            "personen": [
+                {
+                    "id": 53368,
+                    "vorname": "Lisa",
+                    "nachname": "Deml",
+                    "titel": null
+                },
+                {
+                    "id": 53369,
+                    "vorname": "Marie-Sophie",
+                    "nachname": "Dorsch",
+                    "titel": null
+                }
+            ]
+        },
+        "termine": {
+            "termine": [
+                {
+                    "id": 678544,
+                    "veranstaltung_id": 1141657,
+                    "raum": {
+                        "id": 45,
+                        "kurztext": "C 12.111 Seminarraum",
+                        "langtext": "C 12.111 Seminarraum",
+                        "plaetze": "35",
+                        "kommentar": "Beamer-Anschlussmöglichkeiten: USB-C, HDMI / Der Raum hat 76,57 qm und 35 Plätze. Parlamentarische Bestuhlung.",
+                        "beamer": 1,
+                        "standort": {
+                            "id": 2,
+                            "kurztext": "UC",
+                            "langtext": "Campus"
+                        }
+                    },
+                    "rhythmus": {
+                        "id": 2,
+                        "kurztext": "14-tägl.",
+                        "langtext": "14-täglich"
+                    },
+                    "beginn_datum": 1744322400,
+                    "ende_datum": 1752184800,
+                    "beginn_zeit": 47700,
+                    "ende_zeit": 60300,
+                    "tag": "Freitag",
+                    "string": "14-täglich | Freitag | 14:15 - 17:45 | 11.04.2025 - 11.07.2025 | <a href=\"https://mystudy.leuphana.de/raumplan/details?raum_id=45\">C 12.111 Seminarraum</a>"
+                }
+            ]
+        },
+        "zuordnungen": {
+            "zuordnungen": [
+                {
+                    "modul_id": 58540,
+                    "modul_name": "Praxisorientierte Zugänge zu den Geisteswissenschaften",
+                    "modul_nummer": "21702000",
+                    "gebiet_id": 10627,
+                    "gebiet_name": "Komplementärstudium",
+                    "studiengang_id": 1223,
+                    "studiengang_name": "Lehren und Lernen",
+                    "studiengang_abschluss": "B.A.",
+                    "semester": "2,3,4,5,6",
+                    "bereich": null,
+                    "cp": null,
+                    "pruefungsnummer": null,
+                    "pruefungsleistung": null,
+                    "studienleistung": null
+                },
+                {
+                    "modul_id": 58540,
+                    "modul_name": "Praxisorientierte Zugänge zu den Geisteswissenschaften",
+                    "modul_nummer": "21702000",
+                    "gebiet_id": 10641,
+                    "gebiet_name": "Komplementärstudium",
+                    "studiengang_id": 1224,
+                    "studiengang_name": "Leuphana Bachelor",
+                    "studiengang_abschluss": "B.A./B.Eng./B.Sc./LL.B.",
+                    "semester": "2,3,4,5,6",
+                    "bereich": null,
+                    "cp": null,
+                    "pruefungsnummer": null,
+                    "pruefungsleistung": null,
+                    "studienleistung": null
+                },
+                {
+                    "modul_id": 58540,
+                    "modul_name": "Praxisorientierte Zugänge zu den Geisteswissenschaften",
+                    "modul_nummer": "21702000",
+                    "gebiet_id": 10852,
+                    "gebiet_name": "Komplementärstudium",
+                    "studiengang_id": 1253,
+                    "studiengang_name": "Sozialpädagogik",
+                    "studiengang_abschluss": "B.A.",
+                    "semester": "4",
+                    "bereich": null,
+                    "cp": null,
+                    "pruefungsnummer": null,
+                    "pruefungsleistung": null,
+                    "studienleistung": null
+                },
+                {
+                    "modul_id": 58540,
+                    "modul_name": "Praxisorientierte Zugänge zu den Geisteswissenschaften",
+                    "modul_nummer": "21702000",
+                    "gebiet_id": 10873,
+                    "gebiet_name": "Komplementärstudium",
+                    "studiengang_id": 1255,
+                    "studiengang_name": "Wirtschaftspädagogik",
+                    "studiengang_abschluss": "B.A.",
+                    "semester": "6",
+                    "bereich": null,
+                    "cp": null,
+                    "pruefungsnummer": null,
+                    "pruefungsleistung": null,
+                    "studienleistung": null
+                }
+            ]
+        },
+        "sprache": {
+            "id": 1,
+            "kurztext": "de",
+            "langtext": "Deutsch"
+        }
+    },
+    {
+        "id": 1139023,
+        "name": "Ein Labor für neue Lebensformen: Das Bauhaus in Dessau  (Exkursions-Seminar)",
+        "name_en": "A laboratory for new modes of living: The Bauhaus in Dessau (Excursion Seminar)",
+        "nummer": null,
+        "inhalt": "Wir begeben uns auf eine Erkundung der Spuren des Bauhauses in Dessau, wo die legendäre Kunst- und Gestaltungsschule am längsten wirkte (1925 bis 1932). Hier waren alle drei Bauhausdirektoren – Walter Gropius, Hannes Meyer und Mies van der Rohe – tätig. Im Rahmen dieses Exkursion-Seminars erleben wir die Geschichte und die Gegenwart des Bauhauses. Der Fokus liegt auf der Frage, wie ästhetische Formen soziale Funktionen entfalten. Welche Ideen und Lösungen des Bauhauses – von Alltagsgegenständen über moderne Wohnformen bis zum Bildungskonzept – sind heute noch relevant (etwa in ökologischer oder politischer Hinsicht)?\r\n\r\n \r\n\r\nAblauf und Inhalte:\r\n\r\nIn einer Einführungsveranstaltung verschaffen wir uns zunächst einen Überblick über die gesellschaftlichen und politischen Voraussetzungen für die Entwicklung des Bauhauses und seine Transformation – auch räumlich erkennbar durch den Neubezug des ikonischen Bauhausgebäudes. In dieser 1. Sitzung werden die Projektgruppen gebildet und die Materialien für die Projektarbeit verteilt. Der 2. Termin (online) dient zur Klärung von inhaltlichen Fragen und organisatorischen Details zur Exkursion.\r\n\r\nIm Rahmen der 3-Tages-Exkursion nach Dessau besuchen wir das historische Bauhausgebäude das neue Bauhaus Museum und setzen uns mit den Orten in Dessau auseinander, an denen das Bauhaus seine Spuren hinterlassen hat: Dazu gehören auch die Meisterhäuser, die Wohnsiedlungsprojekt Törten und das Kornhaus Carl Fieger. In Gruppenarbeiten und -präsentationen erschließen wir die Bedeutung dieser Orte und diskutieren ortsbezogene Themen. ",
+        "ziel": "Das Seminar vermittelt Wissen über das Bauhaus als bedeutendste Kunst-, Design- und Architekturschule der Moderne sowie angrenzende Themen wie die Arts-and-Crafts-Bewegung, die Kunstschulreformbewegung und den Werkbund.\r\n\r\nIm Mittelpunkt stehen Fragen zur Funktion des Bauhauses als Denkfabrik für soziale und ökologische Herausforderungen. Historische Objekte und Orte dienen als Ausgangspunkt, um Verbindungen zur Gegenwart herzustellen. Wie können wir die am Bauhaus immer wieder neu verhandelte Frage nach der Bedeutung der Kunst für die Gesellschaft heute bewerten?\r\n\r\nWir beleuchten die Bedeutung der Kunst für das Soziale (damals und heute) und prüfen, inwiefern Bauhaus-Ideen auf aktuelle Fragestellungen (z. B. Klimakrise, Stadtentwicklung, Zusammenleben) übertragbar sind. Das Seminar verbindet verschiedene Fachbereiche wie Kulturwissenschaften, Bildungswissenschaften, Nachhaltigkeitswissenschaften und Entrepreneurship. Die Teilnehmer*innen arbeiten kollaborativ in Projektgruppen und nutzen die vielfältigen Expertisen der Gruppe.",
+        "literatur": null,
+        "teilnahmevoraussetzung": "Die Teilnahme an der Einführungsveranstaltung und der Exkursion ist obligatorisch. Vorkenntnisse zum Bauhaus oder der Epoche sind nicht erforderlich, jedoch die Bereitschaft, sich aktiv mit den Themen auseinanderzusetzen. ",
+        "studienleistung": null,
+        "pruefungsleistung": null,
+        "sonstiges": null,
+        "www": null,
+        "sws": "2",
+        "tags": "keine",
+        "schueleruni": 0,
+        "studiumgenerale": 0,
+        "semester_id": 48,
+        "lehrveranstaltung": 1,
+        "veranstaltungsart": {
+            "id": 2,
+            "kurztext": "S",
+            "langtext": "Seminar"
+        },
+        "personen": {
+            "personen": [
+                {
+                    "id": 46350,
+                    "vorname": "Sandra",
+                    "nachname": "Neugärtner",
+                    "titel": "Dr. phil"
+                }
+            ]
+        },
+        "termine": {
+            "termine": [
+                {
+                    "id": 671215,
+                    "veranstaltung_id": 1139023,
+                    "raum": {
+                        "id": 318,
+                        "kurztext": "C 5.019 Seminarraum",
+                        "langtext": "C 5.019 Seminarraum",
+                        "plaetze": "26",
+                        "kommentar": "Beamer-Anschlussmöglichkeiten: USB-C, HDMI / Der Raum hat 53,26 qm und 26 Plätze.",
+                        "beamer": 1,
+                        "standort": {
+                            "id": 2,
+                            "kurztext": "UC",
+                            "langtext": "Campus"
+                        }
+                    },
+                    "rhythmus": {
+                        "id": 3,
+                        "kurztext": "Einzelt.",
+                        "langtext": "Einzeltermin"
+                    },
+                    "beginn_datum": 1745532000,
+                    "ende_datum": 1745532000,
+                    "beginn_zeit": 46800,
+                    "ende_zeit": 61200,
+                    "tag": "Freitag",
+                    "string": "Einzeltermin | Fr, 25.04.2025, 14:00 - Fr, 25.04.2025, 18:00 | <a href=\"https://mystudy.leuphana.de/raumplan/details?raum_id=318\">C 5.019 Seminarraum</a>"
+                },
+                {
+                    "id": 671216,
+                    "veranstaltung_id": 1139023,
+                    "raum": {
+                        "id": 267,
+                        "kurztext": "intern",
+                        "langtext": "intern",
+                        "plaetze": "0",
+                        "kommentar": null,
+                        "beamer": 0,
+                        "standort": {
+                            "id": 5,
+                            "kurztext": "EXT",
+                            "langtext": "externe Räume"
+                        }
+                    },
+                    "rhythmus": {
+                        "id": 3,
+                        "kurztext": "Einzelt.",
+                        "langtext": "Einzeltermin"
+                    },
+                    "beginn_datum": 1746741600,
+                    "ende_datum": 1746741600,
+                    "beginn_zeit": 54000,
+                    "ende_zeit": 61200,
+                    "tag": "Freitag",
+                    "string": "Einzeltermin | Fr, 09.05.2025, 16:00 - Fr, 09.05.2025, 18:00 | <a href=\"https://mystudy.leuphana.de/raumplan/details?raum_id=267\">intern</a> | Online-Termin"
+                },
+                {
+                    "id": 671217,
+                    "veranstaltung_id": 1139023,
+                    "raum": {
+                        "id": 267,
+                        "kurztext": "intern",
+                        "langtext": "intern",
+                        "plaetze": "0",
+                        "kommentar": null,
+                        "beamer": 0,
+                        "standort": {
+                            "id": 5,
+                            "kurztext": "EXT",
+                            "langtext": "externe Räume"
+                        }
+                    },
+                    "rhythmus": {
+                        "id": 3,
+                        "kurztext": "Einzelt.",
+                        "langtext": "Einzeltermin"
+                    },
+                    "beginn_datum": 1747951200,
+                    "ende_datum": 1747951200,
+                    "beginn_zeit": 36000,
+                    "ende_zeit": 61200,
+                    "tag": "Freitag",
+                    "string": "Einzeltermin | Fr, 23.05.2025, 11:00 - Fr, 23.05.2025, 18:00 | <a href=\"https://mystudy.leuphana.de/raumplan/details?raum_id=267\">intern</a> | Dessau (Exkursion Tag 1)"
+                },
+                {
+                    "id": 671218,
+                    "veranstaltung_id": 1139023,
+                    "raum": {
+                        "id": 308,
+                        "kurztext": "intern",
+                        "langtext": "intern",
+                        "plaetze": "0",
+                        "kommentar": null,
+                        "beamer": 0,
+                        "standort": {
+                            "id": 3,
+                            "kurztext": "VO",
+                            "langtext": "Volgershall"
+                        }
+                    },
+                    "rhythmus": {
+                        "id": 3,
+                        "kurztext": "Einzelt.",
+                        "langtext": "Einzeltermin"
+                    },
+                    "beginn_datum": 1748037600,
+                    "ende_datum": 1748037600,
+                    "beginn_zeit": 32400,
+                    "ende_zeit": 61200,
+                    "tag": "Samstag",
+                    "string": "Einzeltermin | Sa, 24.05.2025, 10:00 - Sa, 24.05.2025, 18:00 | <a href=\"https://mystudy.leuphana.de/raumplan/details?raum_id=308\">intern</a> | Dessau (Exkursion Tag 2)"
+                },
+                {
+                    "id": 671219,
+                    "veranstaltung_id": 1139023,
+                    "raum": {
+                        "id": 308,
+                        "kurztext": "intern",
+                        "langtext": "intern",
+                        "plaetze": "0",
+                        "kommentar": null,
+                        "beamer": 0,
+                        "standort": {
+                            "id": 3,
+                            "kurztext": "VO",
+                            "langtext": "Volgershall"
+                        }
+                    },
+                    "rhythmus": {
+                        "id": 3,
+                        "kurztext": "Einzelt.",
+                        "langtext": "Einzeltermin"
+                    },
+                    "beginn_datum": 1748124000,
+                    "ende_datum": 1748124000,
+                    "beginn_zeit": 32400,
+                    "ende_zeit": 57600,
+                    "tag": "Sonntag",
+                    "string": "Einzeltermin | So, 25.05.2025, 10:00 - So, 25.05.2025, 17:00 | <a href=\"https://mystudy.leuphana.de/raumplan/details?raum_id=308\">intern</a> | Dessau (Exkursion Tag 3)"
+                }
+            ]
+        },
+        "zuordnungen": {
+            "zuordnungen": [
+                {
+                    "modul_id": 58540,
+                    "modul_name": "Praxisorientierte Zugänge zu den Geisteswissenschaften",
+                    "modul_nummer": "21702000",
+                    "gebiet_id": 10627,
+                    "gebiet_name": "Komplementärstudium",
+                    "studiengang_id": 1223,
+                    "studiengang_name": "Lehren und Lernen",
+                    "studiengang_abschluss": "B.A.",
+                    "semester": "2,3,4,5,6",
+                    "bereich": null,
+                    "cp": null,
+                    "pruefungsnummer": null,
+                    "pruefungsleistung": null,
+                    "studienleistung": null
+                },
+                {
+                    "modul_id": 58540,
+                    "modul_name": "Praxisorientierte Zugänge zu den Geisteswissenschaften",
+                    "modul_nummer": "21702000",
+                    "gebiet_id": 10641,
+                    "gebiet_name": "Komplementärstudium",
+                    "studiengang_id": 1224,
+                    "studiengang_name": "Leuphana Bachelor",
+                    "studiengang_abschluss": "B.A./B.Eng./B.Sc./LL.B.",
+                    "semester": "2,3,4,5,6",
+                    "bereich": null,
+                    "cp": null,
+                    "pruefungsnummer": null,
+                    "pruefungsleistung": null,
+                    "studienleistung": null
+                },
+                {
+                    "modul_id": 58540,
+                    "modul_name": "Praxisorientierte Zugänge zu den Geisteswissenschaften",
+                    "modul_nummer": "21702000",
+                    "gebiet_id": 10852,
+                    "gebiet_name": "Komplementärstudium",
+                    "studiengang_id": 1253,
+                    "studiengang_name": "Sozialpädagogik",
+                    "studiengang_abschluss": "B.A.",
+                    "semester": "4",
+                    "bereich": null,
+                    "cp": null,
+                    "pruefungsnummer": null,
+                    "pruefungsleistung": null,
+                    "studienleistung": null
+                },
+                {
+                    "modul_id": 58540,
+                    "modul_name": "Praxisorientierte Zugänge zu den Geisteswissenschaften",
+                    "modul_nummer": "21702000",
+                    "gebiet_id": 10873,
+                    "gebiet_name": "Komplementärstudium",
+                    "studiengang_id": 1255,
+                    "studiengang_name": "Wirtschaftspädagogik",
+                    "studiengang_abschluss": "B.A.",
+                    "semester": "6",
+                    "bereich": null,
+                    "cp": null,
+                    "pruefungsnummer": null,
+                    "pruefungsleistung": null,
+                    "studienleistung": null
+                }
+            ]
+        },
+        "sprache": {
+            "id": 1,
+            "kurztext": "de",
+            "langtext": "Deutsch"
+        }
+    },
+    {
+        "id": 1139337,
+        "name": "Exploring cultural spaces through creative ethnographic methods (FSL)",
+        "name_en": "Exploring cultural spaces through creative ethnographic methods",
+        "nummer": null,
+        "inhalt": "Cultural spaces enable a critical examination of current societal issues and invite joint reflection. As such, they serve as important spaces for exchange and harbor the potential of creating a discussion that brings together different social worlds with scientific matters. They are also places of research and experimentation that offer great potential for innovation. In this seminar, we would like to explore these spaces together.\r\n\r\nBeyond the boundaries of classical university spaces, the seminar offers the opportunity to understand cultural spaces as research settings and to experiment with different forms of knowledge production. Within the framework of ethnographic approaches to the spatial, students will work with artistic and creative forms, ranging from text to film and from photography to drawing.",
+        "ziel": "The goal of the seminar is for students to gain a deeper understanding of ethnographic methods in practice and to experience cultural spaces from a new perspective. Students are expected to engage in different creative exercises and explore their interest in cultural spaces openly.",
+        "literatur": null,
+        "teilnahmevoraussetzung": null,
+        "studienleistung": null,
+        "pruefungsleistung": null,
+        "sonstiges": "No artistic experience or skills are necessary.\r\n\r\n„FSL“ steht für fremdsprachiges Lehrangebot. In Veranstaltungen, die dieses Kürzel im Titel tragen, sind alle Studien- und Prüfungsleistungen in der entsprechenden Fremdsprache zu erbringen. Grundsätzlich gelten als Teilnahmevoraussetzung für alle fremdsprachigen Veranstaltungen Sprachkenntnisse auf Stufe B2 gemäß GER (Gemeinsamer Europäischer Referenzrahmen für Sprachen). Für einzelne Veranstaltungen kann ein höheres Mindestniveau festgelegt werden. Studierende können sich im Selbstlernzentrum (C5.104) des Sprachenzentrums kostenfrei einstufen lassen.\r\nAlle FSL-Veranstaltungen sind geeignet, die Regel zur Belegung von mindestens einem fremdsprachigen Lehrangebot im Komplementärstudium zu erfüllen (Studierende im Lehramt unterliegen nicht dieser Belegungspflicht). Prüfungsinformationen zum Komplementärstudium finden Sie unter: http://www.leuphana.de/college/studium/ks.html",
+        "www": null,
+        "sws": "2",
+        "tags": "keine",
+        "schueleruni": 0,
+        "studiumgenerale": 0,
+        "semester_id": 48,
+        "lehrveranstaltung": 1,
+        "veranstaltungsart": {
+            "id": 2,
+            "kurztext": "S",
+            "langtext": "Seminar"
+        },
+        "personen": {
+            "personen": [
+                {
+                    "id": 35887,
+                    "vorname": "Lana",
+                    "nachname": "Bartusch",
+                    "titel": "M.A."
+                },
+                {
+                    "id": 37802,
+                    "vorname": "Lena",
+                    "nachname": "Kostuj",
+                    "titel": null
+                }
+            ]
+        },
+        "termine": {
+            "termine": [
+                {
+                    "id": 673745,
+                    "veranstaltung_id": 1139337,
+                    "raum": {
+                        "id": 391,
+                        "kurztext": "C 40.254 Seminarraum",
+                        "langtext": "C 40.254 Seminarraum",
+                        "plaetze": "22",
+                        "kommentar": "Beamer-Anschlussmöglichkeiten:USB-C, HDMI /  Der Raum hat 67,69 qm und 22 Plätze. Der Raum wird mechanisch be- und entlüftet.",
+                        "beamer": 1,
+                        "standort": {
+                            "id": 2,
+                            "kurztext": "UC",
+                            "langtext": "Campus"
+                        }
+                    },
+                    "rhythmus": {
+                        "id": 2,
+                        "kurztext": "14-tägl.",
+                        "langtext": "14-täglich"
+                    },
+                    "beginn_datum": 1743976800,
+                    "ende_datum": 1752184800,
+                    "beginn_zeit": 33300,
+                    "ende_zeit": 45900,
+                    "tag": "Mittwoch",
+                    "string": "14-täglich | Mittwoch | 10:15 - 13:45 | 07.04.2025 - 11.07.2025 | <a href=\"https://mystudy.leuphana.de/raumplan/details?raum_id=391\">C 40.254 Seminarraum</a>"
+                }
+            ]
+        },
+        "zuordnungen": {
+            "zuordnungen": [
+                {
+                    "modul_id": 58540,
+                    "modul_name": "Praxisorientierte Zugänge zu den Geisteswissenschaften",
+                    "modul_nummer": "21702000",
+                    "gebiet_id": 10627,
+                    "gebiet_name": "Komplementärstudium",
+                    "studiengang_id": 1223,
+                    "studiengang_name": "Lehren und Lernen",
+                    "studiengang_abschluss": "B.A.",
+                    "semester": "2,3,4,5,6",
+                    "bereich": null,
+                    "cp": null,
+                    "pruefungsnummer": null,
+                    "pruefungsleistung": null,
+                    "studienleistung": null
+                },
+                {
+                    "modul_id": 58540,
+                    "modul_name": "Praxisorientierte Zugänge zu den Geisteswissenschaften",
+                    "modul_nummer": "21702000",
+                    "gebiet_id": 10641,
+                    "gebiet_name": "Komplementärstudium",
+                    "studiengang_id": 1224,
+                    "studiengang_name": "Leuphana Bachelor",
+                    "studiengang_abschluss": "B.A./B.Eng./B.Sc./LL.B.",
+                    "semester": "2,3,4,5,6",
+                    "bereich": null,
+                    "cp": null,
+                    "pruefungsnummer": null,
+                    "pruefungsleistung": null,
+                    "studienleistung": null
+                },
+                {
+                    "modul_id": 58540,
+                    "modul_name": "Praxisorientierte Zugänge zu den Geisteswissenschaften",
+                    "modul_nummer": "21702000",
+                    "gebiet_id": 10852,
+                    "gebiet_name": "Komplementärstudium",
+                    "studiengang_id": 1253,
+                    "studiengang_name": "Sozialpädagogik",
+                    "studiengang_abschluss": "B.A.",
+                    "semester": "4",
+                    "bereich": null,
+                    "cp": null,
+                    "pruefungsnummer": null,
+                    "pruefungsleistung": null,
+                    "studienleistung": null
+                },
+                {
+                    "modul_id": 58540,
+                    "modul_name": "Praxisorientierte Zugänge zu den Geisteswissenschaften",
+                    "modul_nummer": "21702000",
+                    "gebiet_id": 10873,
+                    "gebiet_name": "Komplementärstudium",
+                    "studiengang_id": 1255,
+                    "studiengang_name": "Wirtschaftspädagogik",
+                    "studiengang_abschluss": "B.A.",
+                    "semester": "6",
+                    "bereich": null,
+                    "cp": null,
+                    "pruefungsnummer": null,
+                    "pruefungsleistung": null,
+                    "studienleistung": null
+                }
+            ]
+        },
+        "sprache": {
+            "id": 2,
+            "kurztext": "en",
+            "langtext": "Englisch"
+        }
+    },
+    {
+        "id": 1138347,
+        "name": "Gatsby 100 - a project seminar (FSL)",
+        "name_en": "Gatsby 100 - a project seminar",
+        "nummer": null,
+        "inhalt": "2025 sees the 100th anniversary of the publication of The Great Gatsby by F. Scott Fitzgerald. Published in 1925 at the height of the ‘Roaring Twenties’, this story about one man’s version of the American Dream has been voted the best American novel of the 20th century, and Jay Gatsby himself nominated the best fictional character since 1900.  \r\nThis seminar will mark the 100th anniversary with an event in the Heinrich-Heine-Haus in Lüneburg on June 3rd. The building has a large number of different spaces which allow a variety of activities - exhibitions, dramatic performances, concerts, installations etc. (Previous &#39;project seminars&#39; of mine which occupied the entire building were &#39;bLümsday&#39; - celebrating James Joyce&#39;s Ulysses -, &#39;Alice 150&#39;, on the occasion of the 150th anniversary of Alice in Wonderland, and &#39;Harry Potter 21&#39; on its 21st anniversary).\r\nThe activities and exhibition items should be attractive and imaginative to entertain the visitors. As the event is based on a literary work and film adaptations, it should, in addition to the entertainment factor, also reflect an intellectual engagement with The Great Gatsby - the novel, film versions and their critical reception - as well as Gatsby in popular culture, to inform visitors about elements they are unfamiliar with or hadn&#39;t thought about before.\r\nBefore designing the event, we will engage closely with the novel &#34;The Great Gatsby&#34;, paying special attention to Fitzgerald’s narrative strategies and exploring its connections to a wide range of relevant historical and cultural issues, such as the rags to riches success stories of that era, sports, gangsters and Prohibition, consumer society, and changes in gender roles in the USA of the 1920s. We will also briefly look at the German translations (of which there are 8) as well as different film versions. All this is to give us a solid basis upon which to design the event.",
+        "ziel": "Engaging with a canonical literary text\r\nPlanning, organising and reflecting a literature event in a space which allows a variety of formats.",
+        "literatur": null,
+        "teilnahmevoraussetzung": null,
+        "studienleistung": null,
+        "pruefungsleistung": null,
+        "sonstiges": "This is a 3 SWS seminar. As the event will take place in the 9th week of a 14 week semester (and with the event, the seminar will end), our weekly sessions until then will be double ones. This will give us good time to both engage with the novel, films and contexts as well as to plan and execute our creative work for the event. We will also have a Friday or Saturday seminar block close to the event. All students must make themselves available on the whole day of the event (June 3) and on the morning afterwards (June 4) for the clear-up.\r\nPrüfungsleistung:\r\nDesigning, planning and developing an aspect of Gatsby 100 and being involved in one of the administrative tasks. (65%)\r\nShort reflection (around 4-5 pages), in English on the overall event and what your work contributed to it (this can take any form: an essay, a blog, video diary, podcast ... (35%)\r\n\r\n„FSL“ steht für fremdsprachiges Lehrangebot. In Veranstaltungen, die dieses Kürzel im Titel tragen, sind alle Studien- und Prüfungsleistungen in der entsprechenden Fremdsprache zu erbringen. Grundsätzlich gelten als Teilnahmevoraussetzung für alle fremdsprachigen Veranstaltungen Sprachkenntnisse auf Stufe B2 gemäß GER (Gemeinsamer Europäischer Referenzrahmen für Sprachen). Für einzelne Veranstaltungen kann ein höheres Mindestniveau festgelegt werden. Studierende können sich im Selbstlernzentrum (C5.104) des Sprachenzentrums kostenfrei einstufen lassen.\r\nAlle FSL-Veranstaltungen sind geeignet, die Regel zur Belegung von mindestens einem fremdsprachigen Lehrangebot im Komplementärstudium zu erfüllen (Studierende im Lehramt unterliegen nicht dieser Belegungspflicht). Prüfungsinformationen zum Komplementärstudium finden Sie unter: http://www.leuphana.de/college/studium/ks.html",
+        "www": null,
+        "sws": "3",
+        "tags": "keine",
+        "schueleruni": 0,
+        "studiumgenerale": 0,
+        "semester_id": 48,
+        "lehrveranstaltung": 1,
+        "veranstaltungsart": {
+            "id": 6,
+            "kurztext": "Pro",
+            "langtext": "Projekt"
+        },
+        "personen": {
+            "personen": [
+                {
+                    "id": 1034,
+                    "vorname": "Emer",
+                    "nachname": "O'Sullivan",
+                    "titel": "Prof. Dr."
+                }
+            ]
+        },
+        "termine": {
+            "termine": [
+                {
+                    "id": 669828,
+                    "veranstaltung_id": 1138347,
+                    "raum": {
+                        "id": 303,
+                        "kurztext": "C 5.325 Seminarraum",
+                        "langtext": "C 5.325 Seminarraum",
+                        "plaetze": "29",
+                        "kommentar": "Beamer-Anschlussmöglichkeiten: USB-C, HDMI / Der Raum hat 67,29 qm und 29 Plätze.",
+                        "beamer": 1,
+                        "standort": {
+                            "id": 2,
+                            "kurztext": "UC",
+                            "langtext": "Campus"
+                        }
+                    },
+                    "rhythmus": {
+                        "id": 1,
+                        "kurztext": "wöch.",
+                        "langtext": "wöchentlich"
+                    },
+                    "beginn_datum": 1743976800,
+                    "ende_datum": 1748815200,
+                    "beginn_zeit": 47700,
+                    "ende_zeit": 59400,
+                    "tag": "Montag",
+                    "string": "wöchentlich | Montag | 14:15 - 17:30 | 07.04.2025 - 02.06.2025 | <a href=\"https://mystudy.leuphana.de/raumplan/details?raum_id=303\">C 5.325 Seminarraum</a>"
+                }
+            ]
+        },
+        "zuordnungen": {
+            "zuordnungen": [
+                {
+                    "modul_id": 58540,
+                    "modul_name": "Praxisorientierte Zugänge zu den Geisteswissenschaften",
+                    "modul_nummer": "21702000",
+                    "gebiet_id": 10627,
+                    "gebiet_name": "Komplementärstudium",
+                    "studiengang_id": 1223,
+                    "studiengang_name": "Lehren und Lernen",
+                    "studiengang_abschluss": "B.A.",
+                    "semester": "2,3,4,5,6",
+                    "bereich": null,
+                    "cp": null,
+                    "pruefungsnummer": null,
+                    "pruefungsleistung": null,
+                    "studienleistung": null
+                },
+                {
+                    "modul_id": 58540,
+                    "modul_name": "Praxisorientierte Zugänge zu den Geisteswissenschaften",
+                    "modul_nummer": "21702000",
+                    "gebiet_id": 10641,
+                    "gebiet_name": "Komplementärstudium",
+                    "studiengang_id": 1224,
+                    "studiengang_name": "Leuphana Bachelor",
+                    "studiengang_abschluss": "B.A./B.Eng./B.Sc./LL.B.",
+                    "semester": "2,3,4,5,6",
+                    "bereich": null,
+                    "cp": null,
+                    "pruefungsnummer": null,
+                    "pruefungsleistung": null,
+                    "studienleistung": null
+                },
+                {
+                    "modul_id": 58540,
+                    "modul_name": "Praxisorientierte Zugänge zu den Geisteswissenschaften",
+                    "modul_nummer": "21702000",
+                    "gebiet_id": 10852,
+                    "gebiet_name": "Komplementärstudium",
+                    "studiengang_id": 1253,
+                    "studiengang_name": "Sozialpädagogik",
+                    "studiengang_abschluss": "B.A.",
+                    "semester": "4",
+                    "bereich": null,
+                    "cp": null,
+                    "pruefungsnummer": null,
+                    "pruefungsleistung": null,
+                    "studienleistung": null
+                },
+                {
+                    "modul_id": 58540,
+                    "modul_name": "Praxisorientierte Zugänge zu den Geisteswissenschaften",
+                    "modul_nummer": "21702000",
+                    "gebiet_id": 10873,
+                    "gebiet_name": "Komplementärstudium",
+                    "studiengang_id": 1255,
+                    "studiengang_name": "Wirtschaftspädagogik",
+                    "studiengang_abschluss": "B.A.",
+                    "semester": "6",
+                    "bereich": null,
+                    "cp": null,
+                    "pruefungsnummer": null,
+                    "pruefungsleistung": null,
+                    "studienleistung": null
+                }
+            ]
+        },
+        "sprache": {
+            "id": 2,
+            "kurztext": "en",
+            "langtext": "Englisch"
+        }
+    },
+    {
+        "id": 1138579,
+        "name": "Jazzgeschichte Lüneburgs – Ein Ausstellungs- und Vermittlungsprojekt",
+        "name_en": "Jazz history of Lüneburg – A project on exhibition and mediation",
+        "nummer": null,
+        "inhalt": "Das Projekt in Zusammenarbeit mit der Jazz IG und dem Museum Lüneburg widmet sich der 60 bzw. 80-jährigen Geschichte des Jazz in Lüneburg. In Vorarbeiten wurden bereits Archive gesichtet, Zeitzeug:innen interviewt sowie weiteres &#34;Rohmaterial&#34; erstellt. Im Seminar sollen diese Ressourcen nun in einem Ausstellungskonzept gebündelt und umgesetzt werden. \r\nParallel dazu wird es eine Reihe von begleitenden Konzert- und Dialogformaten geben, welche ebenfalls durch die Studierenden mit vorbereitet und umgesetzt werden.",
+        "ziel": "Studierende erlangen oder erweitern ihre Kompetenzen in Bereichen der (lokalen, regionalen) Musikgeschichte, der Arbeit mit Zeitzeug:innen, der Kuration kultureller Artefakte, der Vermittlung von Musik und ihren Geschichten, der Planung und Durchführung von Vermittlungsformaten und dem Marketing kultureller Veranstaltungen.",
+        "literatur": null,
+        "teilnahmevoraussetzung": null,
+        "studienleistung": null,
+        "pruefungsleistung": null,
+        "sonstiges": null,
+        "www": null,
+        "sws": "2",
+        "tags": "keine",
+        "schueleruni": 0,
+        "studiumgenerale": 0,
+        "semester_id": 48,
+        "lehrveranstaltung": 1,
+        "veranstaltungsart": {
+            "id": 6,
+            "kurztext": "Pro",
+            "langtext": "Projekt"
+        },
+        "personen": {
+            "personen": [
+                {
+                    "id": 19898,
+                    "vorname": "Michael",
+                    "nachname": "Ahlers",
+                    "titel": "Prof. Dr."
+                },
+                {
+                    "id": 53389,
+                    "vorname": "Wilfried",
+                    "nachname": "Bokelmann",
+                    "titel": null
+                }
+            ]
+        },
+        "termine": {
+            "termine": [
+                {
+                    "id": 670291,
+                    "veranstaltung_id": 1138579,
+                    "raum": {
+                        "id": 74,
+                        "kurztext": "C 16.203 Seminarraum",
+                        "langtext": "C 16.203 Seminarraum",
+                        "plaetze": "35",
+                        "kommentar": "Beamer-Anschlussmöglichkeiten: USB-C, HDMI / Der Raum hat 75,86 qm und 35 Plätze.",
+                        "beamer": 1,
+                        "standort": {
+                            "id": 2,
+                            "kurztext": "UC",
+                            "langtext": "Campus"
+                        }
+                    },
+                    "rhythmus": {
+                        "id": 1,
+                        "kurztext": "wöch.",
+                        "langtext": "wöchentlich"
+                    },
+                    "beginn_datum": 1743976800,
+                    "ende_datum": 1752184800,
+                    "beginn_zeit": 47700,
+                    "ende_zeit": 53100,
+                    "tag": "Montag",
+                    "string": "wöchentlich | Montag | 14:15 - 15:45 | 07.04.2025 - 11.07.2025 | <a href=\"https://mystudy.leuphana.de/raumplan/details?raum_id=74\">C 16.203 Seminarraum</a>"
+                }
+            ]
+        },
+        "zuordnungen": {
+            "zuordnungen": [
+                {
+                    "modul_id": 58540,
+                    "modul_name": "Praxisorientierte Zugänge zu den Geisteswissenschaften",
+                    "modul_nummer": "21702000",
+                    "gebiet_id": 10627,
+                    "gebiet_name": "Komplementärstudium",
+                    "studiengang_id": 1223,
+                    "studiengang_name": "Lehren und Lernen",
+                    "studiengang_abschluss": "B.A.",
+                    "semester": "2,3,4,5,6",
+                    "bereich": null,
+                    "cp": null,
+                    "pruefungsnummer": null,
+                    "pruefungsleistung": null,
+                    "studienleistung": null
+                },
+                {
+                    "modul_id": 58540,
+                    "modul_name": "Praxisorientierte Zugänge zu den Geisteswissenschaften",
+                    "modul_nummer": "21702000",
+                    "gebiet_id": 10641,
+                    "gebiet_name": "Komplementärstudium",
+                    "studiengang_id": 1224,
+                    "studiengang_name": "Leuphana Bachelor",
+                    "studiengang_abschluss": "B.A./B.Eng./B.Sc./LL.B.",
+                    "semester": "2,3,4,5,6",
+                    "bereich": null,
+                    "cp": null,
+                    "pruefungsnummer": null,
+                    "pruefungsleistung": null,
+                    "studienleistung": null
+                },
+                {
+                    "modul_id": 58540,
+                    "modul_name": "Praxisorientierte Zugänge zu den Geisteswissenschaften",
+                    "modul_nummer": "21702000",
+                    "gebiet_id": 10852,
+                    "gebiet_name": "Komplementärstudium",
+                    "studiengang_id": 1253,
+                    "studiengang_name": "Sozialpädagogik",
+                    "studiengang_abschluss": "B.A.",
+                    "semester": "4",
+                    "bereich": null,
+                    "cp": null,
+                    "pruefungsnummer": null,
+                    "pruefungsleistung": null,
+                    "studienleistung": null
+                },
+                {
+                    "modul_id": 58540,
+                    "modul_name": "Praxisorientierte Zugänge zu den Geisteswissenschaften",
+                    "modul_nummer": "21702000",
+                    "gebiet_id": 10873,
+                    "gebiet_name": "Komplementärstudium",
+                    "studiengang_id": 1255,
+                    "studiengang_name": "Wirtschaftspädagogik",
+                    "studiengang_abschluss": "B.A.",
+                    "semester": "6",
+                    "bereich": null,
+                    "cp": null,
+                    "pruefungsnummer": null,
+                    "pruefungsleistung": null,
+                    "studienleistung": null
+                }
+            ]
+        },
+        "sprache": {
+            "id": 1,
+            "kurztext": "de",
+            "langtext": "Deutsch"
+        }
+    },
+    {
+        "id": 1138294,
+        "name": "Körper Stimme Raum - eine experimentelle Erforschung des Phänomens &#39;Stimme&#39;",
+        "name_en": "body voice space ",
+        "nummer": null,
+        "inhalt": "&#34;I always think […] that each of our voices has many voices within it, so I think that within my voice I have male, female, I have young, old, middle aged, I have animal, vegetable, mineral, you know, I have landscape, I have cityscape within my one instrument, and I think that all of us actually have that.&#34; MEREDITH MONK, The Composer’s Voice\r\n\r\nIn diesem Seminar begeben wir uns als Gruppe und jede*r für sich auf eine Forschungsreise zur Stimme. In der Tradition der Vocal Performanceart, Vocalimprovisation und der Extended Voice nähern wir uns den Facetten der Stimme spielerisch und experimentell an. Hierbei geht es nicht darum ‚schön‘ oder ‚richtig‘ zu singen, sondern sich auf den Gruppenprozess und die Selbsterfahrung einzulassen. \r\n\r\nZudem wird der Zugang zur Stimme theoretisch aufgearbeitet und reflektiert. Wir lesen gemeinsam Texte und hören Musik von Stimmperformer*innen wie z.B. Meredith Monk, Diamanda Galás und Roy Hart. Außerdem bekommen Sie im Laufe des Semesters verschiedene Hausaufgaben, die Sie allein oder in Kleingruppen durchführen.",
+        "ziel": "Sich dem komplexen Phänomen der Stimme sowohl theoretisch als auch performativ zu nähern",
+        "literatur": null,
+        "teilnahmevoraussetzung": "Offenheit für Gruppen- uns Selbsterfahrungsprozesse und Bereitschaft sich auf die Stimmexperimente einzulassen",
+        "studienleistung": null,
+        "pruefungsleistung": null,
+        "sonstiges": null,
+        "www": null,
+        "sws": "2",
+        "tags": "keine",
+        "schueleruni": 0,
+        "studiumgenerale": 0,
+        "semester_id": 48,
+        "lehrveranstaltung": 1,
+        "veranstaltungsart": {
+            "id": 2,
+            "kurztext": "S",
+            "langtext": "Seminar"
+        },
+        "personen": {
+            "personen": [
+                {
+                    "id": 2349,
+                    "vorname": "Kristin Theresa",
+                    "nachname": "Drechsler",
+                    "titel": "Dr. phil."
+                }
+            ]
+        },
+        "termine": {
+            "termine": [
+                {
+                    "id": 669753,
+                    "veranstaltung_id": 1138294,
+                    "raum": {
+                        "id": 81,
+                        "kurztext": "Sporthalle",
+                        "langtext": "C 20.0 Sporthalle",
+                        "plaetze": "0",
+                        "kommentar": "888,08 qm.     \r\n\r\nDie Raumbelegung für Mo-Fr 8-16 Uhr koordiniert das Institut für Bewegung, Sport und Gesundheit (IBGS). Die weitere Belegung erfolgt durch das Universitätssportzentrum und ist hier einzusehen:\r\nhttps://buchung.hochschulsport.leuphana.de/cgi/webpage.cgi?mode=belegung&amp;sp=D918293B4768BB82BEEE72C88ED1580FBB32B7A515268ED5B0DD048A7712BF22\r\n",
+                        "beamer": 0,
+                        "standort": {
+                            "id": 2,
+                            "kurztext": "UC",
+                            "langtext": "Campus"
+                        }
+                    },
+                    "rhythmus": {
+                        "id": 1,
+                        "kurztext": "wöch.",
+                        "langtext": "wöchentlich"
+                    },
+                    "beginn_datum": 1744581600,
+                    "ende_datum": 1752184800,
+                    "beginn_zeit": 33300,
+                    "ende_zeit": 38700,
+                    "tag": "Freitag",
+                    "string": "wöchentlich | Freitag | 10:15 - 11:45 | 14.04.2025 - 11.07.2025 | <a href=\"https://mystudy.leuphana.de/raumplan/details?raum_id=81\">Sporthalle</a>"
+                }
+            ]
+        },
+        "zuordnungen": {
+            "zuordnungen": [
+                {
+                    "modul_id": 58540,
+                    "modul_name": "Praxisorientierte Zugänge zu den Geisteswissenschaften",
+                    "modul_nummer": "21702000",
+                    "gebiet_id": 10627,
+                    "gebiet_name": "Komplementärstudium",
+                    "studiengang_id": 1223,
+                    "studiengang_name": "Lehren und Lernen",
+                    "studiengang_abschluss": "B.A.",
+                    "semester": "2,3,4,5,6",
+                    "bereich": null,
+                    "cp": null,
+                    "pruefungsnummer": null,
+                    "pruefungsleistung": null,
+                    "studienleistung": null
+                },
+                {
+                    "modul_id": 58540,
+                    "modul_name": "Praxisorientierte Zugänge zu den Geisteswissenschaften",
+                    "modul_nummer": "21702000",
+                    "gebiet_id": 10641,
+                    "gebiet_name": "Komplementärstudium",
+                    "studiengang_id": 1224,
+                    "studiengang_name": "Leuphana Bachelor",
+                    "studiengang_abschluss": "B.A./B.Eng./B.Sc./LL.B.",
+                    "semester": "2,3,4,5,6",
+                    "bereich": null,
+                    "cp": null,
+                    "pruefungsnummer": null,
+                    "pruefungsleistung": null,
+                    "studienleistung": null
+                },
+                {
+                    "modul_id": 58540,
+                    "modul_name": "Praxisorientierte Zugänge zu den Geisteswissenschaften",
+                    "modul_nummer": "21702000",
+                    "gebiet_id": 10852,
+                    "gebiet_name": "Komplementärstudium",
+                    "studiengang_id": 1253,
+                    "studiengang_name": "Sozialpädagogik",
+                    "studiengang_abschluss": "B.A.",
+                    "semester": "4",
+                    "bereich": null,
+                    "cp": null,
+                    "pruefungsnummer": null,
+                    "pruefungsleistung": null,
+                    "studienleistung": null
+                },
+                {
+                    "modul_id": 58540,
+                    "modul_name": "Praxisorientierte Zugänge zu den Geisteswissenschaften",
+                    "modul_nummer": "21702000",
+                    "gebiet_id": 10873,
+                    "gebiet_name": "Komplementärstudium",
+                    "studiengang_id": 1255,
+                    "studiengang_name": "Wirtschaftspädagogik",
+                    "studiengang_abschluss": "B.A.",
+                    "semester": "6",
+                    "bereich": null,
+                    "cp": null,
+                    "pruefungsnummer": null,
+                    "pruefungsleistung": null,
+                    "studienleistung": null
+                }
+            ]
+        },
+        "sprache": {
+            "id": 1,
+            "kurztext": "de",
+            "langtext": "Deutsch"
+        }
+    },
+    {
+        "id": 1139499,
+        "name": "Utopian Stories of the World Unite - Creative Fiction and Social Theory (FSL)",
+        "name_en": "Utopian Stories of the World Unite - Creative Fiction and Social Theory",
+        "nummer": null,
+        "inhalt": "Do not let dystopian ideas get you down. You can always look to utopians. In this course, creative writing and social theory are used to imagine a better world. Students apply theories and  use creativity to make something abstract into a real world ... story.  Students will write a collaborative novella using the techniques and theories covered during the course.\r\nPlease note there are 3 double hours which mandatory attendance is required. The collaborative story and the writing assignments will be set up and started in these sessions.  The schedule is in the material section.",
+        "ziel": "- Understand and apply social theory\r\n- Use creative writing techniques\r\n- Employ group discussions to reach consensus ",
+        "literatur": null,
+        "teilnahmevoraussetzung": "This course requires a high level  of English. Students must be able to discuss and write at a C1 level.",
+        "studienleistung": "Attendance is essential for all meeting due to the collaborative nature of the class. This is a group novella and can only be done as a group. Absences create difficulties for classmate.\r\nPlease note that there are 3 double meetings.",
+        "pruefungsleistung": null,
+        "sonstiges": "„FSL“ steht für fremdsprachiges Lehrangebot. In Veranstaltungen, die dieses Kürzel im Titel tragen, sind alle Studien- und Prüfungsleistungen in der entsprechenden Fremdsprache zu erbringen. Grundsätzlich gelten als Teilnahmevoraussetzung für alle fremdsprachigen Veranstaltungen Sprachkenntnisse auf Stufe B2 gemäß GER (Gemeinsamer Europäischer Referenzrahmen für Sprachen). Für einzelne Veranstaltungen kann ein höheres Mindestniveau festgelegt werden. Studierende können sich im Selbstlernzentrum (C5.104) des Sprachenzentrums kostenfrei einstufen lassen.\r\nAlle FSL-Veranstaltungen sind geeignet, die Regel zur Belegung von mindestens einem fremdsprachigen Lehrangebot im Komplementärstudium zu erfüllen (Studierende im Lehramt unterliegen nicht dieser Belegungspflicht). Prüfungsinformationen zum Komplementärstudium finden Sie unter: http://www.leuphana.de/college/studium/ks.html",
+        "www": null,
+        "sws": "2",
+        "tags": "keine",
+        "schueleruni": 0,
+        "studiumgenerale": 0,
+        "semester_id": 48,
+        "lehrveranstaltung": 1,
+        "veranstaltungsart": {
+            "id": 2,
+            "kurztext": "S",
+            "langtext": "Seminar"
+        },
+        "personen": {
+            "personen": [
+                {
+                    "id": 324,
+                    "vorname": "Lynette",
+                    "nachname": "Kirschner",
+                    "titel": "M.A."
+                },
+                {
+                    "id": 19892,
+                    "vorname": "Anthony",
+                    "nachname": "Waters",
+                    "titel": "Prof. Dr."
+                }
+            ]
+        },
+        "termine": {
+            "termine": [
+                {
+                    "id": 672320,
+                    "veranstaltung_id": 1139499,
+                    "raum": {
+                        "id": 106,
+                        "kurztext": "C 9.102 Seminarraum",
+                        "langtext": "C 9.102 Seminarraum",
+                        "plaetze": "65",
+                        "kommentar": "Beamer-Anschlussmöglichkeiten: USB-C, HDMI / Der Raum hat 126,89 qm und 65 Plätze.",
+                        "beamer": 1,
+                        "standort": {
+                            "id": 2,
+                            "kurztext": "UC",
+                            "langtext": "Campus"
+                        }
+                    },
+                    "rhythmus": {
+                        "id": 1,
+                        "kurztext": "wöch.",
+                        "langtext": "wöchentlich"
+                    },
+                    "beginn_datum": 1743976800,
+                    "ende_datum": 1752184800,
+                    "beginn_zeit": 40500,
+                    "ende_zeit": 45900,
+                    "tag": "Freitag",
+                    "string": "wöchentlich | Freitag | 12:15 - 13:45 | 07.04.2025 - 11.07.2025 | <a href=\"https://mystudy.leuphana.de/raumplan/details?raum_id=106\">C 9.102 Seminarraum</a>"
+                },
+                {
+                    "id": 677123,
+                    "veranstaltung_id": 1139499,
+                    "raum": {
+                        "id": 106,
+                        "kurztext": "C 9.102 Seminarraum",
+                        "langtext": "C 9.102 Seminarraum",
+                        "plaetze": "65",
+                        "kommentar": "Beamer-Anschlussmöglichkeiten: USB-C, HDMI / Der Raum hat 126,89 qm und 65 Plätze.",
+                        "beamer": 1,
+                        "standort": {
+                            "id": 2,
+                            "kurztext": "UC",
+                            "langtext": "Campus"
+                        }
+                    },
+                    "rhythmus": {
+                        "id": 3,
+                        "kurztext": "Einzelt.",
+                        "langtext": "Einzeltermin"
+                    },
+                    "beginn_datum": 1747346400,
+                    "ende_datum": 1747346400,
+                    "beginn_zeit": 40500,
+                    "ende_zeit": 53100,
+                    "tag": "Freitag",
+                    "string": "Einzeltermin | Fr, 16.05.2025, 12:15 - Fr, 16.05.2025, 15:45 | <a href=\"https://mystudy.leuphana.de/raumplan/details?raum_id=106\">C 9.102 Seminarraum</a>"
+                },
+                {
+                    "id": 677124,
+                    "veranstaltung_id": 1139499,
+                    "raum": {
+                        "id": 106,
+                        "kurztext": "C 9.102 Seminarraum",
+                        "langtext": "C 9.102 Seminarraum",
+                        "plaetze": "65",
+                        "kommentar": "Beamer-Anschlussmöglichkeiten: USB-C, HDMI / Der Raum hat 126,89 qm und 65 Plätze.",
+                        "beamer": 1,
+                        "standort": {
+                            "id": 2,
+                            "kurztext": "UC",
+                            "langtext": "Campus"
+                        }
+                    },
+                    "rhythmus": {
+                        "id": 3,
+                        "kurztext": "Einzelt.",
+                        "langtext": "Einzeltermin"
+                    },
+                    "beginn_datum": 1749160800,
+                    "ende_datum": 1749160800,
+                    "beginn_zeit": 40500,
+                    "ende_zeit": 53100,
+                    "tag": "Freitag",
+                    "string": "Einzeltermin | Fr, 06.06.2025, 12:15 - Fr, 06.06.2025, 15:45 | <a href=\"https://mystudy.leuphana.de/raumplan/details?raum_id=106\">C 9.102 Seminarraum</a>"
+                },
+                {
+                    "id": 677125,
+                    "veranstaltung_id": 1139499,
+                    "raum": {
+                        "id": 106,
+                        "kurztext": "C 9.102 Seminarraum",
+                        "langtext": "C 9.102 Seminarraum",
+                        "plaetze": "65",
+                        "kommentar": "Beamer-Anschlussmöglichkeiten: USB-C, HDMI / Der Raum hat 126,89 qm und 65 Plätze.",
+                        "beamer": 1,
+                        "standort": {
+                            "id": 2,
+                            "kurztext": "UC",
+                            "langtext": "Campus"
+                        }
+                    },
+                    "rhythmus": {
+                        "id": 3,
+                        "kurztext": "Einzelt.",
+                        "langtext": "Einzeltermin"
+                    },
+                    "beginn_datum": 1750370400,
+                    "ende_datum": 1750370400,
+                    "beginn_zeit": 40500,
+                    "ende_zeit": 53100,
+                    "tag": "Freitag",
+                    "string": "Einzeltermin | Fr, 20.06.2025, 12:15 - Fr, 20.06.2025, 15:45 | <a href=\"https://mystudy.leuphana.de/raumplan/details?raum_id=106\">C 9.102 Seminarraum</a>"
+                }
+            ]
+        },
+        "zuordnungen": {
+            "zuordnungen": [
+                {
+                    "modul_id": 58540,
+                    "modul_name": "Praxisorientierte Zugänge zu den Geisteswissenschaften",
+                    "modul_nummer": "21702000",
+                    "gebiet_id": 10627,
+                    "gebiet_name": "Komplementärstudium",
+                    "studiengang_id": 1223,
+                    "studiengang_name": "Lehren und Lernen",
+                    "studiengang_abschluss": "B.A.",
+                    "semester": "2,3,4,5,6",
+                    "bereich": null,
+                    "cp": null,
+                    "pruefungsnummer": null,
+                    "pruefungsleistung": null,
+                    "studienleistung": null
+                },
+                {
+                    "modul_id": 58540,
+                    "modul_name": "Praxisorientierte Zugänge zu den Geisteswissenschaften",
+                    "modul_nummer": "21702000",
+                    "gebiet_id": 10641,
+                    "gebiet_name": "Komplementärstudium",
+                    "studiengang_id": 1224,
+                    "studiengang_name": "Leuphana Bachelor",
+                    "studiengang_abschluss": "B.A./B.Eng./B.Sc./LL.B.",
+                    "semester": "2,3,4,5,6",
+                    "bereich": null,
+                    "cp": null,
+                    "pruefungsnummer": null,
+                    "pruefungsleistung": null,
+                    "studienleistung": null
+                },
+                {
+                    "modul_id": 58540,
+                    "modul_name": "Praxisorientierte Zugänge zu den Geisteswissenschaften",
+                    "modul_nummer": "21702000",
+                    "gebiet_id": 10852,
+                    "gebiet_name": "Komplementärstudium",
+                    "studiengang_id": 1253,
+                    "studiengang_name": "Sozialpädagogik",
+                    "studiengang_abschluss": "B.A.",
+                    "semester": "4",
+                    "bereich": null,
+                    "cp": null,
+                    "pruefungsnummer": null,
+                    "pruefungsleistung": null,
+                    "studienleistung": null
+                },
+                {
+                    "modul_id": 58540,
+                    "modul_name": "Praxisorientierte Zugänge zu den Geisteswissenschaften",
+                    "modul_nummer": "21702000",
+                    "gebiet_id": 10873,
+                    "gebiet_name": "Komplementärstudium",
+                    "studiengang_id": 1255,
+                    "studiengang_name": "Wirtschaftspädagogik",
+                    "studiengang_abschluss": "B.A.",
+                    "semester": "6",
+                    "bereich": null,
+                    "cp": null,
+                    "pruefungsnummer": null,
+                    "pruefungsleistung": null,
+                    "studienleistung": null
+                }
+            ]
+        },
+        "sprache": {
+            "id": 2,
+            "kurztext": "en",
+            "langtext": "Englisch"
+        }
+    },
+    {
+        "id": 1138461,
+        "name": "Was ist Universität?",
+        "name_en": "What is the university? ",
+        "nummer": null,
+        "inhalt": "Die Kritik an der Universität ist so alt wie diese Institutionen selbst. Seit ihren modernen Anfängen im Sinne einer öffentlichen Bildungseinrichtung steht die Universität im Zentrum vielfältiger gesellschaftlicher Debatten – sie scheint ihrer (politischen) Vereinnahmung ausgesetzt oder in ihrer Qualität bedroht zu sein. Ebenso lange wird über das Ideal der Universität und ihrer Mitglieder debattiert: Was ist Universität, was soll sie sein, was war sie einmal und wie soll ihre Zukunft aussehen? Das Seminar widmet sich einigen klassischen Texten aus den Geisteswissenschaften, wird aber auch mit Blick auf unsere eigene (Lüneburger) Universitätserfahrung Praktiker:innen zu Wort kommen lassen, um deutlich zu machen, dass die Universität nie nur in der rein wissenschaftlichen Sphäre existiert hat, sondern dass ökonomische, politische und kulturelle Fragen wesentlich zu ihr gehören.",
+        "ziel": "Sie entwickeln ein komplexes Verständnis der Universität als Institution und sind in der Lage, diese reflektiert(er) zu beschreiben und in ihrer geschichtlichen Gewordenheit einzuordnen. ",
+        "literatur": null,
+        "teilnahmevoraussetzung": null,
+        "studienleistung": null,
+        "pruefungsleistung": null,
+        "sonstiges": null,
+        "www": null,
+        "sws": "2",
+        "tags": "keine",
+        "schueleruni": 0,
+        "studiumgenerale": 0,
+        "semester_id": 48,
+        "lehrveranstaltung": 1,
+        "veranstaltungsart": {
+            "id": 2,
+            "kurztext": "S",
+            "langtext": "Seminar"
+        },
+        "personen": {
+            "personen": [
+                {
+                    "id": 1283,
+                    "vorname": "Christian",
+                    "nachname": "Brei",
+                    "titel": "Dipl. oec., MPA (Harvard)"
+                },
+                {
+                    "id": 26155,
+                    "vorname": "Christina",
+                    "nachname": "Wessely",
+                    "titel": "Prof. Dr."
+                }
+            ]
+        },
+        "termine": {
+            "termine": [
+                {
+                    "id": 670071,
+                    "veranstaltung_id": 1138461,
+                    "raum": {
+                        "id": 47,
+                        "kurztext": "C 12.013 Seminarraum",
+                        "langtext": "C 12.013 Seminarraum",
+                        "plaetze": "37",
+                        "kommentar": "Beamer-Anschlussmöglichkeiten: USB-C, HDMI / Der Raum hat 74,84 qm und 37 Plätze. Parlamentarische Bestuhlung.",
+                        "beamer": 1,
+                        "standort": {
+                            "id": 2,
+                            "kurztext": "UC",
+                            "langtext": "Campus"
+                        }
+                    },
+                    "rhythmus": {
+                        "id": 1,
+                        "kurztext": "wöch.",
+                        "langtext": "wöchentlich"
+                    },
+                    "beginn_datum": 1743976800,
+                    "ende_datum": 1752184800,
+                    "beginn_zeit": 40500,
+                    "ende_zeit": 45900,
+                    "tag": "Montag",
+                    "string": "wöchentlich | Montag | 12:15 - 13:45 | 07.04.2025 - 11.07.2025 | <a href=\"https://mystudy.leuphana.de/raumplan/details?raum_id=47\">C 12.013 Seminarraum</a>"
+                }
+            ]
+        },
+        "zuordnungen": {
+            "zuordnungen": [
+                {
+                    "modul_id": 58540,
+                    "modul_name": "Praxisorientierte Zugänge zu den Geisteswissenschaften",
+                    "modul_nummer": "21702000",
+                    "gebiet_id": 10627,
+                    "gebiet_name": "Komplementärstudium",
+                    "studiengang_id": 1223,
+                    "studiengang_name": "Lehren und Lernen",
+                    "studiengang_abschluss": "B.A.",
+                    "semester": "2,3,4,5,6",
+                    "bereich": null,
+                    "cp": null,
+                    "pruefungsnummer": null,
+                    "pruefungsleistung": null,
+                    "studienleistung": null
+                },
+                {
+                    "modul_id": 58540,
+                    "modul_name": "Praxisorientierte Zugänge zu den Geisteswissenschaften",
+                    "modul_nummer": "21702000",
+                    "gebiet_id": 10641,
+                    "gebiet_name": "Komplementärstudium",
+                    "studiengang_id": 1224,
+                    "studiengang_name": "Leuphana Bachelor",
+                    "studiengang_abschluss": "B.A./B.Eng./B.Sc./LL.B.",
+                    "semester": "2,3,4,5,6",
+                    "bereich": null,
+                    "cp": null,
+                    "pruefungsnummer": null,
+                    "pruefungsleistung": null,
+                    "studienleistung": null
+                },
+                {
+                    "modul_id": 58540,
+                    "modul_name": "Praxisorientierte Zugänge zu den Geisteswissenschaften",
+                    "modul_nummer": "21702000",
+                    "gebiet_id": 10852,
+                    "gebiet_name": "Komplementärstudium",
+                    "studiengang_id": 1253,
+                    "studiengang_name": "Sozialpädagogik",
+                    "studiengang_abschluss": "B.A.",
+                    "semester": "4",
+                    "bereich": null,
+                    "cp": null,
+                    "pruefungsnummer": null,
+                    "pruefungsleistung": null,
+                    "studienleistung": null
+                },
+                {
+                    "modul_id": 58540,
+                    "modul_name": "Praxisorientierte Zugänge zu den Geisteswissenschaften",
+                    "modul_nummer": "21702000",
+                    "gebiet_id": 10873,
+                    "gebiet_name": "Komplementärstudium",
+                    "studiengang_id": 1255,
+                    "studiengang_name": "Wirtschaftspädagogik",
+                    "studiengang_abschluss": "B.A.",
+                    "semester": "6",
+                    "bereich": null,
+                    "cp": null,
+                    "pruefungsnummer": null,
+                    "pruefungsleistung": null,
+                    "studienleistung": null
+                }
+            ]
+        },
+        "sprache": {
+            "id": 1,
+            "kurztext": "de",
+            "langtext": "Deutsch"
+        }
+    }
+]

@@ -1,0 +1,214 @@
+[
+    {"termine": {
+            "termine": [
+                {
+                    "id": 672232,
+                    "veranstaltung_id": 1139435,
+                    "raum": {
+                        "id": 388,
+                        "kurztext": "C 40.146 Seminarraum",
+                        "langtext": "C 40.146 Seminarraum",
+                        "plaetze": "40",
+                        "kommentar": "Beamer-Anschlussmöglichkeiten: USB-C, HDMI / Der Raum hat 79,19 qm und 40 Plätze. Der Raum wird mechanisch be- und entlüftet.",
+                        "beamer": 1,
+                        "standort": {
+                            "id": 2,
+                            "kurztext": "UC",
+                            "langtext": "Campus"
+                        }
+                    },
+                    "rhythmus": {
+                        "id": 1,
+                        "kurztext": "wöch.",
+                        "langtext": "wöchentlich"
+                    },
+                    "beginn_datum": 1743976800,
+                    "ende_datum": 1751839200,
+                    "beginn_zeit": 54900,
+                    "ende_zeit": 60300,
+                    "tag": "Montag",
+                    "string": "wöchentlich | Montag | 16:15 - 17:45 | 07.04.2025 - 07.07.2025 | <a href=\"https://mystudy.leuphana.de/raumplan/details?raum_id=388\">C 40.146 Seminarraum</a>"
+                }
+            ]
+        }
+    },
+
+    {"termine": {
+            "termine": [
+                {
+                    "id": 669837,
+                    "veranstaltung_id": 1138364,
+                    "raum": {
+                        "id": 317,
+                        "kurztext": "C 12.101 Seminarraum",
+                        "langtext": "C 12.101 Seminarraum",
+                        "plaetze": "36",
+                        "kommentar": "Beamer-Anschlussmöglichkeiten: USB-C, HDMI / Der Raum hat 73,37 qm und 36 Plätze. Parlamentarische Bestuhlung.",
+                        "beamer": 1,
+                        "standort": {
+                            "id": 2,
+                            "kurztext": "UC",
+                            "langtext": "Campus"
+                        }
+                    },
+                    "rhythmus": {
+                        "id": 1,
+                        "kurztext": "wöch.",
+                        "langtext": "wöchentlich"
+                    },
+                    "beginn_datum": 1743976800,
+                    "ende_datum": 1752184800,
+                    "beginn_zeit": 33300,
+                    "ende_zeit": 38700,
+                    "tag": "Mittwoch",
+                    "string": "wöchentlich | Mittwoch | 10:15 - 11:45 | 07.04.2025 - 11.07.2025 | <a href=\"https://mystudy.leuphana.de/raumplan/details?raum_id=317\">C 12.101 Seminarraum</a>"
+                }
+            ]
+        }},
+
+
+        {"termine": {
+            "termine": [
+                {
+                    "id": 678566,
+                    "veranstaltung_id": 1141666,
+                    "raum": {
+                        "id": 47,
+                        "kurztext": "C 12.013 Seminarraum",
+                        "langtext": "C 12.013 Seminarraum",
+                        "plaetze": "37",
+                        "kommentar": "Beamer-Anschlussmöglichkeiten: USB-C, HDMI / Der Raum hat 74,84 qm und 37 Plätze. Parlamentarische Bestuhlung.",
+                        "beamer": 1,
+                        "standort": {
+                            "id": 2,
+                            "kurztext": "UC",
+                            "langtext": "Campus"
+                        }
+                    },
+                    "rhythmus": {
+                        "id": 3,
+                        "kurztext": "Einzelt.",
+                        "langtext": "Einzeltermin"
+                    },
+                    "beginn_datum": 1745532000,
+                    "ende_datum": 1745532000,
+                    "beginn_zeit": 47700,
+                    "ende_zeit": 60300,
+                    "tag": "Freitag",
+                    "string": "Einzeltermin | Fr, 25.04.2025, 14:15 - Fr, 25.04.2025, 17:45 | <a href=\"https://mystudy.leuphana.de/raumplan/details?raum_id=47\">C 12.013 Seminarraum</a>"
+                },
+                {
+                    "id": 678567,
+                    "veranstaltung_id": 1141666,
+                    "raum": {
+                        "id": 47,
+                        "kurztext": "C 12.013 Seminarraum",
+                        "langtext": "C 12.013 Seminarraum",
+                        "plaetze": "37",
+                        "kommentar": "Beamer-Anschlussmöglichkeiten: USB-C, HDMI / Der Raum hat 74,84 qm und 37 Plätze. Parlamentarische Bestuhlung.",
+                        "beamer": 1,
+                        "standort": {
+                            "id": 2,
+                            "kurztext": "UC",
+                            "langtext": "Campus"
+                        }
+                    },
+                    "rhythmus": {
+                        "id": 3,
+                        "kurztext": "Einzelt.",
+                        "langtext": "Einzeltermin"
+                    },
+                    "beginn_datum": 1745618400,
+                    "ende_datum": 1745618400,
+                    "beginn_zeit": 32400,
+                    "ende_zeit": 61200,
+                    "tag": "Samstag",
+                    "string": "Einzeltermin | Sa, 26.04.2025, 10:00 - Sa, 26.04.2025, 18:00 | <a href=\"https://mystudy.leuphana.de/raumplan/details?raum_id=47\">C 12.013 Seminarraum</a>"
+                },
+                {
+                    "id": 678568,
+                    "veranstaltung_id": 1141666,
+                    "raum": {
+                        "id": 47,
+                        "kurztext": "C 12.013 Seminarraum",
+                        "langtext": "C 12.013 Seminarraum",
+                        "plaetze": "37",
+                        "kommentar": "Beamer-Anschlussmöglichkeiten: USB-C, HDMI / Der Raum hat 74,84 qm und 37 Plätze. Parlamentarische Bestuhlung.",
+                        "beamer": 1,
+                        "standort": {
+                            "id": 2,
+                            "kurztext": "UC",
+                            "langtext": "Campus"
+                        }
+                    },
+                    "rhythmus": {
+                        "id": 3,
+                        "kurztext": "Einzelt.",
+                        "langtext": "Einzeltermin"
+                    },
+                    "beginn_datum": 1747951200,
+                    "ende_datum": 1747951200,
+                    "beginn_zeit": 47700,
+                    "ende_zeit": 60300,
+                    "tag": "Freitag",
+                    "string": "Einzeltermin | Fr, 23.05.2025, 14:15 - Fr, 23.05.2025, 17:45 | <a href=\"https://mystudy.leuphana.de/raumplan/details?raum_id=47\">C 12.013 Seminarraum</a>"
+                },
+                {
+                    "id": 678569,
+                    "veranstaltung_id": 1141666,
+                    "raum": {
+                        "id": 47,
+                        "kurztext": "C 12.013 Seminarraum",
+                        "langtext": "C 12.013 Seminarraum",
+                        "plaetze": "37",
+                        "kommentar": "Beamer-Anschlussmöglichkeiten: USB-C, HDMI / Der Raum hat 74,84 qm und 37 Plätze. Parlamentarische Bestuhlung.",
+                        "beamer": 1,
+                        "standort": {
+                            "id": 2,
+                            "kurztext": "UC",
+                            "langtext": "Campus"
+                        }
+                    },
+                    "rhythmus": {
+                        "id": 3,
+                        "kurztext": "Einzelt.",
+                        "langtext": "Einzeltermin"
+                    },
+                    "beginn_datum": 1751580000,
+                    "ende_datum": 1751580000,
+                    "beginn_zeit": 47700,
+                    "ende_zeit": 60300,
+                    "tag": "Freitag",
+                    "string": "Einzeltermin | Fr, 04.07.2025, 14:15 - Fr, 04.07.2025, 17:45 | <a href=\"https://mystudy.leuphana.de/raumplan/details?raum_id=47\">C 12.013 Seminarraum</a>"
+                },
+                {
+                    "id": 678570,
+                    "veranstaltung_id": 1141666,
+                    "raum": {
+                        "id": 47,
+                        "kurztext": "C 12.013 Seminarraum",
+                        "langtext": "C 12.013 Seminarraum",
+                        "plaetze": "37",
+                        "kommentar": "Beamer-Anschlussmöglichkeiten: USB-C, HDMI / Der Raum hat 74,84 qm und 37 Plätze. Parlamentarische Bestuhlung.",
+                        "beamer": 1,
+                        "standort": {
+                            "id": 2,
+                            "kurztext": "UC",
+                            "langtext": "Campus"
+                        }
+                    },
+                    "rhythmus": {
+                        "id": 3,
+                        "kurztext": "Einzelt.",
+                        "langtext": "Einzeltermin"
+                    },
+                    "beginn_datum": 1751666400,
+                    "ende_datum": 1751666400,
+                    "beginn_zeit": 32400,
+                    "ende_zeit": 54000,
+                    "tag": "Samstag",
+                    "string": "Einzeltermin | Sa, 05.07.2025, 10:00 - Sa, 05.07.2025, 16:00 | <a href=\"https://mystudy.leuphana.de/raumplan/details?raum_id=47\">C 12.013 Seminarraum</a>"
+                }
+            ]
+        }}
+]

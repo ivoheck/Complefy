@@ -1,0 +1,1128 @@
+[
+    {
+        "id": 1138279,
+        "name": "Das Wunder der Metalle – Vielfalt und Eigenschaften der metallischen Werkstoffe",
+        "name_en": "The Miracle of Metals - Variety and Properties of Metallic Materials",
+        "nummer": null,
+        "inhalt": "Metalle sind aus dem alltäglichen Leben nicht mehr wegzudenken. Umso wichtiger ist es, deren besondere Eigenschaften zu kennen. Die Studierenden lernen, wie man die charakteristischen Eigenschaften von Metallen überprüft und auswertet. Dabei werden die Vor- und Nachteile von Metallen herausgearbeitet. Neben mechanischen Eigenschaften wird auch die Energiebilanz von Metallen betrachtet, um diese in einen umweltpolitischen Kontext einordnen zu können.\r\nDer Fokus des Seminars liegt auf der methodenorientierten Herangehensweise bei der Durchführung und Auswertung von Laborexperimenten sowie beim Verfassen eines wissenschaftlichen Textes. ",
+        "ziel": "Diese Veranstaltung richtet sich primär an Studierende der Nicht-Ingenieurwissenschaften. Ziel der Veranstaltung ist es, Grundkenntnisse zu metallischen Werkstoffen und ihren modernen Materialprüfmethoden zu vermitteln. ",
+        "literatur": null,
+        "teilnahmevoraussetzung": "aktive, regelmäßige Teilnahme der Studierenden und die Bereitschaft, Präsentationen zu übernehmen",
+        "studienleistung": null,
+        "pruefungsleistung": null,
+        "sonstiges": null,
+        "www": null,
+        "sws": "2",
+        "tags": "keine",
+        "schueleruni": 0,
+        "studiumgenerale": 0,
+        "semester_id": 48,
+        "lehrveranstaltung": 1,
+        "veranstaltungsart": {
+            "id": 2,
+            "kurztext": "S",
+            "langtext": "Seminar"
+        },
+        "personen": {
+            "personen": [
+                {
+                    "id": 39185,
+                    "vorname": "Jonas",
+                    "nachname": "Lehmann",
+                    "titel": null
+                },
+                {
+                    "id": 35987,
+                    "vorname": "Paul",
+                    "nachname": "Zeise",
+                    "titel": "M.Sc."
+                }
+            ]
+        },
+        "termine": {
+            "termine": [
+                {
+                    "id": 669748,
+                    "veranstaltung_id": 1138279,
+                    "raum": {
+                        "id": 384,
+                        "kurztext": "C 40.164 Seminarraum",
+                        "langtext": "C 40.164 Seminarraum",
+                        "plaetze": "22",
+                        "kommentar": "Beamer-Anschlussmöglichkeiten: USB-C, HDMI / Der Raum hat 69,62 qm und 22 Plätze. Der Raum wird mechanisch be- und entlüftet.",
+                        "beamer": 1,
+                        "standort": {
+                            "id": 2,
+                            "kurztext": "UC",
+                            "langtext": "Campus"
+                        }
+                    },
+                    "rhythmus": {
+                        "id": 1,
+                        "kurztext": "wöch.",
+                        "langtext": "wöchentlich"
+                    },
+                    "beginn_datum": 1743976800,
+                    "ende_datum": 1752184800,
+                    "beginn_zeit": 54900,
+                    "ende_zeit": 60300,
+                    "tag": "Montag",
+                    "string": "wöchentlich | Montag | 16:15 - 17:45 | 07.04.2025 - 11.07.2025 | <a href=\"https://mystudy.leuphana.de/raumplan/details?raum_id=384\">C 40.164 Seminarraum</a>"
+                }
+            ]
+        },
+        "zuordnungen": {
+            "zuordnungen": [
+                {
+                    "modul_id": 58538,
+                    "modul_name": "Methodenorientierte Zugänge zu den Naturwissenschaften",
+                    "modul_nummer": "51701000",
+                    "gebiet_id": 10627,
+                    "gebiet_name": "Komplementärstudium",
+                    "studiengang_id": 1223,
+                    "studiengang_name": "Lehren und Lernen",
+                    "studiengang_abschluss": "B.A.",
+                    "semester": "2,3,4,5,6",
+                    "bereich": null,
+                    "cp": null,
+                    "pruefungsnummer": null,
+                    "pruefungsleistung": null,
+                    "studienleistung": null
+                },
+                {
+                    "modul_id": 58538,
+                    "modul_name": "Methodenorientierte Zugänge zu den Naturwissenschaften",
+                    "modul_nummer": "51701000",
+                    "gebiet_id": 10641,
+                    "gebiet_name": "Komplementärstudium",
+                    "studiengang_id": 1224,
+                    "studiengang_name": "Leuphana Bachelor",
+                    "studiengang_abschluss": "B.A./B.Eng./B.Sc./LL.B.",
+                    "semester": "2,3,4,5,6",
+                    "bereich": null,
+                    "cp": null,
+                    "pruefungsnummer": null,
+                    "pruefungsleistung": null,
+                    "studienleistung": null
+                },
+                {
+                    "modul_id": 58538,
+                    "modul_name": "Methodenorientierte Zugänge zu den Naturwissenschaften",
+                    "modul_nummer": "51701000",
+                    "gebiet_id": 10852,
+                    "gebiet_name": "Komplementärstudium",
+                    "studiengang_id": 1253,
+                    "studiengang_name": "Sozialpädagogik",
+                    "studiengang_abschluss": "B.A.",
+                    "semester": "4",
+                    "bereich": null,
+                    "cp": null,
+                    "pruefungsnummer": null,
+                    "pruefungsleistung": null,
+                    "studienleistung": null
+                },
+                {
+                    "modul_id": 58538,
+                    "modul_name": "Methodenorientierte Zugänge zu den Naturwissenschaften",
+                    "modul_nummer": "51701000",
+                    "gebiet_id": 10873,
+                    "gebiet_name": "Komplementärstudium",
+                    "studiengang_id": 1255,
+                    "studiengang_name": "Wirtschaftspädagogik",
+                    "studiengang_abschluss": "B.A.",
+                    "semester": "6",
+                    "bereich": null,
+                    "cp": null,
+                    "pruefungsnummer": null,
+                    "pruefungsleistung": null,
+                    "studienleistung": null
+                }
+            ]
+        },
+        "sprache": {
+            "id": 1,
+            "kurztext": "de",
+            "langtext": "Deutsch"
+        }
+    },
+    {
+        "id": 1140113,
+        "name": "Datenbank und Informationsmanagement",
+        "name_en": "Databases and Information Management",
+        "nummer": null,
+        "inhalt": "Sei es die Planung des nächsten Urlaubs, der gemütliche Abend zuhause\r\nmit einem Film des bevorzugten Streaming-Dienstes oder die Online-\r\nEssensbestellung beim Lieblingsitaliener – alltäglich kommen wir, ohne es\r\nzu merken, in Kontakt mit den versteckten Säulen der Datenverarbeitung:\r\nden Datenbanken. Doch was steckt dahinter und wie genau funktioniert\r\ndie Verwaltung von Daten wirklich?\r\nIn diesem Kurs sollen die Konzepte und Arten von Datenbanken\r\nbeleuchtet sowie anhand einfacher Beispiele der Umgang mit\r\nDatenbanken praxisnah erlernt werden.",
+        "ziel": "Die Studierenden:\r\n• kennen Grundkonzepte von relationalen Datenbanksystemen,\r\nNoSQL-Datenbanken und Informationssystemen und können\r\nSysteme entsprechend der jeweiligen Aufgabenstellung\r\nsachgerecht auswählen.\r\n• können mit Fokus auf technischen Anwendungen selbständig\r\neine einfache Datenbank von der fachlichen Modellierung bis\r\nzur Implementierung systematisch erstellen und in ein\r\nInformationssystem einbinden\r\n• formulieren zielgerichtet Datenbankoperationen, bspw. in SQL,\r\nfür gegebene Aufgabestellungen.\r\n• können Datenbanktransaktionen entwerfen und\r\nimplementieren",
+        "literatur": null,
+        "teilnahmevoraussetzung": null,
+        "studienleistung": null,
+        "pruefungsleistung": null,
+        "sonstiges": null,
+        "www": null,
+        "sws": "2",
+        "tags": "keine",
+        "schueleruni": 0,
+        "studiumgenerale": 0,
+        "semester_id": 48,
+        "lehrveranstaltung": 1,
+        "veranstaltungsart": {
+            "id": 2,
+            "kurztext": "S",
+            "langtext": "Seminar"
+        },
+        "personen": {
+            "personen": [
+                {
+                    "id": 1247,
+                    "vorname": "N.",
+                    "nachname": "N.",
+                    "titel": null
+                }
+            ]
+        },
+        "termine": {
+            "termine": [
+                {
+                    "id": 673920,
+                    "veranstaltung_id": 1140113,
+                    "raum": {
+                        "id": 47,
+                        "kurztext": "C 12.013 Seminarraum",
+                        "langtext": "C 12.013 Seminarraum",
+                        "plaetze": "37",
+                        "kommentar": "Beamer-Anschlussmöglichkeiten: USB-C, HDMI / Der Raum hat 74,84 qm und 37 Plätze. Parlamentarische Bestuhlung.",
+                        "beamer": 1,
+                        "standort": {
+                            "id": 2,
+                            "kurztext": "UC",
+                            "langtext": "Campus"
+                        }
+                    },
+                    "rhythmus": {
+                        "id": 1,
+                        "kurztext": "wöch.",
+                        "langtext": "wöchentlich"
+                    },
+                    "beginn_datum": 1743976800,
+                    "ende_datum": 1752184800,
+                    "beginn_zeit": 33300,
+                    "ende_zeit": 38700,
+                    "tag": "Freitag",
+                    "string": "wöchentlich | Freitag | 10:15 - 11:45 | 07.04.2025 - 11.07.2025 | <a href=\"https://mystudy.leuphana.de/raumplan/details?raum_id=47\">C 12.013 Seminarraum</a>"
+                }
+            ]
+        },
+        "zuordnungen": {
+            "zuordnungen": [
+                {
+                    "modul_id": 58538,
+                    "modul_name": "Methodenorientierte Zugänge zu den Naturwissenschaften",
+                    "modul_nummer": "51701000",
+                    "gebiet_id": 10627,
+                    "gebiet_name": "Komplementärstudium",
+                    "studiengang_id": 1223,
+                    "studiengang_name": "Lehren und Lernen",
+                    "studiengang_abschluss": "B.A.",
+                    "semester": "2,3,4,5,6",
+                    "bereich": null,
+                    "cp": null,
+                    "pruefungsnummer": null,
+                    "pruefungsleistung": null,
+                    "studienleistung": null
+                },
+                {
+                    "modul_id": 58538,
+                    "modul_name": "Methodenorientierte Zugänge zu den Naturwissenschaften",
+                    "modul_nummer": "51701000",
+                    "gebiet_id": 10641,
+                    "gebiet_name": "Komplementärstudium",
+                    "studiengang_id": 1224,
+                    "studiengang_name": "Leuphana Bachelor",
+                    "studiengang_abschluss": "B.A./B.Eng./B.Sc./LL.B.",
+                    "semester": "2,3,4,5,6",
+                    "bereich": null,
+                    "cp": null,
+                    "pruefungsnummer": null,
+                    "pruefungsleistung": null,
+                    "studienleistung": null
+                },
+                {
+                    "modul_id": 58538,
+                    "modul_name": "Methodenorientierte Zugänge zu den Naturwissenschaften",
+                    "modul_nummer": "51701000",
+                    "gebiet_id": 10852,
+                    "gebiet_name": "Komplementärstudium",
+                    "studiengang_id": 1253,
+                    "studiengang_name": "Sozialpädagogik",
+                    "studiengang_abschluss": "B.A.",
+                    "semester": "4",
+                    "bereich": null,
+                    "cp": null,
+                    "pruefungsnummer": null,
+                    "pruefungsleistung": null,
+                    "studienleistung": null
+                },
+                {
+                    "modul_id": 58538,
+                    "modul_name": "Methodenorientierte Zugänge zu den Naturwissenschaften",
+                    "modul_nummer": "51701000",
+                    "gebiet_id": 10873,
+                    "gebiet_name": "Komplementärstudium",
+                    "studiengang_id": 1255,
+                    "studiengang_name": "Wirtschaftspädagogik",
+                    "studiengang_abschluss": "B.A.",
+                    "semester": "6",
+                    "bereich": null,
+                    "cp": null,
+                    "pruefungsnummer": null,
+                    "pruefungsleistung": null,
+                    "studienleistung": null
+                }
+            ]
+        },
+        "sprache": {
+            "id": 1,
+            "kurztext": "de",
+            "langtext": "Deutsch"
+        }
+    },
+    {
+        "id": 1138390,
+        "name": "Der experimentelle Zugang zur Psychologie",
+        "name_en": "The experimental access to psychology",
+        "nummer": null,
+        "inhalt": "Die Pschologie erforscht Verhalten und Erleben von Menschen. Für eine längere Zeit nach Einführung der Psychologie als Wissenschaftsdisziplin galt die Selbstbeobachtung und mithin der Konstruktivismus als anerkannter Forschungsweg. Der Mainstream der Psychologie hat aber erkannt, dass der einzige, gangbare Weg der Erkenntnisgewinnung in der Psychologie der experimentelle Zugang ist. Die Studierenden lernen die einzelnen Schritte des Experimentierens bezüglich des äußerst komplexen Forschungsgegenstandes der Psychologie kennen und üben die Umsetzung. ",
+        "ziel": "Die Studierenden werden befähigt, einerseits Experimente hinsichtlich ihrerAussagegrenzen zu beurteilen und andererseits eigene Experimente so zu planen und durchzuführen, dass sie mit universitär verfügbaren Methoden zur Beantwortung ihrer Fragestellungen Daten beschaffen, auswerten und interpretieren können. ",
+        "literatur": null,
+        "teilnahmevoraussetzung": "Vorkenntnisse der Module &#34; Wissenschaft kennt disziplinäre Grenzen&#34; und &#34;Wissenschaft nutzt Methoden&#34;\r\n\r\nDas Seminar wendet sich an Studierende außerhalb der Psychologiestudiengänge. Studierende des Majors Psychologie und des Minors Wirtschaftspsychologie sollten sich nicht anmelden, da in diesen Studiengängen experimentalpsychologische Praktika angeboten werden.",
+        "studienleistung": null,
+        "pruefungsleistung": null,
+        "sonstiges": null,
+        "www": null,
+        "sws": "2",
+        "tags": "Methodenorientiert - naturwissenschaftlich",
+        "schueleruni": 0,
+        "studiumgenerale": 0,
+        "semester_id": 48,
+        "lehrveranstaltung": 1,
+        "veranstaltungsart": {
+            "id": 2,
+            "kurztext": "S",
+            "langtext": "Seminar"
+        },
+        "personen": {
+            "personen": [
+                {
+                    "id": 463,
+                    "vorname": "Gerd",
+                    "nachname": "Meier",
+                    "titel": "Prof. Dr."
+                }
+            ]
+        },
+        "termine": {
+            "termine": [
+                {
+                    "id": 669919,
+                    "veranstaltung_id": 1138390,
+                    "raum": {
+                        "id": 210,
+                        "kurztext": "W HS 3",
+                        "langtext": "W HS 3",
+                        "plaetze": "98",
+                        "kommentar": "Beamer-Anschlussmöglichkeiten: USB-C, HDMI / Der Raum hat 82 qm und 98 Plätze.",
+                        "beamer": 1,
+                        "standort": {
+                            "id": 4,
+                            "kurztext": "WW",
+                            "langtext": "Wilschenbrucher Weg (Rotes Feld)"
+                        }
+                    },
+                    "rhythmus": {
+                        "id": 1,
+                        "kurztext": "wöch.",
+                        "langtext": "wöchentlich"
+                    },
+                    "beginn_datum": 1743976800,
+                    "ende_datum": 1752184800,
+                    "beginn_zeit": 40500,
+                    "ende_zeit": 45900,
+                    "tag": "Montag",
+                    "string": "wöchentlich | Montag | 12:15 - 13:45 | 07.04.2025 - 11.07.2025 | <a href=\"https://mystudy.leuphana.de/raumplan/details?raum_id=210\">W HS 3</a>"
+                }
+            ]
+        },
+        "zuordnungen": {
+            "zuordnungen": [
+                {
+                    "modul_id": 58538,
+                    "modul_name": "Methodenorientierte Zugänge zu den Naturwissenschaften",
+                    "modul_nummer": "51701000",
+                    "gebiet_id": 10627,
+                    "gebiet_name": "Komplementärstudium",
+                    "studiengang_id": 1223,
+                    "studiengang_name": "Lehren und Lernen",
+                    "studiengang_abschluss": "B.A.",
+                    "semester": "2,3,4,5,6",
+                    "bereich": null,
+                    "cp": null,
+                    "pruefungsnummer": null,
+                    "pruefungsleistung": null,
+                    "studienleistung": null
+                },
+                {
+                    "modul_id": 58538,
+                    "modul_name": "Methodenorientierte Zugänge zu den Naturwissenschaften",
+                    "modul_nummer": "51701000",
+                    "gebiet_id": 10641,
+                    "gebiet_name": "Komplementärstudium",
+                    "studiengang_id": 1224,
+                    "studiengang_name": "Leuphana Bachelor",
+                    "studiengang_abschluss": "B.A./B.Eng./B.Sc./LL.B.",
+                    "semester": "2,3,4,5,6",
+                    "bereich": null,
+                    "cp": null,
+                    "pruefungsnummer": null,
+                    "pruefungsleistung": null,
+                    "studienleistung": null
+                },
+                {
+                    "modul_id": 58538,
+                    "modul_name": "Methodenorientierte Zugänge zu den Naturwissenschaften",
+                    "modul_nummer": "51701000",
+                    "gebiet_id": 10852,
+                    "gebiet_name": "Komplementärstudium",
+                    "studiengang_id": 1253,
+                    "studiengang_name": "Sozialpädagogik",
+                    "studiengang_abschluss": "B.A.",
+                    "semester": "4",
+                    "bereich": null,
+                    "cp": null,
+                    "pruefungsnummer": null,
+                    "pruefungsleistung": null,
+                    "studienleistung": null
+                },
+                {
+                    "modul_id": 58538,
+                    "modul_name": "Methodenorientierte Zugänge zu den Naturwissenschaften",
+                    "modul_nummer": "51701000",
+                    "gebiet_id": 10873,
+                    "gebiet_name": "Komplementärstudium",
+                    "studiengang_id": 1255,
+                    "studiengang_name": "Wirtschaftspädagogik",
+                    "studiengang_abschluss": "B.A.",
+                    "semester": "6",
+                    "bereich": null,
+                    "cp": null,
+                    "pruefungsnummer": null,
+                    "pruefungsleistung": null,
+                    "studienleistung": null
+                }
+            ]
+        },
+        "sprache": {
+            "id": 1,
+            "kurztext": "de",
+            "langtext": "Deutsch"
+        }
+    },
+    {
+        "id": 1140029,
+        "name": "Fortgeschrittene Softwareentwicklung mit Java",
+        "name_en": "Advanced Software development with Java",
+        "nummer": null,
+        "inhalt": "Die Veranstaltung behandelt die fortgeschrittene Programmierung mit Java.  \r\n\r\nDie Veranstaltung wiederholt kurz die grundlegenden Merkmale von Java. Dazu zählen unter anderem Schlüsselworte, Bezeichner, Operatoren, Datentypen, Kontrollstrukturen, Arrays und Strings. Danach werden ausgesuchte vertiefende Konzepte behandelt.\r\n\r\nEs werden ausgesuchte Themen aus folgenden Bereichen behandelt (weiterführende vorbehalten):\r\nKap. 01. Einführung in Java\r\nKap. 02. Sprachelemente und Kontrollstrukturen\r\nKap. 03. Objektorientierung - Klasse und Objekt, Kapselung und Konstruktoren\r\nKap. 04.Objektorientierung - Vererbung, Finale Klassen, Abstrakte Klassen\r\nKap. 05. Interfaces, Adapterklassen\r\nKap. 06. Fehlerbehandlung (Exceptions, Assertions)  \r\nKap. 07. Arrays, Datenstrukturen\r\nKap. 08. Collections-Framework\r\nKap. 09. Generics\r\nKap. 10. Funktionale Programmierung, Lamda Expressions\r\nKap. 11. Stream API\r\nKap. 12. Nebenläufige Programmierung\r\nKap. 13. Design Pattern\r\nKap. 14. Datenbankprogrogrammierung\r\n",
+        "ziel": "Ziel der Veranstaltung ist die Vermittlung von Kenntnissen zur Softwareentwicklung mit Java. Jeder Teilnehmer soll nach Teilnahme der Veranstaltung in der Lage sein, Anwendungen selbstständig mit Java zu entwickeln.",
+        "literatur": null,
+        "teilnahmevoraussetzung": "Eigenes Notebook mit aktuellem MS-Windows Betriebssystem.\r\nKenntnisse der Programmiersprache Java.",
+        "studienleistung": "Selbstständige Entwicklung einer Java-Software und Vertretung der darin enthaltenen Sprachkonzepte.  ",
+        "pruefungsleistung": null,
+        "sonstiges": null,
+        "www": null,
+        "sws": "2",
+        "tags": "Methodenorientiert - naturwissenschaftlich",
+        "schueleruni": 0,
+        "studiumgenerale": 0,
+        "semester_id": 48,
+        "lehrveranstaltung": 1,
+        "veranstaltungsart": {
+            "id": 2,
+            "kurztext": "S",
+            "langtext": "Seminar"
+        },
+        "personen": {
+            "personen": [
+                {
+                    "id": 416,
+                    "vorname": "Ralph",
+                    "nachname": "Welge",
+                    "titel": "Prof. Dr."
+                }
+            ]
+        },
+        "termine": {
+            "termine": [
+                {
+                    "id": 673755,
+                    "veranstaltung_id": 1140029,
+                    "raum": {
+                        "id": 46,
+                        "kurztext": "C 12.112 Seminarraum",
+                        "langtext": "C 12.112 Seminarraum",
+                        "plaetze": "35",
+                        "kommentar": "Beamer-Anschlussmöglichkeiten: USB-C, HDMI /  Der Raum hat 70,16 qm und 35 Plätze. Parlamentarische Bestuhlung. ",
+                        "beamer": 1,
+                        "standort": {
+                            "id": 2,
+                            "kurztext": "UC",
+                            "langtext": "Campus"
+                        }
+                    },
+                    "rhythmus": {
+                        "id": 1,
+                        "kurztext": "wöch.",
+                        "langtext": "wöchentlich"
+                    },
+                    "beginn_datum": 1743976800,
+                    "ende_datum": 1752184800,
+                    "beginn_zeit": 26100,
+                    "ende_zeit": 31500,
+                    "tag": "Freitag",
+                    "string": "wöchentlich | Freitag | 08:15 - 09:45 | 07.04.2025 - 11.07.2025 | <a href=\"https://mystudy.leuphana.de/raumplan/details?raum_id=46\">C 12.112 Seminarraum</a>"
+                }
+            ]
+        },
+        "zuordnungen": {
+            "zuordnungen": [
+                {
+                    "modul_id": 58538,
+                    "modul_name": "Methodenorientierte Zugänge zu den Naturwissenschaften",
+                    "modul_nummer": "51701000",
+                    "gebiet_id": 10627,
+                    "gebiet_name": "Komplementärstudium",
+                    "studiengang_id": 1223,
+                    "studiengang_name": "Lehren und Lernen",
+                    "studiengang_abschluss": "B.A.",
+                    "semester": "2,3,4,5,6",
+                    "bereich": null,
+                    "cp": null,
+                    "pruefungsnummer": null,
+                    "pruefungsleistung": null,
+                    "studienleistung": null
+                },
+                {
+                    "modul_id": 58538,
+                    "modul_name": "Methodenorientierte Zugänge zu den Naturwissenschaften",
+                    "modul_nummer": "51701000",
+                    "gebiet_id": 10641,
+                    "gebiet_name": "Komplementärstudium",
+                    "studiengang_id": 1224,
+                    "studiengang_name": "Leuphana Bachelor",
+                    "studiengang_abschluss": "B.A./B.Eng./B.Sc./LL.B.",
+                    "semester": "2,3,4,5,6",
+                    "bereich": null,
+                    "cp": null,
+                    "pruefungsnummer": null,
+                    "pruefungsleistung": null,
+                    "studienleistung": null
+                },
+                {
+                    "modul_id": 58538,
+                    "modul_name": "Methodenorientierte Zugänge zu den Naturwissenschaften",
+                    "modul_nummer": "51701000",
+                    "gebiet_id": 10852,
+                    "gebiet_name": "Komplementärstudium",
+                    "studiengang_id": 1253,
+                    "studiengang_name": "Sozialpädagogik",
+                    "studiengang_abschluss": "B.A.",
+                    "semester": "4",
+                    "bereich": null,
+                    "cp": null,
+                    "pruefungsnummer": null,
+                    "pruefungsleistung": null,
+                    "studienleistung": null
+                },
+                {
+                    "modul_id": 58538,
+                    "modul_name": "Methodenorientierte Zugänge zu den Naturwissenschaften",
+                    "modul_nummer": "51701000",
+                    "gebiet_id": 10873,
+                    "gebiet_name": "Komplementärstudium",
+                    "studiengang_id": 1255,
+                    "studiengang_name": "Wirtschaftspädagogik",
+                    "studiengang_abschluss": "B.A.",
+                    "semester": "6",
+                    "bereich": null,
+                    "cp": null,
+                    "pruefungsnummer": null,
+                    "pruefungsleistung": null,
+                    "studienleistung": null
+                }
+            ]
+        },
+        "sprache": {
+            "id": 1,
+            "kurztext": "de",
+            "langtext": "Deutsch"
+        }
+    },
+    {
+        "id": 1138619,
+        "name": "How Automobile works: Past, Present, and Future (FSL)",
+        "name_en": "How Automobile works: Past, Present, and Future",
+        "nummer": null,
+        "inhalt": "1. The Past: Evolution of Automobiles\r\nIn this module, we will explore the origins of automobiles and trace their development through key historical milestones:\r\n•\tEarly Innovations: From steam-powered vehicles to the Benz Patent-Motorwagen, the world&#39;s first automobile.\r\n•\tMass Production Revolution: The impact of Henry Ford&#39;s assembly line and the Model T on making cars accessible to the masses.\r\n•\tTechnological Advancements: Innovations in engine technology, chassis design, and safety features during the early to mid-20th century.\r\n 2. The Present: Modern Automotive Technology\r\nThis module focuses on the current state of automotive technology and the innovations that define modern vehicles:\r\n•\tEngine and Powertrain Systems: Evolution from internal combustion engines to hybrid and electric powertrains.\r\n•\tSafety and Driver Assistance Systems: Advances in safety technologies such as ABS, airbags, collision warning systems, and adaptive cruise control.\r\n•\tConnectivity and Infotainment: Integration of GPS navigation, smartphone connectivity, and entertainment systems.\r\n 3. The Future: Emerging Trends and Technologies\r\nLooking ahead, this module explores the cutting-edge innovations and trends that are shaping the future of automobiles:\r\n•\tElectric Vehicles (EVs): The rise of EVs, advancements in battery technology, and infrastructure development.\r\n•\tAutonomous Driving: Development of self-driving cars, AI-powered navigation systems, and regulatory challenges.\r\n•\tSustainability and Environmental Impact: Efforts towards reducing carbon emissions, sustainable materials, and smart urban mobility solutions.\r\n•\tInnovative Designs: Concepts like flying cars, urban mobility solutions, and the integration of AI in vehicles.\r\n4. Practical Applications and Case Studies\r\nIn this hands-on module, participants will engage in practical demonstrations and case studies to deepen their understanding:\r\n•\tHands-on Workshops: Explore the basic mechanics of automobiles, including engine components, drivetrain systems, and vehicle diagnostics.\r\n•\tCase Studies: Analyse real-world examples of automotive innovations and their impact on industry trends.\r\n•\tProject Work: Collaborate on projects that propose solutions to current challenges in automotive engineering and design.\r\n 5. Conclusion: Looking Ahead\r\n•\tReflection and Discussion: Review the transformative journey of automobiles and the societal impacts of technological advancements.\r\n•\tEthical Considerations: Address ethical dilemmas in autonomous driving, data privacy, and sustainability.\r\n•\tCareer Pathways: Explore career opportunities in automotive engineering, design, research, and entrepreneurship. \r\n",
+        "ziel": "This course will take you on a comprehensive journey through the history of automobiles, explore their current technological advancements, and speculate on the exciting possibilities for the future of transportation. Whether you&#39;re a curious enthusiast, a student of engineering/economics/laws/environments or other faculties who has deep interest in the automotive industry, this course will equip you with a deep understanding of how automobiles work and how they are shaping the future of transportation. ",
+        "literatur": null,
+        "teilnahmevoraussetzung": null,
+        "studienleistung": "Each student/student group will be allotted a topic for the project during the semester. The sessions would be a combo mode of the theory sessions followed by practical demonstrations through activities like group discussion, problem solving exercises and presentations. The written report of minimum 15 pages will be expected from each student at the end of the semester. The report structure is expected to be comprised of Background, Introduction, Objectives, Methodology, Findings, Discussion and Conclusions. For instance, the project topic can be “The emergence of driverless electric vehicles in 21st century: Blessing or curse”. \r\n",
+        "pruefungsleistung": null,
+        "sonstiges": "„FSL“ steht für fremdsprachiges Lehrangebot. In Veranstaltungen, die dieses Kürzel im Titel tragen, sind alle Studien- und Prüfungsleistungen in der entsprechenden Fremdsprache zu erbringen. Grundsätzlich gelten als Teilnahmevoraussetzung für alle fremdsprachigen Veranstaltungen Sprachkenntnisse auf Stufe B2 gemäß GER (Gemeinsamer Europäischer Referenzrahmen für Sprachen). Für einzelne Veranstaltungen kann ein höheres Mindestniveau festgelegt werden. Studierende können sich im Selbstlernzentrum (C5.104) des Sprachenzentrums kostenfrei einstufen lassen.\r\nAlle FSL-Veranstaltungen sind geeignet, die Regel zur Belegung von mindestens einem fremdsprachigen Lehrangebot im Komplementärstudium zu erfüllen (Studierende im Lehramt unterliegen nicht dieser Belegungspflicht). Prüfungsinformationen zum Komplementärstudium finden Sie unter: http://www.leuphana.de/college/studium/ks.html",
+        "www": null,
+        "sws": "2",
+        "tags": "Methodenorientiert - naturwissenschaftlich",
+        "schueleruni": 0,
+        "studiumgenerale": 0,
+        "semester_id": 48,
+        "lehrveranstaltung": 1,
+        "veranstaltungsart": {
+            "id": 1,
+            "kurztext": "V",
+            "langtext": "Vorlesung"
+        },
+        "personen": {
+            "personen": [
+                {
+                    "id": 49847,
+                    "vorname": "Harry",
+                    "nachname": "Rana",
+                    "titel": "Dr."
+                }
+            ]
+        },
+        "termine": {
+            "termine": [
+                {
+                    "id": 670414,
+                    "veranstaltung_id": 1138619,
+                    "raum": {
+                        "id": 328,
+                        "kurztext": "C 14.201 Seminarraum",
+                        "langtext": "C 14.201 Seminarraum",
+                        "plaetze": "35",
+                        "kommentar": "Beamer-Anschlussmöglichkeiten: USB-C, HDMI /  Der Raum hat 64,93 qm und 35 Plätze.",
+                        "beamer": 1,
+                        "standort": {
+                            "id": 2,
+                            "kurztext": "UC",
+                            "langtext": "Campus"
+                        }
+                    },
+                    "rhythmus": {
+                        "id": 2,
+                        "kurztext": "14-tägl.",
+                        "langtext": "14-täglich"
+                    },
+                    "beginn_datum": 1744149600,
+                    "ende_datum": 1752012000,
+                    "beginn_zeit": 47700,
+                    "ende_zeit": 60300,
+                    "tag": "Mittwoch",
+                    "string": "14-täglich | Mittwoch | 14:15 - 17:45 | 09.04.2025 - 09.07.2025 | <a href=\"https://mystudy.leuphana.de/raumplan/details?raum_id=328\">C 14.201 Seminarraum</a>"
+                }
+            ]
+        },
+        "zuordnungen": {
+            "zuordnungen": [
+                {
+                    "modul_id": 58538,
+                    "modul_name": "Methodenorientierte Zugänge zu den Naturwissenschaften",
+                    "modul_nummer": "51701000",
+                    "gebiet_id": 10627,
+                    "gebiet_name": "Komplementärstudium",
+                    "studiengang_id": 1223,
+                    "studiengang_name": "Lehren und Lernen",
+                    "studiengang_abschluss": "B.A.",
+                    "semester": "2,3,4,5,6",
+                    "bereich": null,
+                    "cp": null,
+                    "pruefungsnummer": null,
+                    "pruefungsleistung": null,
+                    "studienleistung": null
+                },
+                {
+                    "modul_id": 58538,
+                    "modul_name": "Methodenorientierte Zugänge zu den Naturwissenschaften",
+                    "modul_nummer": "51701000",
+                    "gebiet_id": 10641,
+                    "gebiet_name": "Komplementärstudium",
+                    "studiengang_id": 1224,
+                    "studiengang_name": "Leuphana Bachelor",
+                    "studiengang_abschluss": "B.A./B.Eng./B.Sc./LL.B.",
+                    "semester": "2,3,4,5,6",
+                    "bereich": null,
+                    "cp": null,
+                    "pruefungsnummer": null,
+                    "pruefungsleistung": null,
+                    "studienleistung": null
+                },
+                {
+                    "modul_id": 58538,
+                    "modul_name": "Methodenorientierte Zugänge zu den Naturwissenschaften",
+                    "modul_nummer": "51701000",
+                    "gebiet_id": 10852,
+                    "gebiet_name": "Komplementärstudium",
+                    "studiengang_id": 1253,
+                    "studiengang_name": "Sozialpädagogik",
+                    "studiengang_abschluss": "B.A.",
+                    "semester": "4",
+                    "bereich": null,
+                    "cp": null,
+                    "pruefungsnummer": null,
+                    "pruefungsleistung": null,
+                    "studienleistung": null
+                },
+                {
+                    "modul_id": 58538,
+                    "modul_name": "Methodenorientierte Zugänge zu den Naturwissenschaften",
+                    "modul_nummer": "51701000",
+                    "gebiet_id": 10873,
+                    "gebiet_name": "Komplementärstudium",
+                    "studiengang_id": 1255,
+                    "studiengang_name": "Wirtschaftspädagogik",
+                    "studiengang_abschluss": "B.A.",
+                    "semester": "6",
+                    "bereich": null,
+                    "cp": null,
+                    "pruefungsnummer": null,
+                    "pruefungsleistung": null,
+                    "studienleistung": null
+                }
+            ]
+        },
+        "sprache": {
+            "id": 2,
+            "kurztext": "en",
+            "langtext": "Englisch"
+        }
+    },
+    {
+        "id": 1138542,
+        "name": "Research Methods in Psychology and Management (FSL)",
+        "name_en": "Research Methods in Psychology and Management (FSL)",
+        "nummer": null,
+        "inhalt": "The course provides an introduction to statistical methods in psychological and management research. The course covers quantitative methods, including research designs, psychometric properties of tests, and statistical analyses of mediation and moderation. Furthermore, the course provides an introduction to developing theoretical models and concepts, operationalizing of constructs, selecting appropriate statistical procedures, and running statistical analyses using R software. Basic knowledge in descriptive and inferential statistics is required.",
+        "ziel": "The aim of the course is to provide skills in research design and in statistical analyses with a focus on quantitative methods to address research questions in psychology and management.",
+        "literatur": null,
+        "teilnahmevoraussetzung": null,
+        "studienleistung": null,
+        "pruefungsleistung": null,
+        "sonstiges": "„FSL“ steht für fremdsprachiges Lehrangebot. In Veranstaltungen, die dieses Kürzel im Titel tragen, sind alle Studien- und Prüfungsleistungen in der jeweiligen Fremdsprache zu erbringen. Grundsätzlich gelten als Teilnahmevoraussetzung für alle fremdsprachigen Veranstaltungen Sprachkenntnisse auf Stufe B2 gemäß GER (Gemeinsamer Europäischer Referenzrahmen für Sprachen); für einzelne Veranstaltungen kann ein höheres Mindestniveau festgelegt werden. Studierende können sich im Selbstlernzentrum des Sprachenzentrums (Raum C5.104) kostenfrei einstufen lassen, nähere Informationen dazu unter https://www.leuphana.de/einrichtungen/sprachenzentrum/slz/oeffnungszeiten-des-slz.html \r\nAlle FSL-Veranstaltungen sind geeignet, die Regel zur Belegung von mindestens einem fremdsprachigen Lehrangebot im Komplementärstudium zu erfüllen. (Gilt nicht für Studierende im Lehramt.) Prüfungsinformationen zum Komplementärstudium finden Sie unter: http://www.leuphana.de/college/studium/ks.html\r\n",
+        "www": null,
+        "sws": "2",
+        "tags": "Methodenorientiert - naturwissenschaftlich",
+        "schueleruni": 0,
+        "studiumgenerale": 0,
+        "semester_id": 48,
+        "lehrveranstaltung": 1,
+        "veranstaltungsart": {
+            "id": 2,
+            "kurztext": "S",
+            "langtext": "Seminar"
+        },
+        "personen": {
+            "personen": [
+                {
+                    "id": 25661,
+                    "vorname": "Michael",
+                    "nachname": "Gielnik",
+                    "titel": "Prof. Dr."
+                }
+            ]
+        },
+        "termine": {
+            "termine": [
+                {
+                    "id": 670228,
+                    "veranstaltung_id": 1138542,
+                    "raum": {
+                        "id": 110,
+                        "kurztext": "C HS 4",
+                        "langtext": "C HS 4",
+                        "plaetze": "139",
+                        "kommentar": "Beamer-Anschlussmöglichkeiten: USB-C, HDMI / Der Raum hat 120 qm und 139 Plätze. Der Raum wird mechanisch be- und entlüftet.",
+                        "beamer": 1,
+                        "standort": {
+                            "id": 2,
+                            "kurztext": "UC",
+                            "langtext": "Campus"
+                        }
+                    },
+                    "rhythmus": {
+                        "id": 1,
+                        "kurztext": "wöch.",
+                        "langtext": "wöchentlich"
+                    },
+                    "beginn_datum": 1743976800,
+                    "ende_datum": 1752184800,
+                    "beginn_zeit": 26100,
+                    "ende_zeit": 31500,
+                    "tag": "Freitag",
+                    "string": "wöchentlich | Freitag | 08:15 - 09:45 | 07.04.2025 - 11.07.2025 | <a href=\"https://mystudy.leuphana.de/raumplan/details?raum_id=110\">C HS 4</a>"
+                }
+            ]
+        },
+        "zuordnungen": {
+            "zuordnungen": [
+                {
+                    "modul_id": 58538,
+                    "modul_name": "Methodenorientierte Zugänge zu den Naturwissenschaften",
+                    "modul_nummer": "51701000",
+                    "gebiet_id": 10627,
+                    "gebiet_name": "Komplementärstudium",
+                    "studiengang_id": 1223,
+                    "studiengang_name": "Lehren und Lernen",
+                    "studiengang_abschluss": "B.A.",
+                    "semester": "2,3,4,5,6",
+                    "bereich": null,
+                    "cp": null,
+                    "pruefungsnummer": null,
+                    "pruefungsleistung": null,
+                    "studienleistung": null
+                },
+                {
+                    "modul_id": 58538,
+                    "modul_name": "Methodenorientierte Zugänge zu den Naturwissenschaften",
+                    "modul_nummer": "51701000",
+                    "gebiet_id": 10641,
+                    "gebiet_name": "Komplementärstudium",
+                    "studiengang_id": 1224,
+                    "studiengang_name": "Leuphana Bachelor",
+                    "studiengang_abschluss": "B.A./B.Eng./B.Sc./LL.B.",
+                    "semester": "2,3,4,5,6",
+                    "bereich": null,
+                    "cp": null,
+                    "pruefungsnummer": null,
+                    "pruefungsleistung": null,
+                    "studienleistung": null
+                },
+                {
+                    "modul_id": 58538,
+                    "modul_name": "Methodenorientierte Zugänge zu den Naturwissenschaften",
+                    "modul_nummer": "51701000",
+                    "gebiet_id": 10852,
+                    "gebiet_name": "Komplementärstudium",
+                    "studiengang_id": 1253,
+                    "studiengang_name": "Sozialpädagogik",
+                    "studiengang_abschluss": "B.A.",
+                    "semester": "4",
+                    "bereich": null,
+                    "cp": null,
+                    "pruefungsnummer": null,
+                    "pruefungsleistung": null,
+                    "studienleistung": null
+                },
+                {
+                    "modul_id": 58538,
+                    "modul_name": "Methodenorientierte Zugänge zu den Naturwissenschaften",
+                    "modul_nummer": "51701000",
+                    "gebiet_id": 10873,
+                    "gebiet_name": "Komplementärstudium",
+                    "studiengang_id": 1255,
+                    "studiengang_name": "Wirtschaftspädagogik",
+                    "studiengang_abschluss": "B.A.",
+                    "semester": "6",
+                    "bereich": null,
+                    "cp": null,
+                    "pruefungsnummer": null,
+                    "pruefungsleistung": null,
+                    "studienleistung": null
+                }
+            ]
+        },
+        "sprache": {
+            "id": 2,
+            "kurztext": "en",
+            "langtext": "Englisch"
+        }
+    },
+    {
+        "id": 1139194,
+        "name": "Smart Home Basics",
+        "name_en": "Smart Home Basics",
+        "nummer": null,
+        "inhalt": "Die Technik ist so weit fortgeschritten, dass man heute Computer in Alltagsgegenstände einbauen kann, etwa in LED-Leuchten, Thermostatventilen; Lichtschalter werden ersetzt durch &#34;Panels&#34; und Smartphone-Apps. Das Smart Home kann man aber auch selbst aufbauen oder um eigene Komponenten erweitern. Es ist möglich, sehr einfach einen winzigen Microcomputer um Sensoren (Temperatur, Bewegung, Energieverbrauch etc.) auszustatten, Aktoren wie Leuchtdioden oder Relais (z.b. als Schalter zu Ein- und Ausschalten von 240V-Leitungen) zu ergänzen und zu programmieren. Dazu besteht die Hardware (hoffentlich Raspberry Pi Pico) aus einem USB-Anschluss zum Anschluss an ein Laptop (benötigt man für das Programmieren), einem Anschluss für Spannungsversorgung und vor allem vielen Input- und Outputanschlüsse für die Sensoren und Aktoren. NICHT vorausgesetzt werden Hard- und Softwarekenntnisse, es ist auch nicht notwendig zu wissen, wie man Hardware aufbaut (&#34;löten&#34;). Im Vordergrund stehen kreative computerbasierte Lösungen für das Smart Home. Das fängt an bei einfachen Blicklichtern, Energieverbrauchsmessungen, Temperaturmessungen, CO2-und VOC-Messungen, Feinstaubmessungen... Im Internet finden sich zahlreiche Beispiele, was man alles mit diesen kleinen Microcomputern machen kann. In einer letzten Phase des Seminars werden Fragen der Zukunft der Gesellschaft und Nachhaltigkeit behandelt (Open Source und Open Hardware, Maker-Communities in der Gesellschaft, Green IT, Technik-Trends wie Matter usw.).",
+        "ziel": "Im Vordergrund steht der kreative Umgang mit moderner Technik. Das Anwendungsfeld &#34;Smart Home&#34; dient uns als Orientierung. Gleichwohl werden, nebenläufig, eine Reihe wichtiger Erfahrungen gemacht: anfassbare Hardware, deren Aufbau man nachvollziehen kann, Grundkenntnisse auf dem Gebiet der Elektronik (Anschluss einer Leuchtdiode), Entwickeln kleiner Programme in Python, die dann auf der Hardware laufen. Der erste Teil der Veranstaltung dient dazu, die StudentInnen in die Lage zu versetzen, die zur Verfügung gestellte Hardware um einfache Sensoren und Aktoren zu erweitern und in einfachen Programmen zu nutzen. Dazu sollen so genannte Starter-Kits zur Verfügung gestellt werden, die alles Notwendige dafür enthalten (Steckbrett, Kabel, Widerstände, LEDs usw.). Der zweite Teil dient dann der Realisierung studentischer Projekte. Diese können sein: Energiesparen, Heimautomatisierung, innovative Anzeigen (z.B. CO2- oder VOC-Ampeln)...",
+        "literatur": null,
+        "teilnahmevoraussetzung": "Bereitschaft zur Installation einer (kleinen) Entwicklungsumgebung auf dem eigenen Rechner. Es werden keine besonderen Kenntnisse vorausgesetzt!",
+        "studienleistung": "Regelmäßige Arbeit in Arbeitsgruppen.",
+        "pruefungsleistung": null,
+        "sonstiges": null,
+        "www": null,
+        "sws": "2",
+        "tags": "Methodenorientiert - naturwissenschaftlich, Nachhaltigkeitsorientiert",
+        "schueleruni": 0,
+        "studiumgenerale": 0,
+        "semester_id": 48,
+        "lehrveranstaltung": 1,
+        "veranstaltungsart": {
+            "id": 2,
+            "kurztext": "S",
+            "langtext": "Seminar"
+        },
+        "personen": {
+            "personen": [
+                {
+                    "id": 145,
+                    "vorname": "Andreas",
+                    "nachname": "Möller",
+                    "titel": "Prof. Dr."
+                }
+            ]
+        },
+        "termine": {
+            "termine": [
+                {
+                    "id": 671585,
+                    "veranstaltung_id": 1139194,
+                    "raum": {
+                        "id": 297,
+                        "kurztext": "C 11.319 Seminarraum",
+                        "langtext": "C 11.319 Seminarraum",
+                        "plaetze": "28",
+                        "kommentar": "Beamer-Anschlussmöglichkeiten: USB-C, HDMI / Der Raum hat 63,29 qm und 28 Plätze.",
+                        "beamer": 1,
+                        "standort": {
+                            "id": 2,
+                            "kurztext": "UC",
+                            "langtext": "Campus"
+                        }
+                    },
+                    "rhythmus": {
+                        "id": 1,
+                        "kurztext": "wöch.",
+                        "langtext": "wöchentlich"
+                    },
+                    "beginn_datum": 1743976800,
+                    "ende_datum": 1752184800,
+                    "beginn_zeit": 40500,
+                    "ende_zeit": 45900,
+                    "tag": "Montag",
+                    "string": "wöchentlich | Montag | 12:15 - 13:45 | 07.04.2025 - 11.07.2025 | <a href=\"https://mystudy.leuphana.de/raumplan/details?raum_id=297\">C 11.319 Seminarraum</a>"
+                }
+            ]
+        },
+        "zuordnungen": {
+            "zuordnungen": [
+                {
+                    "modul_id": 58538,
+                    "modul_name": "Methodenorientierte Zugänge zu den Naturwissenschaften",
+                    "modul_nummer": "51701000",
+                    "gebiet_id": 10627,
+                    "gebiet_name": "Komplementärstudium",
+                    "studiengang_id": 1223,
+                    "studiengang_name": "Lehren und Lernen",
+                    "studiengang_abschluss": "B.A.",
+                    "semester": "2,3,4,5,6",
+                    "bereich": null,
+                    "cp": null,
+                    "pruefungsnummer": null,
+                    "pruefungsleistung": null,
+                    "studienleistung": null
+                },
+                {
+                    "modul_id": 58538,
+                    "modul_name": "Methodenorientierte Zugänge zu den Naturwissenschaften",
+                    "modul_nummer": "51701000",
+                    "gebiet_id": 10641,
+                    "gebiet_name": "Komplementärstudium",
+                    "studiengang_id": 1224,
+                    "studiengang_name": "Leuphana Bachelor",
+                    "studiengang_abschluss": "B.A./B.Eng./B.Sc./LL.B.",
+                    "semester": "2,3,4,5,6",
+                    "bereich": null,
+                    "cp": null,
+                    "pruefungsnummer": null,
+                    "pruefungsleistung": null,
+                    "studienleistung": null
+                },
+                {
+                    "modul_id": 58538,
+                    "modul_name": "Methodenorientierte Zugänge zu den Naturwissenschaften",
+                    "modul_nummer": "51701000",
+                    "gebiet_id": 10852,
+                    "gebiet_name": "Komplementärstudium",
+                    "studiengang_id": 1253,
+                    "studiengang_name": "Sozialpädagogik",
+                    "studiengang_abschluss": "B.A.",
+                    "semester": "4",
+                    "bereich": null,
+                    "cp": null,
+                    "pruefungsnummer": null,
+                    "pruefungsleistung": null,
+                    "studienleistung": null
+                },
+                {
+                    "modul_id": 58538,
+                    "modul_name": "Methodenorientierte Zugänge zu den Naturwissenschaften",
+                    "modul_nummer": "51701000",
+                    "gebiet_id": 10873,
+                    "gebiet_name": "Komplementärstudium",
+                    "studiengang_id": 1255,
+                    "studiengang_name": "Wirtschaftspädagogik",
+                    "studiengang_abschluss": "B.A.",
+                    "semester": "6",
+                    "bereich": null,
+                    "cp": null,
+                    "pruefungsnummer": null,
+                    "pruefungsleistung": null,
+                    "studienleistung": null
+                }
+            ]
+        },
+        "sprache": {
+            "id": 1,
+            "kurztext": "de",
+            "langtext": "Deutsch"
+        }
+    },
+    {
+        "id": 1140006,
+        "name": "Time Series Analysis (FSL)",
+        "name_en": "Time Series Analysis (FSL)",
+        "nummer": null,
+        "inhalt": "The course deals with the two core topics of time series analysis: Description of the nature of certain variables and its prediction. We consider different data generating processes, estimation and testing procedures and we apply them to mainly economic research questions. We use R!\r\n\r\nTheoretical Concepts\r\n- Stationary Autoregressive-Moving Average (ARMA) Processes\r\n- Nonstationary Time Series and Unit Roots\r\n- Cointegration and Testing Cointegration\r\n\r\nEmpirical Applications\r\n- Interest Rate Parity\r\n- Bubbles and Explosive Time Series\r\n- Financial Risk Management",
+        "ziel": "Students should be able to conduct their own empirical research with R.",
+        "literatur": null,
+        "teilnahmevoraussetzung": null,
+        "studienleistung": "An empirical study conducted by the students on an applied topic of time series analysis with R.",
+        "pruefungsleistung": null,
+        "sonstiges": "„FSL“ steht für fremdsprachiges Lehrangebot. In Veranstaltungen, die dieses Kürzel im Titel tragen, sind alle Studien- und Prüfungsleistungen in der entsprechenden Fremdsprache zu erbringen. Grundsätzlich gelten als Teilnahmevoraussetzung für alle fremdsprachigen Veranstaltungen Sprachkenntnisse auf Stufe B2 gemäß GER (Gemeinsamer Europäischer Referenzrahmen für Sprachen). Für einzelne Veranstaltungen kann ein höheres Mindestniveau festgelegt werden. Studierende können sich im Selbstlernzentrum (C5.104) des Sprachenzentrums kostenfrei einstufen lassen.\r\nAlle FSL-Veranstaltungen sind geeignet, die Regel zur Belegung von mindestens einem fremdsprachigen Lehrangebot im Komplementärstudium zu erfüllen (Studierende im Lehramt unterliegen nicht dieser Belegungspflicht). Prüfungsinformationen zum Komplementärstudium finden Sie unter: http://www.leuphana.de/college/studium/ks.html",
+        "www": null,
+        "sws": "2",
+        "tags": "keine",
+        "schueleruni": 0,
+        "studiumgenerale": 0,
+        "semester_id": 48,
+        "lehrveranstaltung": 1,
+        "veranstaltungsart": {
+            "id": 2,
+            "kurztext": "S",
+            "langtext": "Seminar"
+        },
+        "personen": {
+            "personen": [
+                {
+                    "id": 36763,
+                    "vorname": "Christoph",
+                    "nachname": "Wegener",
+                    "titel": "Prof. Dr."
+                }
+            ]
+        },
+        "termine": {
+            "termine": [
+                {
+                    "id": 673705,
+                    "veranstaltung_id": 1140006,
+                    "raum": {
+                        "id": 45,
+                        "kurztext": "C 12.111 Seminarraum",
+                        "langtext": "C 12.111 Seminarraum",
+                        "plaetze": "35",
+                        "kommentar": "Beamer-Anschlussmöglichkeiten: USB-C, HDMI / Der Raum hat 76,57 qm und 35 Plätze. Parlamentarische Bestuhlung.",
+                        "beamer": 1,
+                        "standort": {
+                            "id": 2,
+                            "kurztext": "UC",
+                            "langtext": "Campus"
+                        }
+                    },
+                    "rhythmus": {
+                        "id": 1,
+                        "kurztext": "wöch.",
+                        "langtext": "wöchentlich"
+                    },
+                    "beginn_datum": 1743976800,
+                    "ende_datum": 1752184800,
+                    "beginn_zeit": 33300,
+                    "ende_zeit": 38700,
+                    "tag": "Mittwoch",
+                    "string": "wöchentlich | Mittwoch | 10:15 - 11:45 | 07.04.2025 - 11.07.2025 | <a href=\"https://mystudy.leuphana.de/raumplan/details?raum_id=45\">C 12.111 Seminarraum</a>"
+                }
+            ]
+        },
+        "zuordnungen": {
+            "zuordnungen": [
+                {
+                    "modul_id": 58538,
+                    "modul_name": "Methodenorientierte Zugänge zu den Naturwissenschaften",
+                    "modul_nummer": "51701000",
+                    "gebiet_id": 10627,
+                    "gebiet_name": "Komplementärstudium",
+                    "studiengang_id": 1223,
+                    "studiengang_name": "Lehren und Lernen",
+                    "studiengang_abschluss": "B.A.",
+                    "semester": "2,3,4,5,6",
+                    "bereich": null,
+                    "cp": null,
+                    "pruefungsnummer": null,
+                    "pruefungsleistung": null,
+                    "studienleistung": null
+                },
+                {
+                    "modul_id": 58538,
+                    "modul_name": "Methodenorientierte Zugänge zu den Naturwissenschaften",
+                    "modul_nummer": "51701000",
+                    "gebiet_id": 10641,
+                    "gebiet_name": "Komplementärstudium",
+                    "studiengang_id": 1224,
+                    "studiengang_name": "Leuphana Bachelor",
+                    "studiengang_abschluss": "B.A./B.Eng./B.Sc./LL.B.",
+                    "semester": "2,3,4,5,6",
+                    "bereich": null,
+                    "cp": null,
+                    "pruefungsnummer": null,
+                    "pruefungsleistung": null,
+                    "studienleistung": null
+                },
+                {
+                    "modul_id": 58538,
+                    "modul_name": "Methodenorientierte Zugänge zu den Naturwissenschaften",
+                    "modul_nummer": "51701000",
+                    "gebiet_id": 10852,
+                    "gebiet_name": "Komplementärstudium",
+                    "studiengang_id": 1253,
+                    "studiengang_name": "Sozialpädagogik",
+                    "studiengang_abschluss": "B.A.",
+                    "semester": "4",
+                    "bereich": null,
+                    "cp": null,
+                    "pruefungsnummer": null,
+                    "pruefungsleistung": null,
+                    "studienleistung": null
+                },
+                {
+                    "modul_id": 58538,
+                    "modul_name": "Methodenorientierte Zugänge zu den Naturwissenschaften",
+                    "modul_nummer": "51701000",
+                    "gebiet_id": 10873,
+                    "gebiet_name": "Komplementärstudium",
+                    "studiengang_id": 1255,
+                    "studiengang_name": "Wirtschaftspädagogik",
+                    "studiengang_abschluss": "B.A.",
+                    "semester": "6",
+                    "bereich": null,
+                    "cp": null,
+                    "pruefungsnummer": null,
+                    "pruefungsleistung": null,
+                    "studienleistung": null
+                }
+            ]
+        },
+        "sprache": {
+            "id": 2,
+            "kurztext": "en",
+            "langtext": "Englisch"
+        }
+    }
+]

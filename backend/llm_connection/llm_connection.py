@@ -57,7 +57,7 @@ class LLMConnection():
     def chat_completion(self,chat,question,model):
 
         chat = None
-        print(question)
+        #print(question)
         if chat is None:
             chat = self.chat_setup
 
@@ -93,7 +93,7 @@ class LLMConnection():
         end_index = result.rfind(']') + 1  # Finde das Ende der JSON-Daten
 
         json_string = result[start_index:end_index]
-        print(json_string)
+        #print(json_string)
 
         try:
             data_dict = ast.literal_eval(json_string)

@@ -84,14 +84,11 @@ get_result = """ Ich werde dir eine Liste von Einträgen im JSON-Format bereitst
            "name": <string>,
            "inhalt": <string>,
            "ziel": <string>,
-           "semester_id": <integer>,
-           "termine": <array>
+           "date_string": <string>
        },
        ...
    ]
                  Jeder Eintrag enthält die oben genannten Felder.
-                 Für die Bewertung der Relevanz sind ausschließlich die Felder name, inhalt, ziel und termine relevant.
-                 Ignoriere das Feld semester_id.
 
                  Kontext-Prompt: Ein zusätzlicher Text wird als Kontext bereitgestellt. Die Relevanz eines Eintrags wird durch den Grad bestimmt, wie gut die Inhalte des Eintrags (name, inhalt, ziel, termine) zum Kontext-Prompt passen.
 
@@ -102,7 +99,7 @@ get_result = """ Ich werde dir eine Liste von Einträgen im JSON-Format bereitst
         "name": <string>,
         "inhalt": <string>,
         "ziel": <string>,
-        "termine": <array>
+        "date_string": <string>
     },
     ...
 ]
@@ -115,24 +112,21 @@ get_result = """ Ich werde dir eine Liste von Einträgen im JSON-Format bereitst
         "name": "Beispielkurs 1",
         "inhalt": "Dies ist ein "Kurs" über Philosophie.",
         "ziel": "Ein besseres "Verständnis der Philosophie zu erlangen." ",
-        "semester_id": 101,
-        "termine": []
+        "date_string": "Montag 14:15 Uhr"
     },
     {
         "id": 2,
         "name": "Beispielkurs 2",
         "inhalt": "Ein Kurs über "Datenanalyse mit Python".",
         "ziel": "Grundlagen der Datenanalyse zu erlernen.",
-        "semester_id": 102,
-        "termine": []
+        "date_string": "Dienstage 17:15 Uhr"
     },
     {
         "id": 35,
         "name": "Beispielkurs 3",
         "inhalt": "Die geschichte der Philosophie",
         "ziel": "Geschichtliche Entwicklung der philosophischen Konzepte.",
-        "semester_id": 105,
-        "termine": []
+        "date_string": "No dates found"
     }
 ]
                  Und der Kontext lautet: "Bitte finde Kurse, die sich mit Philosophie befassen."
@@ -145,14 +139,14 @@ get_result = """ Ich werde dir eine Liste von Einträgen im JSON-Format bereitst
         "name": "Beispielkurs 1",
         "inhalt": "Dies ist ein Kurs über Philosophie.",
         "ziel": "Ein besseres Verständnis der Philosophie zu erlangen.",
-        "termine": []
+        "date_string": "Montag 14:15 Uhr"
     },
     {
         "id": 35,
         "name": "Beispielkurs 3",
         "inhalt": "Die geschichte der Philosophie",
         "ziel": "Geschichtliche Entwicklung der philosophischen Konzepte.",
-        "termine": []
+        "date_string": "No dates found"
     }
 ]
                  
