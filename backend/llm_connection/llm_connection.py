@@ -88,7 +88,7 @@ class LLMConnection():
                  
         promt = promt + f"{input_comps} Der Kontext-Prompt lautet: {input_promt}"
         complete_promt = {"role":"user","content":promt}
-        result =  self.chat_completion(chat=chat,question=complete_promt,model=self.model)
+        result =  self.chat_completion(chat=chat,question=complete_promt,model=self.model_lama_70)
         start_index = result.find('[')  # Finde den Anfang der JSON-Daten
         end_index = result.rfind(']') + 1  # Finde das Ende der JSON-Daten
 

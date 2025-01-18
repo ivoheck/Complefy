@@ -35,42 +35,42 @@ def home():
 def upload_data_page():
     return render_template('upload_data_page.html')
 
-@app.route('/select_interests_page', methods=['POST'])
-def upload_data():
-    syllabus_file = request.files.get('syllabus')
-    tor_file = request.files.get('tor')
+# @app.route('/select_interests_page', methods=['POST'])
+# def upload_data():
+#     syllabus_file = request.files.get('syllabus')
+#     tor_file = request.files.get('tor')
 
-    try:
-        if syllabus_file:
-            # Dateiendung ermitteln
-            syllabus_extension = os.path.splitext(syllabus_file.filename)[1].lower()
-            if syllabus_extension == '.xlsx':
-                syllabus_data_df = pd.read_excel(BytesIO(syllabus_file.read()))
-                syllabus = GetSallybusInfo().from_myStudy_exel_export(syllabus_data_df)
-                session['syllabus'] = syllabus
-                print(syllabus)
-                print("sallybus als xlsx erhallten")
+#     try:
+#         if syllabus_file:
+#             # Dateiendung ermitteln
+#             syllabus_extension = os.path.splitext(syllabus_file.filename)[1].lower()
+#             if syllabus_extension == '.xlsx':
+#                 syllabus_data_df = pd.read_excel(BytesIO(syllabus_file.read()))
+#                 syllabus = GetSallybusInfo().from_myStudy_exel_export(syllabus_data_df)
+#                 session['syllabus'] = syllabus
+#                 print(syllabus)
+#                 print("sallybus als xlsx erhallten")
 
-            if syllabus_extension == '.png':
-                image = Image.open(BytesIO(syllabus_file.read()))
-                image_np = np.array(image)
-                syllabus = SallybusInfoFromImage(image_np).get_info()
-                session['syllabus'] = syllabus
-                print('test')
-                print(syllabus)
+#             if syllabus_extension == '.png':
+#                 image = Image.open(BytesIO(syllabus_file.read()))
+#                 image_np = np.array(image)
+#                 syllabus = SallybusInfoFromImage(image_np).get_info()
+#                 session['syllabus'] = syllabus
+#                 print('test')
+#                 print(syllabus)
 
 
-    except Exception as e:
-        print(f'extracting information from syllabus was not possible: {e}')
+#     except Exception as e:
+#         print(f'extracting information from syllabus was not possible: {e}')
 
-    try:
-        tor_pdf_data = BytesIO(tor_file.read())
-        finished_comps = GetCompSubsFromInput().getCompSubsFromTOR(tor_pdf_data)
-        session['finished_comps'] = finished_comps
-    except Exception as e:
-        print(f'extracting information from TOR was not possible: {e}')
+#     try:
+#         tor_pdf_data = BytesIO(tor_file.read())
+#         finished_comps = GetCompSubsFromInput().getCompSubsFromTOR(tor_pdf_data)
+#         session['finished_comps'] = finished_comps
+#     except Exception as e:
+#         print(f'extracting information from TOR was not possible: {e}')
 
-    return render_template('select_interests_page.html')
+#     return render_template('select_interests_page.html')
 
 def get_syllabus_frontend(day,time_stamps):
     start_hours = time_stamps[0] // 60
@@ -113,17 +113,50 @@ def get_events():
 
 @app.route('/display_input', methods=['POST'])
 def display_input():
-    essay_preference = request.form.get('essay') == 'true'
-    exam_preference = request.form.get('exam') == 'true'
-    additional_prompt = request.form.get('additionalUserPrompt')
 
-    session['preferences'] = {
-        'essay': essay_preference,
-        'exam': exam_preference,
-        'additionalUserPrompt': additional_prompt,
-    }
+    # essay_preference = request.form.get('essay') == 'true'
+    # exam_preference = request.form.get('exam') == 'true'
+    # additional_prompt = request.form.get('additionalUserPrompt')
+
+    # session['preferences'] = {
+    #     'essay': essay_preference,
+    #     'exam': exam_preference,
+    #     'additionalUserPrompt': additional_prompt,
+    # }
     
     session['chat'] = ChatObject().get_chat()
+
+    syllabus_file = request.files.get('syllabus')
+    tor_file = request.files.get('tor')
+
+    try:
+        if syllabus_file:
+            # Dateiendung ermitteln
+            syllabus_extension = os.path.splitext(syllabus_file.filename)[1].lower()
+            if syllabus_extension == '.xlsx':
+                syllabus_data_df = pd.read_excel(BytesIO(syllabus_file.read()))
+                syllabus = GetSallybusInfo().from_myStudy_exel_export(syllabus_data_df)
+                session['syllabus'] = syllabus
+                print(syllabus)
+                print("sallybus als xlsx erhallten")
+
+            if syllabus_extension == '.png':
+                image = Image.open(BytesIO(syllabus_file.read()))
+                image_np = np.array(image)
+                syllabus = SallybusInfoFromImage(image_np).get_info()
+                session['syllabus'] = syllabus
+                print(syllabus)
+
+
+    except Exception as e:
+        print(f'extracting information from syllabus was not possible: {e}')
+
+    try:
+        tor_pdf_data = BytesIO(tor_file.read())
+        finished_comps = GetCompSubsFromInput().getCompSubsFromTOR(tor_pdf_data)
+        session['finished_comps'] = finished_comps
+    except Exception as e:
+        print(f'extracting information from TOR was not possible: {e}')
 
     return render_template('display_input_data_page.html')
 
@@ -205,7 +238,7 @@ def get_pre_sorted_comps():
     
     #Reduziert ergebnisse auf 30
     print(len(pre_sorted_comps))
-    pre_sorted_comps = pre_sorted_comps[0:30]
+    #pre_sorted_comps = pre_sorted_comps[0:10]
     return pre_sorted_comps
 
 
@@ -214,6 +247,8 @@ def handle_chat_message():
     data = request.get_json()  # Empfängt die Nachricht als JSON
     message = data.get('message')
 
+    result = []
+
     if not message:
         return jsonify({"error": "No message provided"}), 400
 
@@ -221,21 +256,36 @@ def handle_chat_message():
     print(f"Received message: {message}")
 
     try:
-        results = LLMConnection().get_results(input_comps=get_pre_sorted_comps(),input_promt=message)
+        for attempt in range(5):
+            try:
+                results = LLMConnection().get_results(
+                    input_comps=get_pre_sorted_comps()[attempt * 10:(attempt + 1) * 10],
+                    input_promt=message
+                )
+
+                for i in results[0]:
+                    result.append(i)
+
+            except Exception as e:
+                print(f"Fehler beim Abrufen der Ergebnisse in Versuch {attempt + 1}: {e}")
+
+        #result = execute_parallel_requests(5, 10, message)
 
     except Exception as e:
         print(e)
         return jsonify({"status": "success", "message": "Error with LLM result","results":[]}), 200
     
     #question = {"role":"user","content":message}
-    awser = llm.get_result_awnser(message=message,results=results)
+    awser = llm.get_result_awnser(message=message,results=result)
     #session['chat'] = ChatObject().add_user_promt(session['chat'],question)
     #session['chat'] = ChatObject().add_respones(session['chat'],awser)
 
     #print(awser)
     #print(type(awser))
 
-    return jsonify({"status": "success", "message": str(awser),"results_string":results[1],'results':results[0]}), 200
+    #print(result)
+
+    return jsonify({"status": "success", "message": str(awser),"results_string": 'fail','results':result}), 200
 
 if __name__ == '__main__':
     # Starte den Flask-Server
