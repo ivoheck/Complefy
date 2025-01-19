@@ -13,6 +13,8 @@ from secret import api_key
 import json
 import ast
 from backend.llm_connection import promts
+import asyncio
+import ast
 
 
 class ChatObject():
@@ -68,6 +70,23 @@ class LLMConnection():
 
         return chat_completion.choices[0].message.content
     
+    async def chat_completion_async(self,chat,question,model):
+
+        chat = None
+        #print(question)
+        if chat is None:
+            chat = self.chat_setup
+
+        # chat_completion = await self.client.chat.completions.create(
+        #     messages=[chat,question],
+        #     model= model,
+        # )
+        chat_completion = await asyncio.to_thread(self.client.chat.completions.create,
+                                              messages=[chat, question],
+                                              model=model)
+
+        return chat_completion.choices[0].message.content
+    
     def get_result_awnser(self,message,results):
         chat = [{"role":"system","content":"You are a helpful assistant"}]
 
@@ -81,6 +100,27 @@ class LLMConnection():
         
         return self.chat_completion(chat=chat,question=complete_promt,model=self.model_lama_70)
         
+    async def get_results_async(self,input_comps,input_promt):
+        chat = [{"role":"system","content":"You are a helpful assistant"}]
+                 
+        promt =  promts.get_result
+                 
+        promt = promt + f"{input_comps} Der Kontext-Prompt lautet: {input_promt}"
+        complete_promt = {"role":"user","content":promt}
+        result =  await self.chat_completion_async(chat=chat,question=complete_promt,model=self.model_lama_70)
+        start_index = result.find('[')  # Finde den Anfang der JSON-Daten
+        end_index = result.rfind(']') + 1  # Finde das Ende der JSON-Daten
+
+        json_string = result[start_index:end_index]
+        #print(json_string)
+
+        try:
+            data_dict = ast.literal_eval(json_string)
+            return (data_dict,None)
+        except:
+            return (None, json_string)
+        
+
     def get_results(self,input_comps,input_promt):
         chat = [{"role":"system","content":"You are a helpful assistant"}]
                  

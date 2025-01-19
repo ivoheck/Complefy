@@ -10,6 +10,12 @@ from backend.llm_connection.llm_connection import LLMConnection, ChatObject
 from PIL import Image
 import numpy as np
 import json
+import threading
+import queue
+from concurrent.futures import ThreadPoolExecutor
+import asyncio
+import aiohttp
+import time
 
 # Füge das Projektverzeichnis zu sys.path hinzu
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -196,19 +202,15 @@ def get_pre_sorted_comps():
         else:
             not_finished_ids.append(module['id'])
 
-    #reducing to one id for testing resons
-    #not_finished_ids = [not_finished_ids[1]]
     pre_sorted_comps = []
     for id in not_finished_ids:
         with open(f'backend/data/veranstaltungen_json/veranstaltungen_{str(id)}.json','r') as file:
-            
 
             for item in json.load(file):
 
                 data = {'id': item['id'],
                         'name': item['name'],
                         'inhalt': item['inhalt'],
-                        #'date_string': item['termine']['termine'][0]['string']
                     }
 
                 try:
@@ -235,57 +237,110 @@ def get_pre_sorted_comps():
                     data['data_string'] = 'No dates found'
                     pre_sorted_comps.append(data)
 
-    
-    #Reduziert ergebnisse auf 30
     print(len(pre_sorted_comps))
-    #pre_sorted_comps = pre_sorted_comps[0:10]
     return pre_sorted_comps
+
+def fetch_data(message,sorted_comps,result_queue):
+    try:
+        results = LLMConnection().get_results(
+            input_comps=sorted_comps,
+            input_promt=message
+            )
+
+        result_queue.put(results[0])
+        
+    except Exception as e:
+        print(e)  
+
+
+async def fetch_data_async(message, sorted_comps, result_queue):
+    try:
+        results = await LLMConnection().get_results_async(input_comps=sorted_comps, input_promt=message)
+            
+        result_queue.put(results[0])
+    except Exception as e:
+        print(e)  
 
 
 @app.route('/chat_message', methods=['POST','GET'])
-def handle_chat_message():
+async def handle_chat_message():
     data = request.get_json()  # Empfängt die Nachricht als JSON
     message = data.get('message')
 
-    result = []
+    end_result = []
 
     if not message:
         return jsonify({"error": "No message provided"}), 400
 
-    # Hier kannst du die Nachricht speichern oder weiterverarbeiten
     print(f"Received message: {message}")
 
     try:
-        for attempt in range(5):
+        start_time = time.time()
+        # for attempt in range(5):
+        #     try:
+        #         results = LLMConnection().get_results(
+        #             input_comps=get_pre_sorted_comps()[attempt * 10:(attempt + 1) * 10],
+        #             input_promt=message
+        #         )
+
+        #         print(results[0])
+        #         for i in results[0]:
+        #             end_result.append(i)
+
+        #     except Exception as e:
+        #         print(f"Fehler beim Abrufen der Ergebnisse in Versuch {attempt + 1}: {e}")
+        result_queue = queue.Queue()
+
+        # threads = [
+        #     threading.Thread(target=fetch_data, args=(message,get_pre_sorted_comps()[attempt * 10:(attempt + 1) * 10],result_queue))
+        #     for attempt in range(5)
+        # ]
+
+        # for thread in threads:
+        #     thread.start()
+
+        # for thread in threads:
+        #     thread.join()
+
+        # with ThreadPoolExecutor(max_workers=5) as executor:
+        #     futures = []
+        #     for attempt in range(5):
+        #         futures.append(executor.submit(fetch_data, message, get_pre_sorted_comps()[attempt * 10:(attempt + 1) * 10], result_queue))
+        
+        #     # Warte, bis alle Threads fertig sind
+        #     for future in futures:
+        #         future.result()
+        
+        comps = get_pre_sorted_comps()
+        attemps = min(int(len(comps) / 10), 3)
+
+        tasks = []
+        for attempt in range(attemps):
+            task = asyncio.ensure_future(fetch_data_async(message, get_pre_sorted_comps()[attempt * 10:(attempt + 1) * 10], result_queue))
+            tasks.append(task)
+    
+        await asyncio.gather(*tasks)
+
+        while not result_queue.empty():
             try:
-                results = LLMConnection().get_results(
-                    input_comps=get_pre_sorted_comps()[attempt * 10:(attempt + 1) * 10],
-                    input_promt=message
-                )
-
-                for i in results[0]:
-                    result.append(i)
-
+                for result in result_queue.get():
+                    end_result.append(result)
             except Exception as e:
-                print(f"Fehler beim Abrufen der Ergebnisse in Versuch {attempt + 1}: {e}")
+                print(e)
 
-        #result = execute_parallel_requests(5, 10, message)
+        end_time = time.time()
+        elapsed_time = end_time - start_time
+        print(f"Verstrichene Zeit: {elapsed_time} Sekunden")
 
     except Exception as e:
         print(e)
         return jsonify({"status": "success", "message": "Error with LLM result","results":[]}), 200
     
-    #question = {"role":"user","content":message}
-    awser = llm.get_result_awnser(message=message,results=result)
-    #session['chat'] = ChatObject().add_user_promt(session['chat'],question)
-    #session['chat'] = ChatObject().add_respones(session['chat'],awser)
+    awser = llm.get_result_awnser(message=message,results=end_result)
 
-    #print(awser)
-    #print(type(awser))
+    print(end_result)
 
-    #print(result)
-
-    return jsonify({"status": "success", "message": str(awser),"results_string": 'fail','results':result}), 200
+    return jsonify({"status": "success", "message": str(awser),"results_string": 'Nothing found','results':end_result}), 200
 
 if __name__ == '__main__':
     # Starte den Flask-Server
