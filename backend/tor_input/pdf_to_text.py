@@ -11,9 +11,9 @@ class GetCompSubsFromInput():
         self.comp_MetS = "Methodenorientierte Zugänge zu den Sozialwissenschaften"
         self.comp_PraS = "Praxisorientierte Zugänge zu den Sozialwissenschaften"
 
-        self.comp_MedW = "Medialitätsorientierte Zugänge zu inter- und transdisziplinären Wissenschaften"
-        self.comp_MetW = "Methodenorientierte Zugänge zu inter- und transdisziplinären Wissenschaften"
-        self.comp_PraW = "Praxisorientierte Zugänge zu inter- und transdisziplinären Wissenschaften"
+        self.comp_MedW = "Medialitätsorientierte Zugänge zu inter- und transdisziplinären" # Wissenschaften""
+        self.comp_MetW = "Methodenorientierte Zugänge zu inter- und transdisziplinären" # Wissenschaften"
+        self.comp_PraW = "Praxisorientierte Zugänge zu inter- und transdisziplinären" # Wissenschaften"
 
         self.comp_MedG = "Medialitätsorientierte Zugänge zu den Geisteswissenschaften"
         self.comp_MetG = "Methodenorientierte Zugänge zu den Geisteswissenschaften"
