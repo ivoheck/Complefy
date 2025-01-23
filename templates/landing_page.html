@@ -47,13 +47,69 @@
             background-color: #e96c00;
             transform: scale(1.05);
         }
+
+        /* Popup-Stil */
+        #popup {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            visibility: visible;
+            opacity: 1;
+            transition: opacity 0.5s ease, visibility 0.5s;
+            z-index: 9999; /* Sicherstellen, dass das Popup immer im Vordergrund bleibt */
+        }
+        #popup-content {
+            background-color: white;
+            color: black;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            width: 400px;
+        }
+        #popup button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #ff7f00;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        #popup button:hover {
+            background-color: #e96c00;
+        }
+        .hidden {
+            visibility: hidden;
+            opacity: 0;
+        }
     </style>
 </head>
 <body>
+    <div id="popup">
+        <div id="popup-content">
+            <h2>Welcome to Complefy!</h2>
+            <p>This is a brief explanation about the website. Please read the information before proceeding.</p>
+            <button onclick="closePopup()">I Understand</button>
+        </div>
+    </div>
+
     <div class="container">
         <img class="robot-image" src="/static/images/robot.png" alt="Robot">
         <div class="subtitle">Complefy</div>
-        <button class="button" onclick="window.location.href='/upload_data_page'">Press to Start</button>
+        <button class="button disabled" id="startButton" onclick="window.location.href='/upload_data_page'" disabled>Press to Start</button>
     </div>
 </body>
+<script>
+    function closePopup() {
+            document.getElementById('popup').style.display = 'none'; // Popup ausblenden
+            document.getElementById('startButton').disabled = false; // Button aktivieren
+            document.getElementById('startButton').classList.remove('disabled'); // Stil anpassen
+        }
+</script>
 </html>
