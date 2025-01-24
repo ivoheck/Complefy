@@ -41,6 +41,7 @@ sudo docker run --name complefy-app-container complefy-app
 
 ## Usage
 Running the Docker container will host the web page on `http://172.17.0.2:5004`
+The web page can be accessed through a web browser
 
 ## Contributors
 Henry  
