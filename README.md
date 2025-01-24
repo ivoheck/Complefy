@@ -42,5 +42,10 @@ sudo docker run --name complefy-app-container complefy-app
 ## Usage
 Running the Docker container will host the web page on `http://172.17.0.2:5004`
 
+## Contributors
+Henry
+Ahmad
+Ivo
+
 ## Disclaimer
 AI tools like Chat-GPT were used to write parts of the source code.
