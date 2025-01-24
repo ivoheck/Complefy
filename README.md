@@ -28,15 +28,19 @@ Run Docker Container
 sudo docker run --name complefy-app-container complefy-app
 ```
 
-### Stop Docker Container
+### Run Docker Container
 Stop and delete Container
 ```bash
 sudo docker stop complefy-app-container
 sudo docker rm complefy-app-container
 ```
-Complefy can be started again
+Complefy can now be started again
 ```bash
 sudo docker run --name complefy-app-container complefy-app
 ```
 
 ## Usage
+Running the Docker container will host the web page on `http://172.17.0.2:5004`
+
+## Disclaimer
+AI tools like Chat-GPT were used to write parts of the source code.
