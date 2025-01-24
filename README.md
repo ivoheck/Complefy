@@ -10,6 +10,6 @@ git clone git@github.com:ivoheck/Complefy.git
 
 ### Start Docker Container
 ```bash
-sudo docker build -t complefy-app .´
+sudo docker build -t complefy-app .
 sudo docker run --name complefy-app-container complefy-app
 ```
