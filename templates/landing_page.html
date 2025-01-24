@@ -71,6 +71,22 @@
             border-radius: 10px;
             text-align: center;
             width: 400px;
+            max-height: 80%;
+            overflow-y: auto;
+        }
+        #popup-content h2 {
+            margin-top: 0;
+        }
+        #popup-content iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+            margin-top: 20px;
+        }
+        #popup-content .note {
+            font-size: 14px;
+            color: #ff0000;
+            margin-bottom: 10px;
         }
         #popup button {
             margin-top: 20px;
@@ -93,9 +109,11 @@
 <body>
     <div id="popup">
         <div id="popup-content">
+            <div class="note">Note: All uploaded data (timetable, transcript of records) will be forwarded to a third-party LLM</div>
             <h2>Welcome to Complefy!</h2>
-            <p>This is a brief explanation about the website. Please read the information before proceeding.</p>
-            <button onclick="closePopup()">I Understand</button>
+            <p>Please accept the data privacy policy before starting:</p>
+            <iframe src="/static/files/Datenschutz.pdf"></iframe>
+            <button onclick="closePopup()">Accept Datenschutz Hinweise</button>
         </div>
     </div>
 
@@ -107,9 +125,9 @@
 </body>
 <script>
     function closePopup() {
-            document.getElementById('popup').style.display = 'none'; // Popup ausblenden
-            document.getElementById('startButton').disabled = false; // Button aktivieren
-            document.getElementById('startButton').classList.remove('disabled'); // Stil anpassen
-        }
+        document.getElementById('popup').style.display = 'none'; // Popup ausblenden
+        document.getElementById('startButton').disabled = false; // Button aktivieren
+        document.getElementById('startButton').classList.remove('disabled'); // Stil anpassen
+    }
 </script>
 </html>
