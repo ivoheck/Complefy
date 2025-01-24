@@ -89,15 +89,17 @@ class LLMConnection():
 
         return chat_completion.choices[0].message.content
     
-    def get_result_awnser(self,message,results):
+    def get_result_awnser(self,message,results,sub_count):
         chat = [{"role":"system","content":"You are a helpful assistant"}]
 
         promt = """
                 generire eine kurze antwort nachricht für basirend auf der aufforderung des nutzers und der ergebnisse, soetws wie: hier sind die ergebnisse...
-                nim auch kurz bezug auf die gefundenen ergebnisse
+                Nim auch kurz bezug auf die gefundenen ergebnisse.
+                Erwäne auch wie viele Fächer analysiert wurden.
             """
-        promt += "die ergebnisse sind follgende: " + str(results)
-        promt += "die aufforderung des nutzer ist: " + message
+        promt += "Die ergebnisse sind follgende: " + str(results)
+        promt += "Die aufforderung des nutzer ist: " + message
+        promt += "Die anzahl der analysierten Fächer ist: " + str(sub_count)
         complete_promt = {"role":"user","content":promt}
         
         return self.chat_completion(chat=chat,question=complete_promt,model=self.model_lama_70)

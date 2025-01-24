@@ -313,6 +313,7 @@ async def handle_chat_message():
         
         comps = get_pre_sorted_comps()
         attemps = min(int(len(comps) / 10), 3)
+        sub_count = attemps * 10
 
         tasks = []
         for attempt in range(attemps):
@@ -336,7 +337,7 @@ async def handle_chat_message():
         print(e)
         return jsonify({"status": "success", "message": "Error with LLM result","results":[]}), 200
     
-    awser = llm.get_result_awnser(message=message,results=end_result)
+    awser = llm.get_result_awnser(message=message,results=end_result,sub_count=sub_count)
 
     print(end_result)
 
