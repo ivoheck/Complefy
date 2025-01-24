@@ -8,8 +8,45 @@ Link to SCRUM-Board: https://trello.com/invite/b/67335ffd8314a50756abf0e9/ATTI45
 git clone git@github.com:ivoheck/Complefy.git
 ```
 
-### Start Docker Container
+### Setup Api key
+Create a file named `secret.py` in the root of the Projekt  
+Put the Api key in the file as a string named `api_key`
+
+```python
+api_key = "your api key"
+```
+
+Make sure to never push this key to any repository
+
+### Start Complefy
+Build Docker Container
 ```bash
-sudo docker build -t complefy-app .´
+sudo docker build -t complefy-app .
+```
+Run Docker Container
+```bash
 sudo docker run --name complefy-app-container complefy-app
 ```
+
+### Run Docker Container
+Stop and delete Container
+```bash
+sudo docker stop complefy-app-container
+sudo docker rm complefy-app-container
+```
+Complefy can now be started again
+```bash
+sudo docker run --name complefy-app-container complefy-app
+```
+
+## Usage
+Running the Docker container will host the web page on `http://172.17.0.2:5004`  
+The web page can be accessed through a web browser
+
+## Contributors
+Henry  
+Ahmad  
+Ivo  
+
+## Disclaimer
+AI tools like Chat-GPT were used to write parts of the source code.
