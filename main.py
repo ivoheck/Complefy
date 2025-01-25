@@ -312,11 +312,11 @@ async def handle_chat_message():
         #         future.result()
         
         comps = get_pre_sorted_comps()
-        attemps = min(int(len(comps) / 10), 3)
+        attemps = min(int(len(comps) / 10), 4)
         sub_count = attemps * 10
 
         tasks = []
-        for attempt in range(attemps):
+        for attempt in range(1,attemps):
             task = asyncio.ensure_future(fetch_data_async(message, get_pre_sorted_comps()[attempt * 10:(attempt + 1) * 10], result_queue))
             tasks.append(task)
     
