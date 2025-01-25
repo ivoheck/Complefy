@@ -4,3 +4,4 @@ secret.py
 backend/llm_connection/secret.py
 /local/
 .venv/
+.testVenv/
