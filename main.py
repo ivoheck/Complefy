@@ -312,7 +312,7 @@ async def handle_chat_message():
         #         future.result()
         
         comps = get_pre_sorted_comps()
-        attemps = min(int(len(comps) / 10), 4)
+        attemps = min(int(len(comps) / 10), 3)
         sub_count = attemps * 10
 
         tasks = []
