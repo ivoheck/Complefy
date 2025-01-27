@@ -20,5 +20,7 @@ COPY static ./static
 COPY templates ./templates
 COPY secret.py ./
 
+EXPOSE 5004
+
 # Kommando, um die main.py zu starten
 CMD ["python", "main.py"]
