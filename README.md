@@ -21,7 +21,7 @@ Make sure to never push this key to any repository
 ### Start Complefy
 Build Docker Container
 ```bash
-sudo docker build -t complefy-app .
+docker build -t complefy-app .
 ```
 Run Docker Container
 ```bash
@@ -31,8 +31,8 @@ docker run -d --name complefy-app-container -p 5004:5004 complefy-app
 ### Run Docker Container
 Stop and delete Container
 ```bash
-sudo docker stop complefy-app-container
-sudo docker rm complefy-app-container
+docker stop complefy-app-container
+docker rm complefy-app-container
 ```
 Complefy can now be started again
 ```bash
