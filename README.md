@@ -8,9 +8,9 @@ Link to SCRUM-Board: https://trello.com/invite/b/67335ffd8314a50756abf0e9/ATTI45
 git clone git@github.com:ivoheck/Complefy.git
 ```
 
-### Setup Api key
+### Setup API key
 Create a file named `secret.py` in the root of the Projekt  
-Put the Api key in the file as a string named `api_key`
+Put the API key in the file as a string named `api_key`
 
 ```python
 api_key = "your api key"
