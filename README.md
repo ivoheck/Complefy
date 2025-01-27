@@ -25,7 +25,7 @@ sudo docker build -t complefy-app .
 ```
 Run Docker Container
 ```bash
-sudo docker run --name complefy-app-container complefy-app
+docker run -d --name complefy-app-container -p 5004:5004 complefy-app
 ```
 
 ### Run Docker Container
