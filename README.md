@@ -47,8 +47,7 @@ The web page can be accessed through a web browser
 
 
 
-https://github.com/user-attachments/assets/b2764778-3954-4b3e-b982-1f67a0fe0932
-
+https://github.com/user-attachments/assets/a8d22792-049d-4f1e-92af-027a7be23de1
 
 
 
